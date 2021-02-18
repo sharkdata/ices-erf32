@@ -1,0 +1,53 @@
+
+
+# A part of the ICES ERF 3.2 generator.
+# GitHub: https://github.com/sharkdata/ices
+
+info: 
+    title: ICES ERF 3.2 for Zooplankton
+    description:
+        Used to generate ICES ERF 3.2 files from SHARK zip files.
+
+datatype:
+    Zooplankton
+
+yearFrom:
+    2016
+yearTo:
+    2016
+
+icesTarget:
+    directory:
+        data_out
+    fileTemplate: 
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.xml
+    logfileTemplate:
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.txt
+
+sourceFiles:
+    directory: 
+        data_in/datasets
+    globSearch:
+        SHARK_Zooplankton_*_version_*.zip
+    # files:
+    #     - SHARK_Zooplankton_EXAMPLE.zip
+
+taxaWorms:
+    directory:
+        data_in/resources
+    files:
+        - taxa_dyntaxa_to_worms.txt
+
+translate:
+    directory:
+        data_in/resources
+    files:
+        - translate_erf32.txt
+        - translate_erf32_zooplankton.txt
+
+filters:
+    directory:
+        data_in/resources
+    files:
+        - filters_erf32.txt
+        - filters_erf32_zooplankton_nat.txt
