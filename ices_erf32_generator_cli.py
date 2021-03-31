@@ -24,11 +24,13 @@ def run_erf32_generator_command(row):
     if (row < 0) or (row > len(ices_erf32_config)):
         print("\n\nERROR: Wrong value. Please try again.\n\n")
         return
+
+    generator = ices_erf32_generator_main.IcesErf32Generator()
     if row == 0:
         for config_file in ices_erf32_config:
-            ices_erf32_generator_main.generate_ices_erf32(config_file)
+            generator.generate_erf32(config_file)
     else:
-        ices_erf32_generator_main.generate_ices_erf32(ices_erf32_config[row - 1])
+        generator.generate_erf32(ices_erf32_config[row - 1])
 
 
 if __name__ == "__main__":

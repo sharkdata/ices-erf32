@@ -1,10 +1,10 @@
 
 
 # A part of the ICES ERF 3.2 generator.
-# GitHub: https://github.com/sharkdata/ices
+# GitHub: https://github.com/sharkdata/ices-erf32
 
 info: 
-    title: ICES ERF 3.2 for Zooplankton
+    title: ICES ERF 3.2 generator for Zooplankton
     description:
         Used to generate ICES ERF 3.2 files from SHARK zip files.
 
@@ -22,7 +22,7 @@ icesTarget:
     fileTemplate: 
         ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.xml
     logfileTemplate:
-        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.txt
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST_LOG.txt
 
 sourceFiles:
     directory: 
