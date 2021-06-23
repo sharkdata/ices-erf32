@@ -5,3 +5,5 @@ dataset_name	SHARK_Zoobenthos_2020_UMSC
 dataset_name	SHARK_Zoobenthos_2020_DEEP_HAV
 dataset_name	SHARK_Zoobenthos_2020_DEEP_HAV_Asko
 dataset_name	SHARK_Zoobenthos_2017_2020_SLC-T
+
+visit_year  2020
