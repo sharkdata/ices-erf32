@@ -4,6 +4,7 @@
 # Copyright (c) 2021-present SMHI, Swedish Meteorological and Hydrological Institute
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
+import logging
 import erf32_generator
 
 
@@ -13,6 +14,7 @@ class TransectData(object):
     def __init__(self):
         """ """
         self.clear()
+        self.logger = logging.getLogger('erf32_generator')
 
     def clear(self):
         """ """
@@ -149,7 +151,7 @@ class TransectData(object):
                             new_section_distance_end_m
                         ).replace(",", ".")
                 except Exception as e:
-                    print("DEBUG: Transec data exception: " + str(e))
+                    self.logger.error("DEBUG: Transec data exception: " + str(e))
             #
             max_sample_max_depth_m = self._transect_dict[key].get(
                 "max_sample_max_depth_m", "0"
@@ -171,7 +173,7 @@ class TransectData(object):
                             new_sample_max_depth_m
                         ).replace(",", ".")
                 except:
-                    print("DEBUG: Transec data exception: " + str(e))
+                    self.logger.error("DEBUG: Transec data exception: " + str(e))
 
     def reformat_transect_id(self, transect_id):
         """ """

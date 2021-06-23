@@ -5,6 +5,7 @@
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
 import datetime
+import logging
 import erf32_generator
 
 
@@ -20,6 +21,7 @@ class ExportIcesContent(object):
         self._translate_taxa_to_helcom_peg = (
             erf32_generator.TranslateDyntaxaToHelcomPeg()
         )
+        self.logger = logging.getLogger('erf32_generator')
 
     def copy_to_ices_fields(self):
         """ """
@@ -143,7 +145,7 @@ class ExportIcesContent(object):
             ",", "."
         )
         self._dict["NPORT-R34"] = self._get_value("number_of_portions", "").replace(
-            ".", ","
+            ",", "."
         )  # Note: Should be ','.
         self._dict["TRCED-R34"] = self._get_value("section_end_depth_m", "").replace(
             ",", "."
@@ -526,7 +528,7 @@ class ExportIcesContent(object):
                     except:
                         sampler_area_opening = ""
                         try:
-                            print(
+                            self.logger.warning(
                                 "ICES: Failed to calculate SAREA for"
                                 + "  Station: "
                                 + self._get_value("station_name")
@@ -579,7 +581,7 @@ class ExportIcesContent(object):
                         self._dict["TRCSD-R34"] = "0"
                         self._dict["DEPAD-R40"] = "I1"
             except:
-                print("DEBUG: Failed to convert to float.")
+                self.logger.warning("DEBUG: Failed to convert to float.")
                 pass
 
         # Remove values above the surface. ICES does not accept them.
@@ -596,14 +598,14 @@ class ExportIcesContent(object):
                     depth_s = float(depth_s.replace(",", "."))
                     if depth_s < 0.0:
                         self._dict[ices_field_name] = "0"
-                        print(
+                        self.logger.warning(
                             "DEBUG: Depth value set to zero: "
                             + ices_field_name
                             + "   Value: "
                             + str(depth_s)
                         )
             except:
-                print(
+                self.logger.warning(
                     "DEBUG: Failed to convert to float. "
                     + ices_field_name
                     + "   Value: "
@@ -731,7 +733,7 @@ class ExportIcesContent(object):
         elif long_name == "Zooplankton":
             datatype = "ZP"
         else:
-            print("DEBUG: Invalid datatype: " + long_name)
+            self.logger.warning("DEBUG: Invalid datatype: " + long_name)
         #
         return datatype
 
@@ -788,7 +790,7 @@ class ExportIcesContent(object):
                     # New unit.
                     unit_name = "g"
                 except:
-                    print(
+                    self.logger.warning(
                         "DEBUG: Failed to divide value by 1000: "
                         + self._dict.get("VALUE-R38", "")
                     )

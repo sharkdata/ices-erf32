@@ -5,6 +5,7 @@
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
 import codecs
+import logging
 import erf32_generator
 
 
@@ -17,6 +18,8 @@ class IcesErf32Format(object):
         self._rec20_dict = {}
         self._rec21_dict = {}
         self._zp_abundnr_wetwt_list = []
+        #
+        self.logger = logging.getLogger('erf32_generator')
         #
         self._duplicate_counter = 0
         self._34rec_counter = 0
@@ -66,11 +69,11 @@ class IcesErf32Format(object):
                             aggregated_value
                         )  # .rename(',', '.')
                     except:
-                        print("DEBUG: Failed to aggregate ZP values.")
+                        self.logger.error("DEBUG: Failed to aggregate ZP values.")
                 else:
                     self._duplicate_counter += 1
-                    print(
-                        "DEBUG: Duplicate found ("
+                    self.logger.warning(
+                        "Duplicate found ("
                         + str(self._duplicate_counter)
                         + "): "
                         + key38
@@ -89,7 +92,7 @@ class IcesErf32Format(object):
         #
         out_rows = []
         # Erf32 header.
-        out_rows.append('<?XML version="1.0" encoding="ISO-8859-1" ?>')
+        out_rows.append('<?xml version="1.0" encoding="ISO-8859-1" ?>')
         # Erf32 elements.
         rec00_element = False
         rec90_element = False
@@ -259,15 +262,12 @@ class IcesErf32Format(object):
                             + ">"
                         )
 
-                        if rowdict.get(field, "") == "583685dcb6dc9264ca8b878621c27946":
-                            print("DEBUG")
-
             # ===== Rec 38. =====
             remove_value = False
             # Some species are filtered.
             if "<REMOVE>" in rowdict.get("SPECI-R38", ""):
                 remove_value = True
-                print("DEBUG: <REMOVE>" + rowdict.get("scientific_name", ""))
+                self.logger.warning("DEBUG: <REMOVE>" + rowdict.get("scientific_name", ""))
 
             #             # ZP must have both ABUNDNR and WETWT.
             #             elif rowdict['DTYPE-R34'] == 'ZP':
@@ -366,7 +366,7 @@ class IcesErf32Format(object):
         # Replace all "," with ".".
         for index, row in enumerate(out_rows):
             if "," in row:
-                print('DEBUG: "," found in row: ', row)
+                self.logger.debug('DEBUG: "," found in row: ', row)
                 out_rows[index] = row.replace(",", ".")
 
         return out_rows

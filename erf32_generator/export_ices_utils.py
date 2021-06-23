@@ -4,6 +4,8 @@
 # Copyright (c) 2021-present SMHI, Swedish Meteorological and Hydrological Institute
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
+import logging
+
 
 class ExportStations:
     """ """
@@ -12,6 +14,7 @@ class ExportStations:
         """ """
         self.station_info_dict = {}
         self.missing_station_list = []
+        self.logger = logging.getLogger('erf32_generator')
 
     def get_mprog(self, station_name):
         """ """
@@ -87,7 +90,7 @@ class ExportStations:
                             if station_name not in self.station_info_dict.keys():
                                 self.station_info_dict[station_name] = row_dict
                             else:
-                                print("DEBUG: Stations, duplicate row: " + station_name)
+                                self.logger.warning("Stations, duplicate row: " + station_name)
 
 
 class ExportFilter:

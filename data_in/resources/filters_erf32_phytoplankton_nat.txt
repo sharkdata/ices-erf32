@@ -1,0 +1,22 @@
+source_field	include_value	exclude_value	comments
+
+dataset_name	SHARK_Phytoplankton_2020_SMHI
+dataset_name	SHARK_Phytoplankton_2020_DEEP
+dataset_name	SHARK_Phytoplankton_2020_UMSC
+
+# Phytoplankton species (problems with OSPAR area biovolumes not in ICES HELCOM PEG list)
+scientific_name		Ciliophora
+scientific_name		Favella
+scientific_name		Stenosemella
+scientific_name		Strombidium	
+scientific_name		Helicostomella fusiformis
+scientific_name		Coxliella helix
+scientific_name		alpingella acuminata
+scientific_name		Tintinnopsis
+scientific_name		Gymnodinium litoralis
+scientific_name		Tiarina fusus
+scientific_name		Tintinnidae
+scientific_name		Stenosemella
+scientific_name		Leprotintinnus pellucidus
+scientific_name		Helicostomella subulata
+scientific_name		Salpingella acuminata

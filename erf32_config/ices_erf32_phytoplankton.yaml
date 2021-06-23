@@ -4,12 +4,12 @@
 # GitHub: https://github.com/sharkdata/ices-erf32
 
 info: 
-    title: ICES ERF 3.2 generator for Zooplankton
+    title: ICES ERF 3.2 generator for Phytoplankton
     description:
         Used to generate ICES ERF 3.2 files from SHARK zip files.
 
 datatype:
-    Zooplankton
+    Phytoplankton
 
 yearFrom:
     2020
@@ -21,18 +21,18 @@ icesTarget:
         data_out
     fileTemplate: 
         # ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.xml
-        ICES-ERF32_SMHI_Zooplankton_2020_TEST.xml
+        ICES-ERF32_SMHI_Phytoplankton_2020_TEST.xml
     logfileTemplate:
         # ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST_LOG.txt
-        ICES-ERF32_SMHI_Zooplankton_2020_TEST_LOG.txt
+        ICES-ERF32_SMHI_Phytoplankton_2020_TEST_LOG.txt
 
 sourceFiles:
     directory: 
         data_in/datasets
     globSearch:
-        SHARK_Zooplankton_*_version_*.zip
+        SHARK_Phytoplankton_*_version_*.zip
     # files:
-    #     - SHARK_Zooplankton_EXAMPLE.zip
+    #     - SHARK_Phytoplankton_EXAMPLE.zip
 
 taxaWorms:
     directory:
@@ -45,11 +45,11 @@ translate:
         data_in/resources
     files:
         - translate_erf32.txt
-        - translate_erf32_zooplankton.txt
+        - translate_erf32_phytoplankton.txt
 
 filters:
     directory:
         data_in/resources
     files:
         - filters_erf32.txt
-        - filters_erf32_zooplankton_nat.txt
+        - filters_erf32_phytoplankton_nat.txt

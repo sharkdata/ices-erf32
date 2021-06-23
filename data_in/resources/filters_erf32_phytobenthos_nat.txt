@@ -1,0 +1,6 @@
+source_field	include_value	exclude_value	comments
+
+dataset_name	SHARK_Epibenthos_2020_SLC-T
+dataset_name	SHARK_Epibenthos_2020_DEEP_Asko
+dataset_name	SHARK_Epibenthos_2020_DEEP_Singo
+dataset_name	SHARK_Epibenthos_2020_DEEP_Hoga

@@ -6,6 +6,7 @@
 
 import pathlib
 import yaml
+import logging
 
 # import collections.abc
 
@@ -17,6 +18,7 @@ class GeneratorConfig:
         """ """
         self.config_file = config_file
         self.clear()
+        self.logger = logging.getLogger('erf32_generator')
 
     def clear(self):
         """ """
@@ -92,8 +94,6 @@ class GeneratorConfig:
                     file_path = pathlib.Path(directory_path, file_name)
                     if file_path not in source_file_list:
                         source_file_list.append(str(file_path))
-        print("\nFiles to process: ")
-        print("\n".join(sorted(source_file_list)))
         return sorted(source_file_list)
 
     def get_config_files(self, config_key):

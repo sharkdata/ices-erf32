@@ -1,161 +1,314 @@
-source_field	dwc_field	from_value	to_value	comments
+source_field	from_value	to_value	comments
+sampling_laboratory_name_en	The Sven Lovén Centre for Marine Sciences-Kristineberg	KMFS
+sampling_laboratory_name_en	The Sven Lovén Centre for Marine Sciences-Tjärnö	TMBL
+sampling_laboratory_name_en	Swedish Meteorological and Hydrological Institute	SMHI
+sampling_laboratory_name_en	Stockholm University Department of Ecology Environment and Plant Sciences	SUSE
+sampling_laboratory_name_en	Linnaeus University	UCKS
+sampling_laboratory_name_en	Umeå University	UMSC
+sampling_laboratory_name_en	-	TMBL
 
-plankton_sampling_method_code		BTH	Bottom to halocline (included)	
-plankton_sampling_method_code		HAU	Haul	
-plankton_sampling_method_code		HTT	Top of halocline to thermocline (included)	
-plankton_sampling_method_code		IND	Integrated sample	
-plankton_sampling_method_code		INP	Integrated sample from photic zone	
-plankton_sampling_method_code		MIX	Mixed surface layer	
-plankton_sampling_method_code		OTH	Other	
-plankton_sampling_method_code		PDD	Pooled sample from distinct depths	
-plankton_sampling_method_code		SEP	Separate depths	
-plankton_sampling_method_code		TTS	Top of thermocline to surface	
-preservation_method_code		ACD	Acidification	
-preservation_method_code		ALU	Alkaline lugol	
-preservation_method_code		BOU	Bouin's fluid	
-preservation_method_code		CHL	Chloroform (=trichloromethane)	
-preservation_method_code		CLU	Acid lugol	
-preservation_method_code		DTR	Dietrick fixative (10% formaldehyde, 28.5% EtOH, 2% glacial acetic acid)	
-preservation_method_code		ETH	Ethanol	
-preservation_method_code		ETHG	Ethanol (95%) with Glycerol (to 90% ethanol content)	
-preservation_method_code		F4B	Fomaldehye - 4% buffered formaldehyde (ph 7-8)	
-preservation_method_code		FET	Formalin - neutral buffered formalin 10% + ethanol	
-preservation_method_code		FOR	Formaldehyde	
-preservation_method_code		HCL	Acidification with HCL	
-preservation_method_code		HNO	Acidification with HNO3	
-preservation_method_code		IMS	Industrial methylated spirits	
-preservation_method_code		ISO	Isopropanol	
-preservation_method_code		LUG	Neutral lugol	
-preservation_method_code		NBF	Formalin - neutral buffered formalin 10%	
-preservation_method_code		NON	No fixation method used	
+sampling_laboratory_name_sv	The Sven Lovén Centre for Marine Sciences-Kristineberg	KMFS
+sampling_laboratory_name_sv	The Sven Lovén Centre for Marine Sciences-Tjärnö	TMBL
+sampling_laboratory_name_sv	Swedish Meteorological and Hydrological Institute	SMHI
+sampling_laboratory_name_sv	Stockholm University Department of Ecology Environment and Plant Sciences	SUSE
+sampling_laboratory_name_sv	Linnaeus University	UCKS
+sampling_laboratory_name_sv	Umeå University	UMSC
+sampling_laboratory_name_sv	-	TMBL
 
-	lifeStage	AD	AD (Adult)	
-	lifeStage	C1	C1 (Copepodite I)	
-	lifeStage	C2	C2 (Copepodite II)	
-	lifeStage	C3	C3 (Copepodite III)	
-	lifeStage	C4	C4 (Copepodite IV)	
-	lifeStage	C5	C5 (Copepodite V)	
-	lifeStage	C1-C3	C1-C3 (Copepodite I - Copepodite III)	
-	lifeStage	C3-C5	C3-C5 (Copepodite III - Copepodite V)	
-	lifeStage	C4-C5	C4-C5 (Copepodite IV - Copepodite V)	
-	lifeStage	CN	CN (Copepodite, stage not specified)	
-	lifeStage	EG	EG (Egg)	
-	lifeStage	EM	EM (Embryo)	
-	lifeStage	IM	IM (Immature/sub-adult)	
-	lifeStage	JV	JV (Juvenile)	
-	lifeStage	LV	LV (Larvae)	
-	lifeStage	MX	MX (Mixed for pooled specimens)	
-	lifeStage	NP	NP (Nauplius)	
-	lifeStage	NS	NS (Not specified)	
+analytical_laboratory_name_en	National Marine Fisheries Research Institute (NMFRI)	MIRG
+analytical_laboratory_name_en	Swedish Meteorological and Hydrological Institute	SMHI
+analytical_laboratory_name_en	Stockholm University Department of Ecology Environment and Plant Sciences	SUSE
+analytical_laboratory_name_en	The Sven Lovén Centre for Marine Sciences-Kristineberg	KMFS
+analytical_laboratory_name_en	The Sven Lovén Centre for Marine Sciences-Tjärnö	TMBL
+analytical_laboratory_name_en	FITO-Lab	SFIP
+analytical_laboratory_name_en	Linnaeus University	UCKS
+analytical_laboratory_name_en	Umeå University	UMSC
+analytical_laboratory_name_en	WEAQ AB	WEAQ
+analytical_laboratory_name_en	-	TMBL
 
-sampler_type_code		AD	Anchor dredge	
-sampler_type_code		AGT	Agassiz trawl	
-sampler_type_code		AQSC	Aquascope	
-sampler_type_code		ASK	Askö gravity corer	
-sampler_type_code		ASV	Aerial surveillance	
-sampler_type_code		BC	Box-corer	
-sampler_type_code		BGN	Bongo net	
-sampler_type_code		BO	Boillot dredge	
-sampler_type_code		BOT	Bottom trawl	
-sampler_type_code		BR	Bogorov-Rass net	
-sampler_type_code		CH	Charcot dredge	
-sampler_type_code		CPOD	C-POD	
-sampler_type_code		CM	Camera mounted corer	
-sampler_type_code		DA	Day grab	
-sampler_type_code		DC	Diver-operated corer	
-sampler_type_code		DD	Drilling device	
-sampler_type_code		DIV	Diver collected	
-sampler_type_code		DROP	Drop trap	
-sampler_type_code		DTR	Diving transects	
-sampler_type_code		EK	Ekman grab	
-sampler_type_code		EN	Endoume dredge	
-sampler_type_code		FBW	Ferry box water sampler	
-sampler_type_code		FRAMENET	Frame with net collector for epibenthic samples	
-sampler_type_code		GC	Gravity corer	
-sampler_type_code		GE	Gemini corer	
-sampler_type_code		GFL	Go-Flo seawater sampler	
-sampler_type_code		GIL	Gill net	
-sampler_type_code		GOV	GOV trawl	
-sampler_type_code		GRT	Granton trawl	
-sampler_type_code		GS	Grab sampler	
-sampler_type_code		Gulf3	Gulf III	
-sampler_type_code		Gulf7	Gulf VII	
-sampler_type_code		GX	Gemax corer (for recent gyttja-clays)	
-sampler_type_code		HAN	Collected by hand	
-sampler_type_code		HM	Hamon grab	
-sampler_type_code		HOS	Hose	
-sampler_type_code		HP	Haps corer	
-sampler_type_code		HYB-TPN	Hydro-Bios transparent plastic Nansen sampler	
-sampler_type_code		HYD-MPD	Hydro-Bios Multi Plankton sampler - Midi	
-sampler_type_code		HYD-MPN	Hydro-Bios Multi Plankton sampler - Mini	
-sampler_type_code		HYD-MPX	Hydro-Bios Multi Plankton sampler - Maxi	
-sampler_type_code		IFCB	Imaging Flow Cytobot 	
-sampler_type_code		IW	Ice wedge corer	
-sampler_type_code		JUDAY	Juday net	
-sampler_type_code		KA	Kajak corer	
-sampler_type_code		LM	Limnos sediment corer	
-sampler_type_code		LS	Lister dredge	
-sampler_type_code		LW	Limnos water sampler	
-sampler_type_code		MKS	Modified Knudsen sampler	
-sampler_type_code		MOCNESS	Multiple Opening/ Closing Net and Environmental Sampling System)	
-sampler_type_code		MU	Multi corer	
-sampler_type_code		NAN	Nansen sampler	
-sampler_type_code		NC	Niemistö corer	
-sampler_type_code		ND	Nodules dredge	
-sampler_type_code		NET	Net	
-sampler_type_code		NSK	Niskin bottle	
-sampler_type_code		NT	Naturalists dredge	
-sampler_type_code		NZ	NIOZ core	
-sampler_type_code		OC	Other core device (request code from ICES)	
-sampler_type_code		OD	Other dredge device (request code from ICES)	
-sampler_type_code		OL	Jonasson-Olausen Boxcorer	
-sampler_type_code		OR	Oscor corer (corer for sandy sediments)	
-sampler_type_code		OS	Other grab sampling device (request code from ICES)	
-sampler_type_code		OXS	Oxygen sensor	
-sampler_type_code		PAR	Pair trawl	
-sampler_type_code		PEL	Pelagic trawl	
-sampler_type_code		PHOTO	Photo-based determination	
-sampler_type_code		PMP	Pump	
-sampler_type_code		PRS	Purse seines	
-sampler_type_code		PS	Ponar core sampler	
-sampler_type_code		PT	Petersen grab	
-sampler_type_code		QSM	Quantitative sampling	
-sampler_type_code		RA	Rallier dredge	
-sampler_type_code		RB	Ramberg sampler	
-sampler_type_code		RD	Rock dredge	
-sampler_type_code		RN	Rieneck box corer	
-sampler_type_code		ROS	Rosette sampler	
-sampler_type_code		RU	Ruttner sampler	
-sampler_type_code		RUTA	Ruta	
-sampler_type_code		SC	Scripps box corer	
-sampler_type_code		CTD	CTD sonde	
-sampler_type_code		SCT	Scraping tool	
-sampler_type_code		SHUGG	Special grab with a sampling area of 450 cm2	
-sampler_type_code		SL	Selena corer (for recent gyttja-clays)	
-sampler_type_code		SM	Smith McIntyre Grab	
-sampler_type_code		SQR	Area defined square for epibenthic monitoring	
-sampler_type_code		SRN	Seines and ring net	
-sampler_type_code		STR	Snorkling transect	
-sampler_type_code		SUSE_TS	Tube sampler for zooplankton used by SUSE	
-sampler_type_code		UD	Unknown dredge	
-sampler_type_code		US	Usnel corer	
-sampler_type_code		VC	Vibro-corer	
-sampler_type_code		WD	Warren dredge	
-sampler_type_code		VID	Video-based determination of coverage	
-sampler_type_code		VIDEO-NET	A combined net and video-frame used for visual observations	
-sampler_type_code		WAT	Unknown water sampler	
-sampler_type_code		WP-2	WP-2 net	
-sampler_type_code		WP-3	WP-3 net	
-sampler_type_code		VS	Valter core sampler	
-sampler_type_code		VV	Van Veen grab	
-sampler_type_code		HC	Hand corer
+analytical_laboratory_name_sv	National Marine Fisheries Research Institute (NMFRI)	MIRG
+analytical_laboratory_name_sv	Swedish Meteorological and Hydrological Institute	SMHI
+analytical_laboratory_name_sv	Stockholm University Department of Ecology Environment and Plant Sciences	SUSE
+analytical_laboratory_name_sv	The Sven Lovén Centre for Marine Sciences-Kristineberg	KMFS
+analytical_laboratory_name_sv	The Sven Lovén Centre for Marine Sciences-Tjärnö	TMBL
+analytical_laboratory_name_sv	FITO-Lab	SFIP
+analytical_laboratory_name_sv	Linnaeus University	UCKS
+analytical_laboratory_name_sv	Umeå University	UMSC
+analytical_laboratory_name_sv	WEAQ AB	WEAQ
+analytical_laboratory_name_sv	-	TMBL
 
-calculation_method		F	Flowmeter reading	
-calculation_method		H	Haul length
+#sampler_area_m2		0,04
 
-	sex	F	Female
-	sex	H	Hermaphrodite
-	sex	I	Immature
-	sex	M	Male
-	sex	U	Undetermined
-	sex	X	Mixed
+dev_stage_code	C2	C1
+dev_stage_code	C3	C1
+dev_stage_code	C5	C4
+
+monitoring_program_code	O	CEMP
+monitoring_program_code	OSPAR	CEMP
+monitoring_program_code	O~H	CEMP~COMB
+monitoring_program_code	OSPAR~HELCOM	CEMP~COMB
+monitoring_program_code	H~O~NTL	CEMP~COMB~NATL
+monitoring_program_code	H	COMB
+monitoring_program_code	H2	COMB
+monitoring_program_code	HELCOM	COMB
+monitoring_program_code	National	NATL
+monitoring_program_code	NTL	NATL
+monitoring_program_code	National~OSPAR	NATL~CEMP
+monitoring_program_code	O~NTL	NATL~CEMP
+monitoring_program_code	H~NTL	NATL~COMB
+monitoring_program_code	H2~NTL	NATL~COMB
+monitoring_program_code	National~HELCOM	NATL~COMB
+
+plankton_sampling_method_code	HAU	IND
+
+platform_code	74	AA15
+platform_code	7710	77SE
+platform_code	7774	AA15
+platform_code	7790	AA30
+platform_code	7799	AA30
+platform_code	7798	AA33
+platform_code		AA72
+platform_code	14	77AR
+platform_code	GA	77GA
+platform_code	HE	77HP
+platform_code	K2	77K2
+platform_code	K5	77K5
+platform_code	1	77KB
+platform_code	2	77KC
+platform_code	KD	77KD
+platform_code	28	77KF
+platform_code	LY	77LY
+platform_code	18	77SN
+platform_code	34AR	34A3
+
+preservation_method_code	ETHG	ETH9GL
+
+sample_orderer_name_en	Swedish Environmental Protection Agency	SEPA
+sample_orderer_name_en	Swedish Agency for Marine and Water Management	SWAM
+sample_orderer_name_sv	Swedish Environmental Protection Agency	SEPA
+sample_orderer_name_sv	Swedish Agency for Marine and Water Management	SWAM
+
+sampler_type_code	RAMSKRAP	FRAMENET
+sampler_type_code	RSKRAP	FRAMENET
+sampler_type_code	RUTA	SQR
+
+#section_start_depth_m		0
+#section_end_depth_m		0
+#section_distance_start_m		0
+#section_distance_end_m		0
+
+sediment_deposition_code	4	H
+sediment_deposition_code	2	L
+sediment_deposition_code	3	M
+sediment_deposition_code	1	N
+
+station_name	13 BOTTENHAVET	13
+station_name	18 ÖREGRUNDS KUSTVATTEN	18
+station_name	1004 SO GILLÖGA	1004
+station_name	2098 EKOKNÖLEN	2099 EKOKNÖLEN
+station_name	3116 SVINGRUND	3117 SVINGRUND
+station_name	3117 LAUTERHORN	3118 LAUTERHORN
+station_name	3121 MAGÖ	3122 MAGÖ
+station_name	3124 ÖSTERGARN	3125 ÖSTERGARN
+station_name	3130 YTTERHOLMEN	3131 YTTERHOLMEN
+station_name	4002 IREVIKEN	4003 IREVIKEN
+station_name	4009 HÄVRINGE	4009
+station_name	4138 KAPPELSHAMN	4139 KAPPELSHAMN
+station_name	5139 N ÖLANDS NORRA UDDE	5140 N ÖLANDS NORRA UDDE
+station_name	6004 ASENSKALLEN	6004
+station_name	6007 S LANDSORT	6008 S LANDSORT
+station_name	6008 SO LANDSORT	6009 SO LANDSORT
+station_name	6019 S NYGRUND	6019
+station_name	6020 Y HÅLLSFJÄRDEN	6020
+station_name	6022 LILLBERGET	6022
+station_name	6025 SKVALLRAN	6025
+station_name	TH11	11N HIRTSHALS
+station_name	ESE NÄR	3129 ESE NÄR
+station_name	FURHOLMARNA	6010 FURHOLMARNA
+station_name	FURHOLMARNA	6010 FURHOLMARNA
+station_name	ALSBÄCK	ALS
+station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
+station_name	Askimsfjorden_02	ASKIMSFJORDEN_7
+station_name	Askimsfjorden_03	ASKIMSFJORDEN_3
+station_name	Askimsfjorden_04	ASKIMSFJORDEN
+station_name	Askimsfjorden_05	ASKIMSFJORDEN_5
+station_name	BCS III-10	BCSIII-10
+station_name	Bottnefjorden_01	BOTTNEFJORDEN_1
+station_name	Bottnefjorden_02	BOTTNEFJORDEN_2
+station_name	Bottnefjorden_03	BOTTNEFJORDEN_3
+station_name	Bottnefjorden_04	BOVALLSTRAND_2
+station_name	Bottnefjorden_05	BOVALLSTRAND_1
+station_name	STRETUDDEN	Brofjorden (Stretudden)
+station_name	BROFJORDEN_2	Brofjorden 2
+station_name	BROFJORDEN_3	Brofjorden 3
+station_name	BROFJORDEN_4	Brofjorden 4
+station_name	BROFJORDEN_5	Brofjorden 5
+station_name	BROFJORDEN_6	Brofjorden 6
+station_name	BROFJORDEN_7	Brofjorden 7
+station_name	BROFJORDEN_8	Brofjorden 8
+station_name	BY15W	BY15 W
+station_name	BY20 FÅRÖDJ	BY20
+station_name	BY29 / LL19	BY29
+station_name	BY3 HAMRARNE SUND	BY3
+station_name	BY32 NORRKÖPINGSDJ	BY32
+station_name	BY38 KARLSÖDJ	BY38
+station_name	BY39 ÖLANDS S UDDE	BY39
+station_name	BY4 CHRISTIANSÖ	BY4
+station_name	BY9 KLAIPEDA	BY9
+station_name	C3	C3_North
+station_name	F18 SYDOSTBROTTEN	F18
+station_name	F26 / C15	F26
+station_name	F33 GRUNDKALLEN	F33
+station_name	F64 SOLOVJEVA	F64
+station_name	FALKENBERG SYD SKOTTAREVET 8,7 M TOPP	FALKENBERG SYD SKOTTAREVET 8.7 M TOPP
+station_name	Fjällbacka_01	FJÄLLBACKA_9
+station_name	Fjällbacka_02	FJÄLLBACKA_2
+station_name	Fjällbacka_03	FJÄLLBACKA_3
+station_name	Fjällbacka_04	FJÄLLBACKA_4
+station_name	Fjällbacka_05	FJÄLLBACKA_5
+station_name	Fjällbacka inre_01	FJÄLLBACKA_INRE_9
+station_name	Fjällbacka inre_02	FJÄLLBACKA_INRE_2
+station_name	Fjällbacka inre_03	FJÄLLBACKA_INRE_10
+station_name	Fjällbacka inre_04	FJÄLLBACKA_INRE_4
+station_name	Fjällbacka inre_05	FJÄLLBACKA_INRE_5
+station_name	Y10 FÅGELSKÄR	Fågelskär
+station_name	G1 ÖREN	G 1
+station_name	GAVIKSFJÄRDEN-EDSÄTTERFJÄRDEN G 11	G 11
+station_name	G4 SJÄLSTENSUDDEN	G2
+station_name	G3 DÖNSTAUDDEN	G3
+station_name	GAVIK-1	GA1
+station_name	Grebb01	GREBBESTAD
+station_name	Grebb02	GREBBESTAD
+station_name	Grebb03	GREBBESTAD
+station_name	Grebb04	GREBBESTAD
+station_name	Grebb05	GREBBESTAD
+station_name	Gull01	GULLMARN_1
+station_name	Gull02	GULLMARN_2
+station_name	Gull03	GULLMARN_3
+station_name	Gull04	GULLMARN_4
+station_name	Gull05	ORMESTAD
+station_name	Gullmarn_06	SLÄGGÖ
+station_name	Gullmarn_07	ALS
+station_name	Gullmarn_08	ALS
+station_name	Gullmarn_09	SK5
+station_name	Gullmarn_10	LYSE 4
+station_name	HAVSTENS FJORD, N BRATTÖN	HAVSTENS FJORD N BRATTÖN
+station_name	HAVSTENS FJORD, V LYCKORNA	HAVSTENS FJORD V LYCKORNA
+station_name	Hunne01	HUNNEBOSTRAND_1
+station_name	Hunne02	HUNNEBOSTRAND_2
+station_name	Hunne03	HUNNEBOSTRAND_3
+station_name	Hunne04	HUNNEBOSTRAND_4
+station_name	Hunne05	HUNNEBOSTRAND_5
+station_name	HÄSTHOLMEN	Hästholmen (Torhamn)
+station_name	Y9	Höglosmen
+station_name	I:1	I_1
+station_name	I:2	I_2
+station_name	DANAFJORD	KA4
+station_name	Kattegatt utsjö_01	KATTEGATT UTSJÖ_1
+station_name	Kattegatt utsjö_02	KATTEGATT_UTSJÖ_2
+station_name	Kattegatt utsjö_03	KATTEGATT UTSJÖ_3
+station_name	Kattegatt utsjö_04	SW VINGA GF4
+station_name	Kattegatt utsjö_05	FLADEN
+station_name	Kattegatt utsjö_06	KATTEGATT UTSJÖ_12
+station_name	Kattegatt utsjö_07	KATTEGATT UTSJÖ_13
+station_name	Kattegatt utsjö_08	KATTEGATT UTSJÖ_14
+station_name	Kattegatt utsjö_09	ANHOLT E
+station_name	Kattegatt utsjö_10	N15
+station_name	KF1_KÅLLA - GÅSEFJÄRDEN	KF1_Kålla-/Gåsefjärden
+station_name	KF2_KÅLLA - GÅSEFJÄRDEN	KF2_Kålla-/Gåsefjärden
+station_name	KF3_KÅLLA - GÅSEFJÄRDEN	KF3_Kålla-/Gåsefjärden
+station_name	KF4_KÅLLA - GÅSEFJÄRDEN	KF4_Kålla-/Gåsefjärden
+station_name	KF5_KÅLLA - GÅSEFJÄRDEN	KF5_Kålla-/Gåsefjärden
+station_name	Kolj01	KOLJÖFJORD
+station_name	Kolj02	KOLJÖFJORD_2
+station_name	Kolj03	KOLJÖFJORD_3
+station_name	Kolj04	KOLJÖFJORD_4
+station_name	Kolj05	KOLJÖFJORD_5
+station_name	Kråke fjord inre_01	KRÅKE_FJORD_1
+station_name	Kråke fjord inre_02	KRÅKE_FJORD_2
+station_name	Kråke fjord inre_03	KRÅKE_FJORD_3
+station_name	Kråke fjord inre_04	KRÅKE_FJORD_4
+station_name	Kråke fjord inre_05	KRÅKE_FJORD_5
+station_name	Käringö fjord inre_01	KÄRINGÖ_FJORD_1
+station_name	Käringö fjord inre_02	KÄRINGÖ_FJORD_2
+station_name	Käringö fjord inre_03	KÄRINGÖ_FJORD_3
+station_name	L:A MIDDELGRUND	L_A MIDDELGRUND
+station_name	L9 LAHOLMSBUKTEN	L9
+station_name	Laholmsbukten inre_01	LAHOLMSBUKTEN INRE_1
+station_name	Laholmsbukten inre_02	LAHOLMSBUKTEN INRE_2
+station_name	Laholmsbukten inre_03	LAHOLMSBUKTEN INRE_3
+station_name	Laholmsbukten inre_04	LAHOLMSBUKTEN INRE_4
+station_name	Laholmsbukten yttre_01	LAHOLMSBUKTEN YTTRE_6
+station_name	Laholmsbukten yttre_02	LAHOLMSBUKTEN YTTRE_7
+station_name	Laholmsbukten yttre_03	LAHOLMSBUKTEN YTTRE_8
+station_name	Laholmsbukten yttre_04	LAHOLMSBUKTEN YTTRE_9
+station_name	Laholmsbukten yttre_05	LAHOLMSBUKTEN YTTRE_10
+station_name	LD2_Lindödjupet<or>LD2	LD2_Lindödjupet
+station_name	Moll01	MOLLÖFJORDEN_1
+station_name	Moll02	SK27
+station_name	Moll03	MOLLÖFJORDEN_3
+station_name	Moll04	MOLLÖFJORDEN_4
+station_name	Moll05	MOLLÖFJORDEN_5
+station_name	N10	N 10
+station_name	N 9 	N 9
+station_name	N_n_B_01	N_n_B_8
+station_name	N_n_B_02	N_n_B_2
+station_name	N_n_B_03	N_n_B_3
+station_name	N_n_B_04	N_n_B_10
+station_name	N_n_B_05	N_n_B_5
+station_name	N.JUTSKÄR	JUTSKÄR
+station_name	N.JUTSKÄR V	JUTSKÄR
+station_name	N10 DEL AV N KATTEGATTS UTSJÖVATTEN	N10
+station_name	N13 VÄRÖ	N13
+station_name	N15 HALMSTAD	N15
+station_name	N5 KUNGSBACKAFJORDEN	N5
+station_name	N6 KUNGSBACKAFJORDEN	N6
+station_name	N8 KUNGSBACKAFJORDEN	N8
+station_name	N9 KUNGSBACKAFJORDEN	N9
+station_name	B3	NB1 / B3
+station_name	N7 OST NIDINGEN	Nidingen
+station_name	ÖVF 1:3	OVF 1_3
+station_name	ÖVF 4:9	OVF 4_9
+station_name	PERSÖ NV	PERSÖ
+station_name	PL-P1	PL-P1/BMPL1
+station_name	PMK 3B	PMK 3
+station_name	PMK5 KÅLLAFJÄRDEN	PMK5
+station_name	RÅNEÅ-1	RA1
+station_name	RÅNEÅ-1	RA1
+station_name	RÅNEÅ-2	RA2
+station_name	RÅNEÅ	RF 1
+station_name	RIVÖ FJORD, N BRÄNNÖ	RIVÖ FJORD N BRÄNNÖ
+station_name	RR1	RR 1
+station_name	Saltk01	SALTKÄLLEFJORDEN
+station_name	Saltk02	SALTKÄLLEFJORDEN_1
+station_name	Saltk03	SALTKÄLLEFJORDEN_4
+station_name	Saltk04	SALTKÄLLEFJORDEN_2
+station_name	Saltk05	SALTKÄLLEFJORDEN_3
+station_name	GALTERÖ	SKX1
+station_name	SKÄLDERVIKEN-2	SKÄLDERVIKEN (S2)
+station_name	Stigfjorden 05	STIGFJORDEN_4
+station_name	Stigfj01	STIGFJORDEN_1
+station_name	Stigfj02	STIGFJORDEN_2
+station_name	Stigfj03	STIGFJORDEN_3
+station_name	Stigfj04	STIGFJORDEN
+station_name	Stigfj05	STIGFJORDEN_4
+station_name	STOLPE TRÖSKEL	Stolpe troskel
+station_name	Ström01	STRÖMSTAD
+station_name	Ström02	SELÄTER_1
+station_name	Ström03	STRÖMSTAD
+station_name	Ström04	SK12
+station_name	Ström05	SELÄTER_2
+station_name	Styrso01	KÅRHOLME_SKÄR_1
+station_name	Styrso02	KÅRHOLME_SKÄR_2
+station_name	Styrso03	KÅRHOLME_SKÄR_3
+station_name	Styrso04	KÅRHOLME_SKÄR_4
+station_name	Styrso05	KÅRHOLME_SKÄR_5
+station_name	SV 3 N ANGEDROMMEN	SV 3
+station_name	Tången_01	TÅNGEN
+station_name	Tången_02	TÅNGEN
+station_name	US2 ULVÖDJ	US2
+station_name	BY37	VÄV 3
+station_name	ÖRESUND-12X	ÖRES-12X
+station_name	ÖRESUND-2	ÖRES-2
+station_name	ÖRESUND-4	ÖRES-4
+station_name	ÖRESUND-7	ÖRES-7

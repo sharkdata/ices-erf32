@@ -25,13 +25,17 @@ class IcesErf32Generator():
         log_file_name = log_file_name.replace("<", "")
         log_file_name = log_file_name.replace(">", "")
 
-        self.setup_logging(log_file_name)
         logger = logging.getLogger('erf32_generator')
+        self.setup_logging(log_file_name)
 
-        logger.info("")
-        logger.info("")
+        print("")
+        print("")
         logger.info("")
         logger.info("=== Processing: " + str(config_file))
+        logger.info("")
+        logger.info("Files to process: ")
+        for source_file in ices_config.source_files:
+            logger.info("- " + source_file)
 
         # Prepare data.
         logger.info("")
@@ -43,7 +47,8 @@ class IcesErf32Generator():
             source_data.add_shark_dataset(dataset_filepath)
         # Data result.
         data_rows = source_data.get_data_rows()
-        logger.debug("- Number of data rows" + str(len(data_rows)))
+        logger.info("")
+        logger.info("Total number of data rows: " + str(len(data_rows)))
 
         logger.info("")
         logger.info("=== Generate ICES ERF32 ===")
@@ -80,8 +85,8 @@ class IcesErf32Generator():
         # Add filter to console to avoid huge error lists.
         class ConsoleFilter(logging.Filter):
             def filter(self, record):
-                return record.levelno in [logging.INFO, logging.WARNING]
-                # return record.levelno in [logging.DEBUG, logging.INFO, logging.WARNING]
+                # return record.levelno in [logging.INFO, logging.WARNING]
+                return record.levelno in [logging.DEBUG, logging.INFO, logging.WARNING]
         console_handler.addFilter(ConsoleFilter())
         # Add handlers to the loggers.
         logger.addHandler(file_handler)
@@ -93,6 +98,9 @@ if __name__ == "__main__":
     """ """
     config_files = [
         "erf32_config/ices_erf32_zooplankton.yaml",
+        "erf32_config/ices_erf32_zoobenthos.yaml",
+        "erf32_config/ices_erf32_phytoplankton.yaml",
+        "erf32_config/ices_erf32_phytobenthos.yaml",
     ]
     generator = IcesErf32Generator()
     for config_file in config_files:

@@ -1,3 +1,40 @@
 source_field	include_value	exclude_value	comments
-sampler_type_code WP-2
-dataset_name		SHARK_Zooplankton_2018_SLCK
+
+dataset_name	SHARK_Zooplankton_2020_UMSC
+dataset_name	SHARK_Zooplankton_2020_DEEP
+dataset_name	SHARK_Zooplankton_2019_2020_SLCK_SMHI
+dataset_name	SHARK_Zooplankton_2020_SLCK
+
+##Zooplankton species (problems with missing biomass parameter necessary to accompany abundance parameter in ICES)
+scientific_name		Amphibalanus improvisus
+scientific_name		Anomalocera patersoni
+scientific_name		Asteroidea
+scientific_name		Balanus
+scientific_name		Bivalvia
+scientific_name		Bivalvia (Lamellibranchiata)
+scientific_name		Bylgides sarsi
+scientific_name		Bryozoa
+scientific_name		Cirripedia
+scientific_name		Crustacea
+scientific_name		Cyclopoida
+scientific_name		Diaphanosoma
+scientific_name		Echinoidea
+scientific_name		Euterpina acutifrons
+scientific_name		Fritillaria
+scientific_name		Gastropoda
+scientific_name		Gymnolaemata
+scientific_name		Harpacticoida
+scientific_name		Leptodora kindtii
+scientific_name		Magelona
+scientific_name		Microsetella norvegica
+scientific_name		Monstrilla
+scientific_name		Mysidae
+scientific_name		Obelia
+scientific_name		Oithona similis
+scientific_name		Osteichthyes
+scientific_name		Ostracoda
+scientific_name		Polychaeta
+scientific_name		Pompholyx
+scientific_name		Radiosperma
+scientific_name		Synchaeta
+scientific_name		Tintinnida
