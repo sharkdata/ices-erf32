@@ -106,12 +106,13 @@ class GenerateIcesErf32(object):
         erf32_format = erf32_generator.IcesErf32Format()
         #
         try:
-            # # Phytobentos or Zoobenthos. Transect data for record 40.
-            # transect_data = erf32_format.TransectData()
-            # transect_data.clear()
-            # if (datatype == "Epibenthos") or \
-            #     (datatype == "Phytobenthos"):
-            #     transect_data.load_all_transect_data(dataset)
+            # Phytobentos or Zoobenthos. Transect data for record 40.
+            transect_data = erf32_generator.TransectData()
+            transect_data.clear()
+            if (datatype == "Epibenthos") or \
+                (datatype == "Phytobenthos"):
+                # transect_data.load_all_transect_data(dataset)
+                transect_data.load_all_transect_data(self.data_rows)
 
             #
             # Process rows.

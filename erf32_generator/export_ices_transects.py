@@ -114,11 +114,23 @@ class TransectData(object):
     # }
     # Ices40Transect newRecord = new Ices40Transect();
 
-    def load_all_transect_data(self, dataset):
+
+
+    # def load_all_transect_data(self, dataset):
+    #     """ """
+    #     dataheader = dataset.data_header
+    #     for datarow in dataset.data_rows:
+    #         datarow_dict = dict(zip(dataheader, map(str, datarow)))
+    #         # Create key.
+    #         key = self.create_key(datarow_dict)
+    #         if not key in self._transect_dict:
+    #             self._transect_sequence_no += 1
+    #             self._transect_dict[key] = {
+    #                 "transect_sequence_no": str(self._transect_sequence_no)
+    #             }
+    def load_all_transect_data(self, data_rows):
         """ """
-        dataheader = dataset.data_header
-        for datarow in dataset.data_rows:
-            datarow_dict = dict(zip(dataheader, map(str, datarow)))
+        for datarow_dict in data_rows:
             # Create key.
             key = self.create_key(datarow_dict)
             if not key in self._transect_dict:
@@ -126,7 +138,6 @@ class TransectData(object):
                 self._transect_dict[key] = {
                     "transect_sequence_no": str(self._transect_sequence_no)
                 }
-
             #
 
             transect_length_m = datarow_dict.get("transect_length_m", "")
