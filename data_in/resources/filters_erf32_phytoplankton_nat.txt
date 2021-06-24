@@ -21,3 +21,4 @@ scientific_name		Leprotintinnus pellucidus
 scientific_name		Helicostomella subulata
 scientific_name		Salpingella acuminata
 scientific_name		Ensiculifera carinata
+scientific_name		Didinium nasutum
