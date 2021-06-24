@@ -6,35 +6,35 @@ dataset_name	SHARK_Zooplankton_2019_2020_SLCK_SMHI
 dataset_name	SHARK_Zooplankton_2020_SLCK
 
 ##Zooplankton species (problems with missing biomass parameter necessary to accompany abundance parameter in ICES)
-scientific_name		Amphibalanus improvisus
-scientific_name		Anomalocera patersoni
-scientific_name		Asteroidea
-scientific_name		Balanus
-scientific_name		Bivalvia
-scientific_name		Bivalvia (Lamellibranchiata)
-scientific_name		Bylgides sarsi
-scientific_name		Bryozoa
-scientific_name		Cirripedia
-scientific_name		Crustacea
-scientific_name		Cyclopoida
-scientific_name		Diaphanosoma
-scientific_name		Echinoidea
-scientific_name		Euterpina acutifrons
-scientific_name		Fritillaria
-scientific_name		Gastropoda
-scientific_name		Gymnolaemata
-scientific_name		Harpacticoida
-scientific_name		Leptodora kindtii
-scientific_name		Magelona
-scientific_name		Microsetella norvegica
-scientific_name		Monstrilla
-scientific_name		Mysidae
-scientific_name		Obelia
-scientific_name		Oithona similis
-scientific_name		Osteichthyes
-scientific_name		Ostracoda
-scientific_name		Polychaeta
-scientific_name		Pompholyx
-scientific_name		Radiosperma
-scientific_name		Synchaeta
-scientific_name		Tintinnida
+XXX_scientific_name		Amphibalanus improvisus
+XXX_scientific_name		Anomalocera patersoni
+XXX_scientific_name		Asteroidea
+XXX_scientific_name		Balanus
+XXX_scientific_name		Bivalvia
+XXX_scientific_name		Bivalvia (Lamellibranchiata)
+XXX_scientific_name		Bylgides sarsi
+XXX_scientific_name		Bryozoa
+XXX_scientific_name		Cirripedia
+XXX_scientific_name		Crustacea
+XXX_scientific_name		Cyclopoida
+XXX_scientific_name		Diaphanosoma
+XXX_scientific_name		Echinoidea
+XXX_scientific_name		Euterpina acutifrons
+XXX_scientific_name		Fritillaria
+XXX_scientific_name		Gastropoda
+XXX_scientific_name		Gymnolaemata
+XXX_scientific_name		Harpacticoida
+XXX_scientific_name		Leptodora kindtii
+XXX_scientific_name		Magelona
+XXX_scientific_name		Microsetella norvegica
+XXX_scientific_name		Monstrilla
+XXX_scientific_name		Mysidae
+XXX_scientific_name		Obelia
+XXX_scientific_name		Oithona similis
+XXX_scientific_name		Osteichthyes
+XXX_scientific_name		Ostracoda
+XXX_scientific_name		Polychaeta
+XXX_scientific_name		Pompholyx
+XXX_scientific_name		Radiosperma
+XXX_scientific_name		Synchaeta
+XXX_scientific_name		Tintinnida
