@@ -5,6 +5,9 @@
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
 import logging
+import pathlib
+
+import erf32_generator
 
 
 class ExportStations:
@@ -14,13 +17,13 @@ class ExportStations:
         """ """
         self.station_info_dict = {}
         self.missing_station_list = []
-        self.logger = logging.getLogger('erf32_generator')
+        self.logger = logging.getLogger("erf32_generator")
 
     def get_mprog(self, station_name):
         """ """
         info_dict = self.get_station_info_dict(station_name)
         mprog = info_dict.get("Station_ProgramGovernance", "")
-        ###### mprog = erf32_generator.TranslateValues().get_translated_value('monitoring_program_code', mprog)
+        mprog = erf32_generator.global_translate.get_translate_from_source('monitoring_program_code', mprog)
         #
         return mprog
 
@@ -65,19 +68,17 @@ class ExportStations:
         """ """
         return self.missing_station_list
 
-    def load_export_stations(self, resource_name):
+    def load_export_stations(self):
         """ """
         self.station_info_dict = {}
         self.missing_station_list = []
         #
-        resource = None
-        # try: resource = resources_models.Resources.objects.get(resource_name = resource_name)
-        # except ObjectDoesNotExist: resource = None
+        station_file_name = "data_in/resources/export_ices_stations_utf8.txt"
         #
-        if resource:
-            data_as_text = resource.file_content  # .encode('cp1252')
-            header = []
-            for index, row in enumerate(data_as_text.split("\n")):
+        station_file_path = pathlib.Path(station_file_name)
+        header = []
+        with station_file_path.open("r", encoding="utf8") as file:
+            for index, row in enumerate(file):
                 row = [item.strip() for item in row.split("\t")]
                 if index == 0:
                     header = row
@@ -90,108 +91,9 @@ class ExportStations:
                             if station_name not in self.station_info_dict.keys():
                                 self.station_info_dict[station_name] = row_dict
                             else:
-                                self.logger.warning("Stations, duplicate row: " + station_name)
-
-
-class ExportFilter:
-    """ """
-
-    def __init__(self):
-        """ """
-        self.filter_keep_dict = {}
-        self.filter_remove_dict = {}
-
-    def get_filter_keep_list(self, internal_key):
-        """ """
-        if internal_key in self.filter_keep_dict.keys():
-            return self.filter_keep_dict[internal_key]
-        else:
-            return []
-
-    def get_filter_remove_list(self, internal_key):
-        """ """
-        if internal_key in self.filter_remove_dict.keys():
-            return self.filter_remove_dict[internal_key]
-        else:
-            return []
-
-    def load_export_filter(self, resource_name):
-        """ """
-        self.filter_keep_dict = {}
-        self.filter_remove_dict = {}
-        #
-        resource = None
-        # try: resource = resources_models.Resources.objects.get(resource_name = resource_name)
-        # except ObjectDoesNotExist: resource = None
-        #
-        if resource:
-            data_as_text = resource.file_content  # .encode('cp1252')
-            header = []
-            for index, row in enumerate(data_as_text.split("\n")):
-                row = [item.strip() for item in row.split("\t")]
-                if index == 0:
-                    header = row
-                else:
-                    # Keep filter.
-                    if len(row) >= 2:
-                        internal_key = row[0]
-                        keep_value = row[1]
-                        if keep_value:
-                            if internal_key not in self.filter_keep_dict.keys():
-                                self.filter_keep_dict[internal_key] = []
-                            #
-                            self.filter_keep_dict[internal_key].append(keep_value)
-                    # Remove filter.
-                    if len(row) >= 3:
-                        internal_key = row[0]
-                        remove_value = row[2]
-                        if remove_value:
-                            if internal_key not in self.filter_remove_dict.keys():
-                                self.filter_remove_dict[internal_key] = []
-                            #
-                            self.filter_remove_dict[internal_key].append(remove_value)
-
-
-class TranslateValues:
-    """ """
-
-    def __init__(self):
-        """ """
-        self.translate_value_dict = {}
-
-    def get_translated_value(self, internal_key, internal_value):
-        """ """
-        key = internal_key + "<+>" + internal_value
-        if key in self.translate_value_dict:
-            return self.translate_value_dict[key]
-        else:
-            return internal_value
-
-    def load_export_translate_values(self, resource_name):
-        """ """
-        self.translate_value_dict = {}
-        #
-        resource = None
-        # try: resource = resources_models.Resources.objects.get(resource_name = resource_name)
-        # except: pass ##### ObjectDoesNotExist: resource = None
-        #
-        if resource:
-            data_as_text = resource.file_content  # .encode('cp1252')
-            header = []
-            for index, row in enumerate(data_as_text.split("\n")):
-                row = [item.strip() for item in row.split("\t")]
-                if index == 0:
-                    # Supposed to be at least 'internal_key', 'value', 'ices-Erf32'.
-                    header = row
-                else:
-                    if len(row) >= 2:
-                        row_dict = dict(zip(header, row))
-                        internal_key = row_dict.get("internal_key", "")
-                        internal_value = row_dict.get("internal_value", "")
-                        ices_export = row_dict.get("ices_export", "")
-                        if ices_export:
-                            key = internal_key + "<+>" + internal_value
-                            self.translate_value_dict[key] = ices_export
+                                self.logger.warning(
+                                    "Stations, duplicate row: " + station_name
+                                )
 
 
 class TranslateTaxa:
@@ -222,22 +124,20 @@ class TranslateTaxa:
         """ """
         return self.missing_taxa_list
 
-    def load_translate_taxa(self, resource_name):
+    def load_translate_taxa(self):
         """ """
         self.translate_taxa_dict = {}
         self.missing_taxa_list = []
         #
-        resource = None
-        # try: resource = resources_models.Resources.objects.get(resource_name = resource_name)
-        # except: pass ##### except ObjectDoesNotExist: resource = None
+        translate_file_name = "data_in/resources/translate_dyntaxa_to_worms.txt"
         #
-        if resource:
-            data_as_text = resource.file_content  # .encode('cp1252')
-            header = []
-            for index, row in enumerate(data_as_text.split("\n")):
+        translate_file_path = pathlib.Path(translate_file_name)
+        header = []
+        # with translate_file_path.open("r", encoding="utf8") as file:
+        with translate_file_path.open("r", encoding="cp1252") as file:
+            for index, row in enumerate(file):
                 row = [item.strip() for item in row.split("\t")]
                 if index == 0:
-                    # Supposed to be at least 'dyntaxa_scientific_name', 'worms_aphia_id', 'ices_rlist'.
                     header = row
                 else:
                     if len(row) >= 2:
@@ -261,22 +161,20 @@ class TranslateDyntaxaToHelcomPeg:
         #
         return ("", "")
 
-    def load_translate_taxa(self, resource_name):
+    def load_translate_taxa(self):
         """ """
         self.translate_taxa_dict = {}
         self.missing_taxa_list = []
         #
-        resource = None
-        # try: resource = resources_models.Resources.objects.get(resource_name = resource_name)
-        # except: pass ##### except ObjectDoesNotExist: resource = None
+        translate_file_name = "data_in/resources/translate_dyntaxa_to_helcom_peg.txt"
         #
-        if resource:
-            data_as_text = resource.file_content  # .encode('cp1252')
-            header = []
-            for index, row in enumerate(data_as_text.split("\n")):
+        translate_file_path = pathlib.Path(translate_file_name)
+        header = []
+        # with translate_file_path.open("r", encoding="utf8") as file:
+        with translate_file_path.open("r", encoding="cp1252") as file:
+            for index, row in enumerate(file):
                 row = [item.strip() for item in row.split("\t")]
                 if index == 0:
-                    # Supposed to be at least 'dyntaxa_scientific_name', 'worms_aphia_id', 'ices_rlist'.
                     header = row
                 else:
                     if len(row) >= 2:

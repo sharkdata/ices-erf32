@@ -19,7 +19,7 @@ class GenerateIcesErf32(object):
         """ """
         self.ices_config = ices_config
         self.data_rows = []
-        self.logger = logging.getLogger('erf32_generator')
+        self.logger = logging.getLogger("erf32_generator")
 
     def setup(self, data_rows):
         """ """
@@ -44,25 +44,6 @@ class GenerateIcesErf32(object):
     def generate_erf32_files(self):
         """ """
         try:
-            # Load resource content for ICES station.
-            erf32_generator.ExportStations().load_export_stations(
-                "export_ices_stations"
-            )
-            # Load resource content for filtering reported data.
-            erf32_generator.ExportFilter().load_export_filter("export_ices_filters")
-            # Load resource content to translate values.
-            erf32_generator.TranslateValues().load_export_translate_values(
-                "export_ices_translate_values"
-            )
-            # Load resource content to translate from DynTaxa to WoRMS.
-            erf32_generator.TranslateTaxa().load_translate_taxa(
-                "translate_dyntaxa_to_worms"
-            )
-            # Load resource content to translate from DynTaxa to Helcom PEG.
-            erf32_generator.TranslateDyntaxaToHelcomPeg().load_translate_taxa(
-                "translate_dyntaxa_to_helcom_peg"
-            )
-
             # Create target directory if not exists.
             target_dir_path = pathlib.Path(self.target_logfile_template).parent
             if not target_dir_path.exists():
@@ -74,7 +55,7 @@ class GenerateIcesErf32(object):
             year_int = int(self.year_from)
             year_to_int = int(self.year_to)
             while year_int <= year_to_int:
-                ""
+                """"""
                 self.generate_erf32(
                     self.logfile_name,
                     error_counter,
@@ -87,9 +68,11 @@ class GenerateIcesErf32(object):
                 year_int += 1
             #
             # Log missing stations.
+            # missing_station_list = (
             missing_station_list = (
-                erf32_generator.ExportStations().get_missing_station_list()
+                erf32_generator.global_export_stations.get_missing_station_list()
             )
+
             if len(missing_station_list) > 0:
                 self.logger.warning("Missing station(s): ")
                 for missing_station in sorted(missing_station_list):
@@ -97,18 +80,14 @@ class GenerateIcesErf32(object):
                 self.logger.warning("")
 
             # Log missing taxa.
-            missing_taxa_list = erf32_generator.TranslateTaxa().get_missing_taxa_list()
+            missing_taxa_list = (
+                erf32_generator.global_translate_taxa.get_missing_taxa_list()
+            )
             if len(missing_taxa_list) > 0:
                 self.logger.warning("Missing taxa: ")
                 for missing_taxa in sorted(missing_taxa_list):
-                    # Don't log filtered taxa.
-                    if (
-                        missing_taxa
-                        not in erf32_generator.ExportFilter().get_filter_remove_list(
-                            "scientific_name"
-                        )
-                    ):
-                        self.logger.warning("- " + missing_taxa)
+                    self.logger.warning("- " + missing_taxa)
+
                 self.logger.warning("")
             #
             if error_counter > 0:
@@ -140,9 +119,9 @@ class GenerateIcesErf32(object):
                 #
                 if datarow_dict.get("visit_year", "") == str(year):
 
-                    # # Remove RAMSKRAP.
-                    # if "FRAMENET" == datarow_dict.get("sampler_type_code", ""):
-                    #     continue
+                    # Remove RAMSKRAP.
+                    if "FRAMENET" == datarow_dict.get("sampler_type_code", ""):
+                        continue
 
                     # OK to add row.
                     erf32_format.add_row(datarow_dict)
@@ -152,8 +131,7 @@ class GenerateIcesErf32(object):
             error_counter += 1
             traceback.print_exc()
             self.logger.error(
-                "ERROR: Failed to generate ICES-Erf32."
-                + ".",
+                "ERROR: Failed to generate ICES-Erf32." + ".",
             )
         #
         try:
@@ -163,37 +141,7 @@ class GenerateIcesErf32(object):
             print("DEBUG: " + str(len(out_rows)))
             #
             if len(out_rows) > 1:
-                #
-                # export_name = "ICES-Erf32" + "_SMHI_" + datatype + "_" + str(year)
-                # export_file_name = export_name + ".Erf32"
-                # export_file_path = pathlib.Path(self._export_dir_path, export_file_name)
-                # error_log_file = export_name + "_log.txt"
-                # error_log_file_path = pathlib.Path(
-                #     self._export_dir_path, error_log_file
-                # )
-                #
-                # erf32_format.save_erf32_file(out_rows, str(export_file_path))
                 erf32_format.save_erf32_file(out_rows, str(self.target_file_template))
-
-                # # Log file.
-                # log_rows = []
-                # log_rows.append("")
-                # log_rows.append("")
-                # log_rows.append(
-                #     "Generate ICES-Erf32 files. " + str(datetime.datetime.now())
-                # )
-                # log_rows.append("")
-                # # log_rows.append("- Format: " + dbrow.format)
-                # log_rows.append("- Datatype: " + str(datatype))
-                # log_rows.append("- Year: " + str(year))
-                # # log_rows.append("- Status: " + str(dbrow.status))
-                # # log_rows.append("- Approved: " + str(dbrow.approved))
-                # # log_rows.append("- Export name: " + str(dbrow.export_name))
-                # log_rows.append("- Export file name: " + str(self.target_file_template))
-                # log_rows.append("")
-                # #
-                # # erf32_format.save_log_file(log_rows, str(error_log_file_path))
-                # erf32_format.save_log_file(log_rows, str(self.target_logfile_template))
         #
         except Exception as e:
             error_counter += 1
@@ -203,11 +151,3 @@ class GenerateIcesErf32(object):
                 log_row="ERROR: Failed to generate ICES-Erf32 files. Exception: "
                 + str(e),
             )
-
-    # def target_log_write(self, logfile_name, log_row=""):
-    #     """ """
-    #     print("LOGGER-TODO: ", log_row)
-
-    # def target_log_close(self, logfile_name, status=""):
-    #     """ """
-    #     print("LOGGER-TODO: CLOSED: ", status)

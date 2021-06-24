@@ -10,13 +10,11 @@ import pathlib
 class Erf32Filters:
     """ """
 
-    def __init__(self, filters_file_list):
+    def __init__(self):
         """ """
-        self.filters_file_list = filters_file_list
         self.filters_dict = {}
         self.filter_include_groups_dict = {}
         self.filter_exclude_groups_dict = {}
-        self.load_translate()
 
     def get_filters_from_source(self, source_field, value):
         """ """
@@ -41,11 +39,11 @@ class Erf32Filters:
         """ """
         return self.filter_exclude_groups_dict
 
-    def load_translate(self):
+    def load_filters(self, filters_file_list):
         """ """
         self.filters_dict = {}
         #
-        for filters_file in self.filters_file_list:
+        for filters_file in filters_file_list:
             filters_file_path = pathlib.Path(filters_file)
             header = []
             if filters_file_path.suffix in [".txt", ".tsv"]:

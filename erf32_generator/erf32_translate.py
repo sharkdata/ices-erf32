@@ -10,12 +10,10 @@ import pathlib
 class Erf32Translate:
     """ """
 
-    def __init__(self, translate_file_list):
+    def __init__(self):
         """ """
-        self.translate_file_list = translate_file_list
         self.translate_from_source_dict = {}
         self.translate_from_dwc_dict = {}
-        self.load_translate()
 
     def get_translate_from_source(self, source_field, value):
         """ """
@@ -39,11 +37,11 @@ class Erf32Translate:
         """ """
         return self.translate_from_dwc_dict.keys()
 
-    def load_translate(self):
+    def load_translate(self, translate_file_list):
         """ """
         self.translate_dict = {}
         #
-        for translate_file in self.translate_file_list:
+        for translate_file in translate_file_list:
             translate_file_path = pathlib.Path(translate_file)
             header = []
             if translate_file_path.suffix in [".txt", ".tsv"]:
@@ -51,7 +49,6 @@ class Erf32Translate:
 
                 # with translate_file_path.open("r", encoding="cp1252") as translate_file:
                 with translate_file_path.open("r", encoding="utf8") as translate_file:
-
 
                     for index, row in enumerate(translate_file):
                         row = [item.strip() for item in row.split("\t")]

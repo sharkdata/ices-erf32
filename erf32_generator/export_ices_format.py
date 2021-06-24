@@ -19,7 +19,7 @@ class IcesErf32Format(object):
         self._rec21_dict = {}
         self._zp_abundnr_wetwt_list = []
         #
-        self.logger = logging.getLogger('erf32_generator')
+        self.logger = logging.getLogger("erf32_generator")
         #
         self._duplicate_counter = 0
         self._34rec_counter = 0
@@ -267,7 +267,9 @@ class IcesErf32Format(object):
             # Some species are filtered.
             if "<REMOVE>" in rowdict.get("SPECI-R38", ""):
                 remove_value = True
-                self.logger.warning("DEBUG: <REMOVE>" + rowdict.get("scientific_name", ""))
+                self.logger.warning(
+                    "DEBUG: <REMOVE>" + rowdict.get("scientific_name", "")
+                )
 
             #             # ZP must have both ABUNDNR and WETWT.
             #             elif rowdict['DTYPE-R34'] == 'ZP':
@@ -402,7 +404,7 @@ class IcesErf32Format(object):
                 outfile.close()
 
     def add_key_strings(self, row_dict):
-        """ Adds all needed keys to the dictionary. Returns key for the row. """
+        """Adds all needed keys to the dictionary. Returns key for the row."""
         # Create key values.
         rec00_key = self.create_key_string(row_dict, self.rec00_keys)
         rec90_key = self.create_key_string(row_dict, self.rec90_keys)
@@ -635,7 +637,7 @@ class IcesErf32Format(object):
         ]
 
     def create_key_string(self, row_dict, key_columns):
-        """ Util: Generates the key for one row. """
+        """Util: Generates the key for one row."""
         key_string = ""
         try:
             key_list = [str(row_dict.get(item, "")) for item in key_columns]

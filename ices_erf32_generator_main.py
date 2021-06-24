@@ -9,8 +9,9 @@ import logging
 import erf32_generator
 
 
-class IcesErf32Generator():
+class IcesErf32Generator:
     """ """
+
     def __init__(self):
         """ """
 
@@ -25,7 +26,7 @@ class IcesErf32Generator():
         log_file_name = log_file_name.replace("<", "")
         log_file_name = log_file_name.replace(">", "")
 
-        logger = logging.getLogger('erf32_generator')
+        logger = logging.getLogger("erf32_generator")
         self.setup_logging(log_file_name)
 
         print("")
@@ -40,9 +41,17 @@ class IcesErf32Generator():
         # Prepare data.
         logger.info("")
         logger.info("=== Preparing data ===")
-        filters = erf32_generator.Erf32Filters(ices_config.filters_files)
-        translate = erf32_generator.Erf32Translate(ices_config.translate_files)
-        source_data = erf32_generator.Erf32DataShark(ices_config, filters, translate)
+        erf32_generator.global_filters.load_filters(ices_config.filters_files)
+        erf32_generator.global_translate.load_translate(ices_config.translate_files)
+
+        # Load resource content for ICES station.
+        erf32_generator.global_export_stations.load_export_stations()
+        # Load resource content to translate from DynTaxa to WoRMS.
+        erf32_generator.global_translate_taxa.load_translate_taxa()
+        # Load resource content to translate from DynTaxa to Helcom PEG.
+        erf32_generator.global_translate_dyntaxa_to_helcom_peg.load_translate_taxa()
+
+        source_data = erf32_generator.Erf32DataShark(ices_config)
         for dataset_filepath in ices_config.source_files:
             source_data.add_shark_dataset(dataset_filepath)
         # Data result.
@@ -66,9 +75,9 @@ class IcesErf32Generator():
         if logfile_path.exists():
             logfile_path.unlink()
         # New logfile, and console logging.
-        logger = logging.getLogger('erf32_generator')
+        logger = logging.getLogger("erf32_generator")
         logger.setLevel(logging.DEBUG)
-         # Remove old handlers.
+        # Remove old handlers.
         while logger.hasHandlers():
             logger.removeHandler(logger.handlers[0])
         # To a log file named similar to produced xml file.
@@ -78,15 +87,16 @@ class IcesErf32Generator():
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.DEBUG)
         # Create formatter and add to the handlers.
-        formatter = logging.Formatter('%(asctime)s %(levelname)s : %(message)s')
+        formatter = logging.Formatter("%(asctime)s %(levelname)s : %(message)s")
         file_handler.setFormatter(formatter)
-        formatter = logging.Formatter('%(message)s')
+        formatter = logging.Formatter("%(message)s")
         console_handler.setFormatter(formatter)
         # Add filter to console to avoid huge error lists.
         class ConsoleFilter(logging.Filter):
             def filter(self, record):
                 # return record.levelno in [logging.INFO, logging.WARNING]
                 return record.levelno in [logging.DEBUG, logging.INFO, logging.WARNING]
+
         console_handler.addFilter(ConsoleFilter())
         # Add handlers to the loggers.
         logger.addHandler(file_handler)

@@ -14,7 +14,7 @@ class TransectData(object):
     def __init__(self):
         """ """
         self.clear()
-        self.logger = logging.getLogger('erf32_generator')
+        self.logger = logging.getLogger("erf32_generator")
 
     def clear(self):
         """ """

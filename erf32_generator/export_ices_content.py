@@ -15,13 +15,16 @@ class ExportIcesContent(object):
     def __init__(self, datarow_dict):
         """ """
         self._dict = datarow_dict
-        self._translate_values = erf32_generator.TranslateValues()
-        self._export_stations = erf32_generator.ExportStations()
-        self._translate_taxa = erf32_generator.TranslateTaxa()
+        # self._export_stations = erf32_generator.ExportStations()
+        self._export_stations = erf32_generator.global_export_stations
+        # self._translate_taxa = erf32_generator.TranslateTaxa()
+        self._translate_taxa = erf32_generator.global_translate_taxa
+        # self._translate_taxa_to_helcom_peg = erf32_generator.TranslateDyntaxaToHelcomPeg()
         self._translate_taxa_to_helcom_peg = (
-            erf32_generator.TranslateDyntaxaToHelcomPeg()
+            erf32_generator.global_translate_dyntaxa_to_helcom_peg
         )
-        self.logger = logging.getLogger('erf32_generator')
+
+        self.logger = logging.getLogger("erf32_generator")
 
     def copy_to_ices_fields(self):
         """ """
@@ -146,7 +149,16 @@ class ExportIcesContent(object):
         )
         self._dict["NPORT-R34"] = self._get_value("number_of_portions", "").replace(
             ",", "."
-        )  # Note: Should be ','.
+        )
+
+        try:
+            number_of_portions_integer = int(
+                float(self._get_value("number_of_portions", ""))
+            )
+            self._dict["NPORT-R34"] = str(number_of_portions_integer)
+        except:
+            pass
+
         self._dict["TRCED-R34"] = self._get_value("section_end_depth_m", "").replace(
             ",", "."
         )
@@ -335,15 +347,6 @@ class ExportIcesContent(object):
         self._dict["SFLAG-R38"] = self.ices_tilde(self._dict["SFLAG-R38"])
         self._dict["VFLAG-R38"] = self.ices_tilde(self._dict["VFLAG-R38"])
 
-        # Filter species.
-        scientific_name = self._get_value("scientific_name", "")
-        if scientific_name in erf32_generator.ExportFilter().get_filter_remove_list(
-            "scientific_name"
-        ):
-            self._dict["SPECI-R38"] = (
-                "<REMOVE>" + self._dict["SPECI-R38"]
-            )  # Is removed when generating Erf32 file.
-
         #
         if self._dict["DTYPE-R34"] in ["PB"]:
             if not self._dict["SMTYP-R20"]:
@@ -378,7 +381,7 @@ class ExportIcesContent(object):
             self._dict["VFLAG-R38"] = "S"
 
     def check_zp_abundnr_wetwt(self, datarow_dict, zp_abundnr_wetwt_list):
-        """"ZP must have both ABUNDNR and WETWT. """
+        """ "ZP must have both ABUNDNR and WETWT."""
         if self._dict["DTYPE-R34"] == "ZP":
             param = self._dict["PARAM-R38"]
             if param in [
@@ -650,11 +653,7 @@ class ExportIcesContent(object):
     # ===== Utils =====
     def _get_value(self, internal_key, default=""):
         """ """
-        translate_values = erf32_generator.TranslateValues()
-        #
-        value = self._dict.get(internal_key, default)
-        value = translate_values.get_translated_value(internal_key, value)
-        #
+        value = self._dict.get(internal_key, default)        #
         return value
 
     def translate_scientific_name_to_aphia_id(self, scientific_name):

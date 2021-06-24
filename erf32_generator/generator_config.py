@@ -8,8 +8,6 @@ import pathlib
 import yaml
 import logging
 
-# import collections.abc
-
 
 class GeneratorConfig:
     """ """
@@ -18,7 +16,7 @@ class GeneratorConfig:
         """ """
         self.config_file = config_file
         self.clear()
-        self.logger = logging.getLogger('erf32_generator')
+        self.logger = logging.getLogger("erf32_generator")
 
     def clear(self):
         """ """

@@ -18,7 +18,6 @@ class Erf32SpeciesWorms:
         """ """
         self.taxa_file_path = taxa_file_path
         self.clear()
-        self.load_translate_taxa()
 
     def clear(self):
         """ """
@@ -33,7 +32,7 @@ class Erf32SpeciesWorms:
         self.info_lookup_dict = {}
 
     def get_translated_aphiaid_and_name(self, scientific_name):
-        """ Returns a dictionary containing taxonomical information. """
+        """Returns a dictionary containing taxonomical information."""
         if scientific_name in self.translate_taxa_dict:
             return self.translate_taxa_dict[scientific_name]
         # Store missing taxa.
