@@ -19,3 +19,5 @@ global_translate = Erf32Translate()
 global_export_stations = ExportStations()
 global_translate_taxa = TranslateTaxa()
 global_translate_dyntaxa_to_helcom_peg = TranslateDyntaxaToHelcomPeg()
+global_transect_data = TransectData()
+

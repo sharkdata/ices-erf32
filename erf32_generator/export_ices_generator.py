@@ -107,7 +107,7 @@ class GenerateIcesErf32(object):
         #
         try:
             # Phytobentos or Zoobenthos. Transect data for record 40.
-            transect_data = erf32_generator.TransectData()
+            transect_data = erf32_generator.global_transect_data
             transect_data.clear()
             if (datatype == "Epibenthos") or \
                 (datatype == "Phytobenthos"):
@@ -120,9 +120,9 @@ class GenerateIcesErf32(object):
                 #
                 if datarow_dict.get("visit_year", "") == str(year):
 
-                    # Remove RAMSKRAP.
-                    if "FRAMENET" == datarow_dict.get("sampler_type_code", ""):
-                        continue
+                    # # Remove RAMSKRAP.
+                    # if "FRAMENET" == datarow_dict.get("sampler_type_code", ""):
+                    #     continue
 
                     # OK to add row.
                     erf32_format.add_row(datarow_dict)

@@ -393,7 +393,7 @@ class ExportIcesContent(object):
 
     def add_transect_fields(self):
         """ """
-        transect_data_dict = erf32_generator.TransectData().get_transect_data(
+        transect_data_dict = erf32_generator.global_transect_data.get_transect_data(
             self._dict
         )
 
@@ -453,7 +453,7 @@ class ExportIcesContent(object):
                 #####self._dict['TRSLN-R40'] = '0' # TRSLN.
                 self._dict["DEPAD-R40"] = "N"  # DEPAD.
             #
-            stratum_id = erf32_generator.TransectData().stratum_id(self._dict)
+            stratum_id = erf32_generator.global_transect_data.stratum_id(self._dict)
             self._dict["STRID-R38"] = stratum_id
 
             ##### Calculated sampler area SAREA. #####
@@ -565,7 +565,7 @@ class ExportIcesContent(object):
             # TRCED = section_end_depth_m            sample_max_depth_m
 
             if (not self._get_value("TRSCS-R34")) and (
-                not self._get_value("TRSCS-R34")
+                not self._get_value("TRSCE-R34")
             ):
 
                 self._dict["TRSCS-R34"] = self._get_value("transect_min_distance_m")

@@ -119,7 +119,8 @@ class IcesErf32Format(object):
                 out_rows.append("<R00.FileInformation>")
                 #
                 for field in self.rec00_fields:
-                    if rowdict.get(field, False):
+                    # if rowdict.get(field, False):
+                    if rowdict.get(field, "") != "":
                         field_ices = field.split("-R")[0]
                         out_rows.append(
                             "  <"
@@ -154,7 +155,8 @@ class IcesErf32Format(object):
                 out_rows.append("  <R90.SamplingPlatformRecord>")
                 #
                 for field in self.rec90_fields:
-                    if rowdict.get(field, False):
+                    # if rowdict.get(field, False):
+                    if rowdict.get(field, "") != "":
                         field_ices = field.split("-R")[0]
                         out_rows.append(
                             "    <"
@@ -186,7 +188,8 @@ class IcesErf32Format(object):
                 out_rows.append("    <R91.SamplingEventRecord>")
                 #
                 for field in self.rec91_fields:
-                    if rowdict.get(field, False):
+                    # if rowdict.get(field, False):
+                    if rowdict.get(field, "") != "":
                         field_ices = field.split("-R")[0]
                         out_rows.append(
                             "      <"
@@ -217,7 +220,8 @@ class IcesErf32Format(object):
                     out_rows.append("      <R40.TransectDescription>")
                     #
                     for field in self.rec40_fields:
-                        if rowdict.get(field, False):
+                        # if rowdict.get(field, False):
+                        if rowdict.get(field, "") != "":
                             field_ices = field.split("-R")[0]
                             out_rows.append(
                                 "        <"
@@ -250,7 +254,8 @@ class IcesErf32Format(object):
                     )
                 #
                 for field in self.rec34_fields:
-                    if rowdict.get(field, False):
+                    # if rowdict.get(field, False):
+                    if rowdict.get(field, "") != "":
                         field_ices = field.split("-R")[0]
                         out_rows.append(
                             "          <"
@@ -301,7 +306,8 @@ class IcesErf32Format(object):
                     out_rows.append("          <R38.BiologicalCommunityAbundance>")
                     #
                     for field in self.rec38_fields:
-                        if rowdict.get(field, False):
+                        # if rowdict.get(field, False):
+                        if rowdict.get(field, "") != "":
                             field_ices = field.split("-R")[0]
                             out_rows.append(
                                 "            <"

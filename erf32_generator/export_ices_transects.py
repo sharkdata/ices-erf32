@@ -51,6 +51,9 @@ class TransectData(object):
         #         key += datarow_dict.get('StationNumber', '') + '+'
         #         key += datarow_dict.get('Transect', '') + '+'
         key += datarow_dict.get("transect_direction", "") + "+"
+        key += datarow_dict.get("transect_direction_deg", "") + "+"
+        key += datarow_dict.get("sample_latitude_dd", "") + "+"
+        key += datarow_dict.get("sample_longitude_dd", "") + "+"
         key += datarow_dict.get("transect_start_latitude_dd", "") + "+"
         key += datarow_dict.get("transect_start_longitude_dd", "") + "+"
         key += datarow_dict.get("transect_length_m", "") + "+"
