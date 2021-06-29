@@ -3364,3 +3364,60 @@ Bosmina longirostris	242091	148379	Bosmina (Bosmina) longirostris
 Pagurus cuanensis	217760	107235	Pagurus cuanensis												
 Owenia	1007623	129427	Owenia												
 Ulnaria ulna	262369	149187	Synedra ulna	accepted											
+
+Aglaophamus pulcher		547398
+Andaniopsis nordlandica		103089
+Aricidea		129430
+Astacilla dilatata		295579
+Atherospio disticha		131109
+Augeneria tentaculata		130225
+Bathymedon		101691
+Bylgides		129483
+Chaetoparia nilssoni		130610
+Chaetozone zetlandica		336485
+Chirimia biceps		130277
+Corycaeus anglicus		149847
+Dipolydora		129611
+Dipolydora caulleryi		131116
+Dipolydora coeca		131117
+Doliolum		137222
+Eriopisa		101672
+Glycera unicornis		130131
+Gymnolaemata		1795
+Halice abyssi		102939
+Ilyarachna longicornis		118677
+Ischnomesus bispinosus		118694
+Jasmineira caudata		130920
+Kurtiella bidentata		345281
+Leptophoxus falcatus		102980
+Leucon (Leucon) nasica		110618
+Lumbrineris aniara		130238
+Magelona filiformis		130268
+Malacoceros		129614
+Malmgrenia andreapolis		147008
+Medicorophium affine		423507
+Melinna		129168
+Monstrilla longiremis		119805
+Myrianida		129659
+Mysis relicta s.lat.		120120
+Mytilopsis leucophaeata		156887
+Nephasoma minutum		424440
+Nyctiphanes couchii		254316
+Ocnus lacteus		124645
+Oithona atlantica		106642
+Oithona nana		106651
+Palliolum		138322
+Paradoneis		129433
+Parexogone hebes		757970
+Phisidia aurea		131513
+Phylo norvegicus		130531
+Pista		129708
+Pista lornensis		154972
+Scolelepis korsuni		131174
+Scopelocheirus		101652
+Sorgenfreispira brachystoma		847930
+Sosane wahrbergi		334811
+Terebellides stroemii		131573
+Tiaropsis		117252
+Tritia nitida		890057
+Tritia pygmaea		1391526	Tritia varicosa
