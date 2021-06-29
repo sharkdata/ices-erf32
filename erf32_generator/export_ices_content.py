@@ -79,8 +79,10 @@ class ExportIcesContent(object):
         self._dict["ETIME-R91"] = ""  # Not used.
         self._dict["WADEP-R91"] = self._get_value("water_depth_m", "").replace(",", ".")
         self._dict["STATN-R91"] = self._get_value("station_name", "")
+
+        mprog_default = self._get_value("monitoring_program_code", "")
         self._dict["MPROG-R91"] = self._export_stations.get_mprog(
-            self._get_value("station_name", "")
+            self._get_value("station_name", mprog_default)
         )
         self._dict["WLTYP-R91"] = self._export_stations.get_wltyp(
             self._get_value("station_name", "")
@@ -569,7 +571,7 @@ class ExportIcesContent(object):
             ):
 
                 self._dict["TRSCS-R34"] = self._get_value("transect_min_distance_m")
-                self._dict["TRSCE-R34"] = self._get_value("transect_min_distance_m")
+                self._dict["TRSCE-R34"] = self._get_value("transect_max_distance_m")
                 self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
                 self._dict["TRCED-R34"] = self._get_value("sample_max_depth_m")
 

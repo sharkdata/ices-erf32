@@ -18,14 +18,35 @@ class ExportStations:
         self.station_info_dict = {}
         self.missing_station_list = []
         self.logger = logging.getLogger("erf32_generator")
+        #
+        self.mprog_check = {}
 
-    def get_mprog(self, station_name):
+    def get_mprog(self, station_name, default_value=""):
         """ """
         info_dict = self.get_station_info_dict(station_name)
-        mprog = info_dict.get("Station_ProgramGovernance", "")
-        mprog = erf32_generator.global_translate.get_translate_from_source('monitoring_program_code', mprog)
+        mprog_used = info_dict.get("Station_ProgramGovernance", default_value)
+        mprog_translated = erf32_generator.global_translate.get_translate_from_source(
+            "monitoring_program_code", mprog_used
+        )
+        # Log used alternatives.
+        mprog_ices = info_dict.get("Station_ProgramGovernance", "")
+        message = (
+            "MPROG. Station: "
+            + station_name
+            + "   SHARK: "
+            + default_value
+            + "  ICES: "
+            + mprog_ices
+            + "  Used: "
+            + mprog_used
+            + "  Translated: "
+            + mprog_translated
+        )
+        if message not in self.mprog_check:
+            self.mprog_check[message] = "DUMMY"
+            self.logger.info(message)
         #
-        return mprog
+        return mprog_translated
 
     def get_wltyp(self, station_name):
         """ """
