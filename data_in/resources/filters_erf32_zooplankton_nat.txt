@@ -10,7 +10,7 @@ scientific_name		Amphibalanus improvisus
 XXX_scientific_name		Anomalocera patersoni
 XXX_scientific_name		Asteroidea
 XXX_scientific_name		Balanus
-XXX_scientific_name		Bivalvia
+scientific_name		Bivalvia
 scientific_name		Bivalvia (Lamellibranchiata)
 scientific_name		Bylgides sarsi
 XXX_scientific_name		Bryozoa
@@ -38,3 +38,72 @@ XXX_scientific_name		Pompholyx
 scientific_name		Radiosperma
 XXX_scientific_name		Synchaeta
 scientific_name		Tintinnida
+
+scientific_name		Aglantha
+scientific_name		Amphipoda
+scientific_name		Arnoglossus
+scientific_name		Ascidia
+scientific_name		Asterias rubens
+scientific_name		Asteroidea
+scientific_name		Balanus
+scientific_name		Beröe cucumis
+scientific_name		Bivalvia
+scientific_name		Branchiostoma
+scientific_name		Bryozoa
+scientific_name		Candacia
+scientific_name		Carcinus maenas
+scientific_name		Chydoridae
+scientific_name		Cnidaria
+scientific_name		Copepoda
+scientific_name		Ctenophora
+scientific_name		Cyanea
+scientific_name		Decapoda
+scientific_name		Diaphanosoma
+scientific_name		Diastylis
+scientific_name		Doliolum
+scientific_name		Echinodermata
+scientific_name		Euterpina acutifrons
+scientific_name		Gadus
+scientific_name		Gastropoda
+scientific_name		Harmothoe
+scientific_name		Harpacticoida
+scientific_name		Hydrachnidiae
+scientific_name		Hydrozoa
+scientific_name		Hyperia
+scientific_name		Hyperiidea
+scientific_name		Isopoda
+scientific_name		Leptoplanidae
+scientific_name		Leuckartiara
+scientific_name		Luidia sarsi
+scientific_name		Magelona
+scientific_name		Meganyctiphanes norvegica
+scientific_name		Metridia
+scientific_name		Microsetella norvegica
+scientific_name		Mysidae
+scientific_name		Necora puber
+scientific_name		Nemertea
+scientific_name		Noctiluca scintillans
+scientific_name		Obelia
+scientific_name		Oikopleura dioica
+scientific_name		Oncaea
+scientific_name		Ophiuroidea
+scientific_name		Ostracoda
+scientific_name		Phoronida
+scientific_name		Pisces
+scientific_name		Podon
+scientific_name		Polychaeta
+scientific_name		Porcellana
+scientific_name		Processa nouveli
+scientific_name		Pseudocuma
+scientific_name		Sagitta
+scientific_name		Synchaeta
+scientific_name		Tiaropsis
+scientific_name		Tomopteris
+scientific_name		Tomopteris helgolandica
+scientific_name		Tomopteris septentrionalis
+scientific_name		Trachylinae
+
+scientific_name		Monstrilla longiremis
+scientific_name		Corycaeus anglicus
+scientific_name		Paraeuchaeta
+scientific_name		Anomalocera patersoni
