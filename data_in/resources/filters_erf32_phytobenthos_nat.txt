@@ -1,7 +1,15 @@
-source_field	include_value	exclude_value	comments
+source_field	include_value	exclude_value	filter_group_id	comments
 
-dataset_name	XXXXX_SHARK_Epibenthos_2020_SLC-T
+dataset_name	SHARK_Epibenthos_2020_SLC-T
 dataset_name	SHARK_Epibenthos_2020_DEEP_Asko
 dataset_name	SHARK_Epibenthos_2020_DEEP_Singo
 dataset_name	SHARK_Epibenthos_2020_DEEP_Hoga_kusten
 dataset_name	SHARK_Epibenthos_2000_2020_DEEP_Gotland
+
+# Due to problems with missing values for transect
+sampler_type_code		FRAMENET
+sampler_type_code		RUTA
+
+# Zero is not accepted as a value for Cover (%)
+parameter		Cover (%)	Group-cover-1
+value		0	Group-cover-1
