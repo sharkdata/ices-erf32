@@ -312,3 +312,42 @@ station_name	ÖRESUND-12X	ÖRES-12X
 station_name	ÖRESUND-2	ÖRES-2
 station_name	ÖRESUND-4	ÖRES-4
 station_name	ÖRESUND-7	ÖRES-7
+
+station_name	Ellöse_01	ELLÖSE_1
+station_name	Ellöse_03	ELLÖSE_3
+station_name	Ellöse_05	ELLÖSE_5
+station_name	Gullmarn_01	GULLMARN_1
+station_name	Gullmarn_02	GULLMARN_2
+station_name	Gullmarn_03	GULLMARN_3
+station_name	Gullmarn_04	GULLMARN_4
+station_name	LAHOLMSBUKTEN YTTRE_6	LAHOLMSBUKTEN YTTRE_6
+station_name	Lysekil yttre kust_01	LYSEKIL YTTRE KUST_1
+station_name	Lysekil yttre kust_02	LYSEKIL YTTRE KUST_2
+station_name	Lysekil yttre kust_03	LYSEKIL YTTRE KUST_3
+station_name	Lysekil yttre kust_05	LYSEKIL YTTRE KUST_5
+station_name	Lysekil yttre kust_06	LYSEKIL YTTRE KUST_6
+station_name	Lysekil yttre kust_08	LYSEKIL YTTRE KUST_8
+station_name	Lysekil yttre kust_09	LYSEKIL YTTRE KUST_9
+station_name	Nordre Älvs fjord_01	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
+station_name	Nordre Älvs fjord_02	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
+station_name	Nordre Älvs fjord_03	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
+station_name	Nordre Älvs fjord_04	NORDRE ÄLVS FJORD/SÄLÖ FJORD_4
+station_name	Nordre Älvs fjord_05	NORDRE ÄLVS FJORD/SÄLÖ FJORD_5
+station_name	S Hallands kustvatten_01	S HALLANDS KUSTVATTEN_1
+station_name	S Hallands kustvatten_02	S HALLANDS KUSTVATTEN_2
+station_name	S Hallands kustvatten_05	S HALLANDS KUSTVATTEN_5
+station_name	Sälö fjord_01	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
+station_name	Sälö fjord_02	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
+station_name	Sälö fjord_03	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
+station_name	Sälö fjord_04	NORDRE ÄLVS FJORD/SÄLÖ FJORD_4
+station_name	Sälö fjord_05	NORDRE ÄLVS FJORD/SÄLÖ FJORD_5
+station_name	Skagerrak utsjö_01	SKAGERRAK UTSJÖ_1
+station_name	Skagerrak utsjö_02	SKAGERRAK UTSJÖ_2
+station_name	Skagerrak utsjö_03	SKAGERRAK UTSJÖ_3
+station_name	Skagerrak utsjö_04	SKAGERRAK UTSJÖ_4
+station_name	Skagerrak utsjö_05	SKAGERRAK UTSJÖ_5
+station_name	SKAGERRAK UTSJÖ 10	SKAGERRAK UTSJÖ_10
+station_name	Södra_Öresund_02	SÖDRA ÖRESUND_2
+station_name	Södra_Öresund_03	SÖDRA ÖRESUND_3
+station_name	Södra_Öresund_05	SÖDRA ÖRESUND_5
+station_name	Strömstad_01	STRÖMSTAD_1
