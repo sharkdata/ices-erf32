@@ -374,7 +374,7 @@ class IcesErf32Format(object):
         # Replace all "," with ".".
         for index, row in enumerate(out_rows):
             if "," in row:
-                self.logger.debug('DEBUG: "," found in row: ', row)
+                self.logger.debug('DEBUG: "," found in row: ' + row)
                 out_rows[index] = row.replace(",", ".")
 
         return out_rows
