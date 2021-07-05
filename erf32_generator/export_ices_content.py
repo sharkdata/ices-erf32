@@ -189,9 +189,14 @@ class ExportIcesContent(object):
         self._dict["QFLAG-R38"] = self._get_value("quality_flag", "")
         self._dict["VALUE-R38"] = self._get_value("value", "")
 
-        self._dict["CPORT-R38"] = self._get_value("counted_portions", "").replace(
-            ".", ","
-        )  # Note: Should be ','.
+        try:
+            counted_portions_integer = int(
+                float(self._get_value("counted_portions", ""))
+            )
+            self._dict["CPORT-R38"] = str(counted_portions_integer)
+        except:
+            pass
+
         self._dict["SDVOL-R38"] = self._get_value("sedimentation_volume_ml", "")
         self._dict["AMLNK-R21"] = ""  # Generated later.
 
@@ -718,7 +723,7 @@ class ExportIcesContent(object):
     def ices_time(self, time):
         """ """
         ices_time = time.replace(":", "")
-        return ices_time
+        return ices_time[0:4]
 
     def ices_datatype(self, long_name):
         """ """
