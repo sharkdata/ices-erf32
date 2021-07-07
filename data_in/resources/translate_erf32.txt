@@ -313,41 +313,130 @@ station_name	ÖRESUND-2	ÖRES-2
 station_name	ÖRESUND-4	ÖRES-4
 station_name	ÖRESUND-7	ÖRES-7
 
+station_name	Blekeskär	BLEKESKÄR
+station_name	Brunskär	BRUNSKÄR
+station_name	Danholmen	DANHOLMEN
+station_name	Eggskärsfyr	EGGSKÄRSFYR
+station_name	Grötskär	GRÖTSKÄR
+station_name	Kråkholmen	KRÅKHOLMEN
+station_name	Måkholmen	MÅKHOLMEN
+station_name	Måvholmen	MÅVHOLMEN
+station_name	Norra Dyngön	NORRA DYNGÖN
+station_name	Oxskär	OXSKÄR
+station_name	Ramnered	RAMNERED
+station_name	Saltskär inre	SALTSKÄR INRE
+station_name	Sjumannaholmen	SJUMANNAHOLMEN
+station_name	Skäddeskären	SKÄDDESKÄREN
+station_name	Slubbersholmen	SLUBBERSHOLMEN
+station_name	Slängerumpan	SLÄNGERUMPAN
+station_name	Stora Gråbenskär	STORA GRÅBENSKÄR
+station_name	Stora Håskär	STORA HÅSKÄR
+station_name	Stora Lyngön	STORA LYNGÖN
+station_name	Storön	STORÖN
+station_name	Södra Styrsö	SÖDRA STYRSÖ
+station_name	Trinissla	TRINISSLA
+station_name	Yttre Vannholmen	YTTRE VANNHOLMEN
+station_name	Ärholmen	ÄRHOLMEN
 station_name	Ellöse_01	ELLÖSE_1
+station_name	Ellöse_02	ELLÖSE_2
 station_name	Ellöse_03	ELLÖSE_3
+station_name	Ellöse_04	ELLÖSE_4
 station_name	Ellöse_05	ELLÖSE_5
+station_name	Fjällbacka yttre_01	FJÄLLBACKA YTTRE_1
+station_name	Fjällbacka yttre_02	FJÄLLBACKA YTTRE_2
+station_name	Fjällbacka yttre_03	FJÄLLBACKA YTTRE_3
+station_name	Fjällbacka yttre_04	FJÄLLBACKA YTTRE_4
+station_name	Fjällbacka yttre_05	FJÄLLBACKA YTTRE_5
 station_name	Gullmarn_01	GULLMARN_1
 station_name	Gullmarn_02	GULLMARN_2
 station_name	Gullmarn_03	GULLMARN_3
 station_name	Gullmarn_04	GULLMARN_4
-station_name	LAHOLMSBUKTEN YTTRE_6	LAHOLMSBUKTEN YTTRE_6
+station_name	Gullmarn_05	GULLMARN_5
 station_name	Lysekil yttre kust_01	LYSEKIL YTTRE KUST_1
 station_name	Lysekil yttre kust_02	LYSEKIL YTTRE KUST_2
 station_name	Lysekil yttre kust_03	LYSEKIL YTTRE KUST_3
+station_name	Lysekil yttre kust_04	LYSEKIL YTTRE KUST_4
 station_name	Lysekil yttre kust_05	LYSEKIL YTTRE KUST_5
 station_name	Lysekil yttre kust_06	LYSEKIL YTTRE KUST_6
+station_name	Lysekil yttre kust_07	LYSEKIL YTTRE KUST_7
 station_name	Lysekil yttre kust_08	LYSEKIL YTTRE KUST_8
 station_name	Lysekil yttre kust_09	LYSEKIL YTTRE KUST_9
+station_name	Lysekil yttre kust_10	LYSEKIL YTTRE KUST_10
+station_name	Marstrand reningsv01	MARSTRAND RENINGSV_1
+station_name	Marstrand reningsv02	MARSTRAND RENINGSV_2
+station_name	Marstrand reningsv03	MARSTRAND RENINGSV_3
+station_name	Mellersta Öresund_01	MELLERSTA ÖRESUND_1
+station_name	Mellersta Öresund_02	MELLERSTA ÖRESUND_2
+station_name	Mellersta Öresund_03	MELLERSTA ÖRESUND_3
+station_name	Mellersta Öresund_04	MELLERSTA ÖRESUND_4
+station_name	Mellersta Öresund_05	MELLERSTA ÖRESUND_5
 station_name	Nordre Älvs fjord_01	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
 station_name	Nordre Älvs fjord_02	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
 station_name	Nordre Älvs fjord_03	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
 station_name	Nordre Älvs fjord_04	NORDRE ÄLVS FJORD/SÄLÖ FJORD_4
 station_name	Nordre Älvs fjord_05	NORDRE ÄLVS FJORD/SÄLÖ FJORD_5
+station_name	Norra Öresund_01	NORRA ÖRESUND_1
+station_name	Norra Öresund_02	NORRA ÖRESUND_2
+station_name	Norra Öresund_03	NORRA ÖRESUND_3
+station_name	Norra Öresund_04	NORRA ÖRESUND_4
+station_name	Norra Öresund_05	NORRA ÖRESUND_5
+station_name	Onsala kust_02	ONSALA KUST_2
+station_name	Onsala kust_03	ONSALA KUST_3
+station_name	Onsala kust_04	ONSALA KUST_4
+station_name	Onsala kust_05	ONSALA KUST_5
+station_name	Risö-Särö_01	RISÖ-SÄRÖ_1
+station_name	Risö-Särö_02	RISÖ-SÄRÖ_2
+station_name	Risö-Särö_03	RISÖ-SÄRÖ_3
+station_name	Risö-Särö_04	RISÖ-SÄRÖ_4
+station_name	Risö-Särö_05	RISÖ-SÄRÖ_5
 station_name	S Hallands kustvatten_01	S HALLANDS KUSTVATTEN_1
 station_name	S Hallands kustvatten_02	S HALLANDS KUSTVATTEN_2
+station_name	S Hallands kustvatten_03	S HALLANDS KUSTVATTEN_3
+station_name	S Hallands kustvatten_04	S HALLANDS KUSTVATTEN_4
 station_name	S Hallands kustvatten_05	S HALLANDS KUSTVATTEN_5
 station_name	Sälö fjord_01	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
 station_name	Sälö fjord_02	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
 station_name	Sälö fjord_03	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
 station_name	Sälö fjord_04	NORDRE ÄLVS FJORD/SÄLÖ FJORD_4
 station_name	Sälö fjord_05	NORDRE ÄLVS FJORD/SÄLÖ FJORD_5
+station_name	Saltkällan_01	SALTKÄLLAN_1
+station_name	Saltkällan_02	SALTKÄLLAN_2
+station_name	Saltkällan_03	SALTKÄLLAN_3
+station_name	Saltkällan_04	SALTKÄLLAN_4
+station_name	Saltkällan_05	SALTKÄLLAN_5
 station_name	Skagerrak utsjö_01	SKAGERRAK UTSJÖ_1
 station_name	Skagerrak utsjö_02	SKAGERRAK UTSJÖ_2
 station_name	Skagerrak utsjö_03	SKAGERRAK UTSJÖ_3
 station_name	Skagerrak utsjö_04	SKAGERRAK UTSJÖ_4
 station_name	Skagerrak utsjö_05	SKAGERRAK UTSJÖ_5
+station_name	Skagerrak utsjö_06	SKAGERRAK UTSJÖ_6
+station_name	Skagerrak utsjö_07	SKAGERRAK UTSJÖ_7
+station_name	Skagerrak utsjö_08	SKAGERRAK UTSJÖ_8
+station_name	Skagerrak utsjö_09	SKAGERRAK UTSJÖ_9
 station_name	SKAGERRAK UTSJÖ 10	SKAGERRAK UTSJÖ_10
+station_name	Skälderviken_01	SKÄLDERVIKEN_1
+station_name	Skälderviken_02	SKÄLDERVIKEN_2
+station_name	Skälderviken_03	SKÄLDERVIKEN_3
+station_name	Skälderviken_04	SKÄLDERVIKEN_4
+station_name	Skälderviken_05	SKÄLDERVIKEN_5
+station_name	Skälderviken_06	SKÄLDERVIKEN_6
+station_name	Skälderviken_07	SKÄLDERVIKEN_7
+station_name	Skälderviken_08	SKÄLDERVIKEN_8
+station_name	Skälderviken_09	SKÄLDERVIKEN_9
+station_name	Skälderviken_10	SKÄLDERVIKEN_10
+station_name	Södra_Öresund_01	SÖDRA ÖRESUND_1
 station_name	Södra_Öresund_02	SÖDRA ÖRESUND_2
 station_name	Södra_Öresund_03	SÖDRA ÖRESUND_3
+station_name	Södra_Öresund_04	SÖDRA ÖRESUND_4
 station_name	Södra_Öresund_05	SÖDRA ÖRESUND_5
+station_name	Strävliden01	STRÄVLIDEN_1
+station_name	Strävliden02	STRÄVLIDEN_2
+station_name	Strävliden03	STRÄVLIDEN_3
+station_name	Strävliden04	STRÄVLIDEN_4
+station_name	Strävliden05	STRÄVLIDEN_5
+station_name	Strävliden06	STRÄVLIDEN_6
 station_name	Strömstad_01	STRÖMSTAD_1
+station_name	Strömstad_02	STRÖMSTAD_2
+station_name	Strömstad_03	STRÖMSTAD_3
+station_name	Strömstad_04	STRÖMSTAD_4
+station_name	Strömstad_05	STRÖMSTAD_5
