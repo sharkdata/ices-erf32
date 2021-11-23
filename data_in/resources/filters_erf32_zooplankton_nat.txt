@@ -2,8 +2,13 @@ source_field	include_value	exclude_value	comments
 
 dataset_name	SHARK_Zooplankton_2020_UMSC
 dataset_name	SHARK_Zooplankton_2020_DEEP
-dataset_name	SHARK_Zooplankton_2019_2020_SLCK_SMHI
 dataset_name	SHARK_Zooplankton_2020_SLCK
+
+dataset_name	SHARK_Zooplankton_2019_UMSC
+dataset_name	SHARK_Zooplankton_2019_DEEP
+dataset_name	SHARK_Zooplankton_2019_SLCK
+
+dataset_name	SHARK_Zooplankton_2019_2020_SLCK_SMHI
 
 ##Zooplankton species (problems with missing biomass parameter necessary to accompany abundance parameter in ICES)
 scientific_name		Amphibalanus improvisus
