@@ -12,7 +12,7 @@ datatype:
     Zooplankton
 
 yearFrom:
-    2020
+    2019
 yearTo:
     2020
 
@@ -20,11 +20,11 @@ icesTarget:
     directory:
         data_out
     fileTemplate: 
-        # ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.xml
-        ICES-ERF32_SMHI_Zooplankton_2020_TEST.xml
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>.xml
+        # ICES-ERF32_SMHI_Zooplankton_2020_TEST.xml
     logfileTemplate:
-        # ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST_LOG.txt
-        ICES-ERF32_SMHI_Zooplankton_2020_TEST_LOG.txt
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_LOG.txt
+        # ICES-ERF32_SMHI_Zooplankton_2020_TEST_LOG.txt
 
 sourceFiles:
     directory: 

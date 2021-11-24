@@ -15,11 +15,8 @@ class ExportIcesContent(object):
     def __init__(self, datarow_dict):
         """ """
         self._dict = datarow_dict
-        # self._export_stations = erf32_generator.ExportStations()
         self._export_stations = erf32_generator.global_export_stations
-        # self._translate_taxa = erf32_generator.TranslateTaxa()
         self._translate_taxa = erf32_generator.global_translate_taxa
-        # self._translate_taxa_to_helcom_peg = erf32_generator.TranslateDyntaxaToHelcomPeg()
         self._translate_taxa_to_helcom_peg = (
             erf32_generator.global_translate_dyntaxa_to_helcom_peg
         )
@@ -660,7 +657,7 @@ class ExportIcesContent(object):
     # ===== Utils =====
     def _get_value(self, internal_key, default=""):
         """ """
-        value = self._dict.get(internal_key, default)        #
+        value = self._dict.get(internal_key, default)  #
         return value
 
     def translate_scientific_name_to_aphia_id(self, scientific_name):

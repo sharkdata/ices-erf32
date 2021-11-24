@@ -85,6 +85,10 @@ class ExportStations:
         #
         return {}
 
+    def clear_missing_station_list(self):
+        """ """
+        self.missing_station_list = []
+
     def get_missing_station_list(self):
         """ """
         return self.missing_station_list
@@ -140,6 +144,10 @@ class TranslateTaxa:
             self.missing_taxa_list.append(scientific_name)
         #
         return ""
+
+    def clear_missing_taxa_list(self):
+        """ """
+        self.missing_taxa_list = []
 
     def get_missing_taxa_list(self):
         """ """
