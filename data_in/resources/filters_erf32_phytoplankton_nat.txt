@@ -28,3 +28,5 @@ scientific_name		Unicell	Group-bvol-1
 size_class		29	Group-bvol-1
 
 scientific_name		Mesodinium
+
+scientific_name		Verrucodesmus

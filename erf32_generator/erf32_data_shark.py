@@ -35,7 +35,7 @@ class Erf32DataShark:
         """ """
         return self.row_list
 
-    def add_shark_dataset(self, dataset_filepath):
+    def add_shark_dataset(self, dataset_filepath, year_int):
         """Add data from SHARK zipped files."""
 
         self.logger.info("Adding dataset: " + dataset_filepath)
@@ -78,6 +78,10 @@ class Erf32DataShark:
                         else:
                             counter_rows += 1
                             row_dict = dict(zip(header, row_items))
+
+                            # Check visit year. One report for each year.
+                            if row_dict.get("visit_year", "") != str(year_int):
+                                continue
 
                             # Add debug info.
                             dataset_name = row_dict.get("dataset_name", "")

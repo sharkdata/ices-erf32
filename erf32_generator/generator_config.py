@@ -28,7 +28,6 @@ class GeneratorConfig:
         self.year_from = ""
         self.year_to = ""
         self.source_files = []
-        self.taxa_worms_file = ""
         self.translate_files = []
         self.filters_files = []
 
@@ -49,9 +48,6 @@ class GeneratorConfig:
         self.target_logfile_template = log_template
         # "sourceFiles"
         self.source_files = self.get_source_file_list()
-        # "taxaWorms"
-        file_list = self.get_config_files("taxaWorms")
-        self.taxa_worms_file = file_list[0]
         # "translate"
         self.translate_files = self.get_config_files("translate")
         # "filters"

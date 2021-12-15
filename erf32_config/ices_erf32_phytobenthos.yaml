@@ -20,25 +20,15 @@ icesTarget:
     directory:
         data_out
     fileTemplate: 
-        # ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST.xml
-        ICES-ERF32_SMHI_Phytobenthos_2020_TEST.xml
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>.xml
     logfileTemplate:
-        # ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_TEST_LOG.txt
-        ICES-ERF32_SMHI_Phytobenthos_2020_TEST_LOG.txt
+        ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_LOG.txt
 
 sourceFiles:
     directory: 
         data_in/datasets
     globSearch:
         SHARK_Epibenthos_*_version_*.zip
-    # files:
-    #     - SHARK_Epibenthos_EXAMPLE.zip
-
-taxaWorms:
-    directory:
-        data_in/resources
-    files:
-        - taxa_dyntaxa_to_worms.txt
 
 translate:
     directory:

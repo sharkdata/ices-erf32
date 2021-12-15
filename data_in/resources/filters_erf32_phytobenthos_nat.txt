@@ -12,5 +12,5 @@ sampler_type_code		FRAMENET
 sampler_type_code		RUTA
 
 # Zero is not accepted as a value for Cover (%)
-parameter		Cover (%)	Group-cover-1
-value		0	Group-cover-1
+XXX-parameter		Cover (%)	Group-cover-1
+XXX-value		0	Group-cover-1

@@ -21,24 +21,14 @@ icesTarget:
         data_out
     fileTemplate: 
         ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>.xml
-        # ICES-ERF32_SMHI_Zooplankton_2020_TEST.xml
     logfileTemplate:
         ICES-ERF32_SMHI_<DATATYPE>_<YEAR>_version_<DATE>_LOG.txt
-        # ICES-ERF32_SMHI_Zooplankton_2020_TEST_LOG.txt
 
 sourceFiles:
     directory: 
         data_in/datasets
     globSearch:
         SHARK_Zooplankton_*_version_*.zip
-    # files:
-    #     - SHARK_Zooplankton_EXAMPLE.zip
-
-taxaWorms:
-    directory:
-        data_in/resources
-    files:
-        - taxa_dyntaxa_to_worms.txt
 
 translate:
     directory:

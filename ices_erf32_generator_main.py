@@ -74,7 +74,7 @@ class IcesErf32Generator:
             try:
                 source_data = erf32_generator.Erf32DataShark(ices_config)
                 for dataset_filepath in ices_config.source_files:
-                    source_data.add_shark_dataset(dataset_filepath)
+                    source_data.add_shark_dataset(dataset_filepath, year_int)
                 # Data result.
                 data_rows = source_data.get_data_rows()
                 logger.info("")
@@ -92,7 +92,6 @@ class IcesErf32Generator:
                     log_file_name,
                     error_counter,
                     datatype,
-                    year_int,
                     status,
                     user,
                 )
@@ -174,9 +173,9 @@ if __name__ == "__main__":
     """ """
     config_files = [
         "erf32_config/ices_erf32_zooplankton.yaml",
-        # "erf32_config/ices_erf32_zoobenthos.yaml",
-        # "erf32_config/ices_erf32_phytoplankton.yaml",
-        # "erf32_config/ices_erf32_phytobenthos.yaml",
+        "erf32_config/ices_erf32_zoobenthos.yaml",
+        "erf32_config/ices_erf32_phytoplankton.yaml",
+        "erf32_config/ices_erf32_phytobenthos.yaml",
     ]
     generator = IcesErf32Generator()
     for config_file in config_files:

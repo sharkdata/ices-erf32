@@ -8,6 +8,9 @@
 test_data/TMP_DarwinCore
 
 **/*OLD*
+data_out
+.vscode
+**/*.xml
 
 
 # Byte-compiled / optimized / DLL files

@@ -34,12 +34,11 @@ class GenerateIcesErf32(object):
         logfile_name,
         error_counter,
         datatype,
-        year,
         status,
         user,
     ):
         """ """
-        # Add all rows from all datasets that match datatype and year.
+        # Add all rows from all datasets with matching datatype and year.
         erf32_format = erf32_generator.IcesErf32Format()
         #
         try:
@@ -52,15 +51,12 @@ class GenerateIcesErf32(object):
 
             # Process rows.
             for datarow_dict in self.data_rows:
-                #
-                if datarow_dict.get("visit_year", "") == str(year):
+                # # Remove RAMSKRAP.
+                # if "FRAMENET" == datarow_dict.get("sampler_type_code", ""):
+                #     continue
 
-                    # # Remove RAMSKRAP.
-                    # if "FRAMENET" == datarow_dict.get("sampler_type_code", ""):
-                    #     continue
-
-                    # OK to add row.
-                    erf32_format.add_row(datarow_dict)
+                # OK to add row.
+                erf32_format.add_row(datarow_dict)
 
         except Exception as e:
             error_counter += 1
