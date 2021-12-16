@@ -48,8 +48,14 @@ Pediastrum duplex	Pediastrum duplex	PEG_BVOL
 Schroederia setigera	Schroederia setigera	PEG_BVOL
 Selenastrum bibraianum	Selenastrum bibraianum	PEG_BVOL
 Stauridium tetras	Stauridium tetras	PEG_BVOL
+
 Tetra�dron caudatum	Tetraedron caudatum	PEG_BVOL
 Tetra�dron minimum	Tetraedron minimum	PEG_BVOL
+Tetraëdron caudatum	Tetraedron caudatum	PEG_BVOL
+Tetraëdron minimum	Tetraedron minimum	PEG_BVOL
+Tetraëdron caudatum	Tetraedron caudatum	PEG_BVOL
+Tetraëdron minimum	Tetraedron minimum	PEG_BVOL
+
 Tetraedron triangulare	Tetraedron triangulare	PEG_BVOL
 Tetrabaena socialis	Tetrabaena socialis	PEG_BVOL
 Chlamydomonadales  	Volvocales	PEG_BVOL

@@ -199,8 +199,8 @@ class TranslateDyntaxaToHelcomPeg:
         #
         translate_file_path = pathlib.Path(translate_file_name)
         header = []
-        # with translate_file_path.open("r", encoding="utf8") as file:
-        with translate_file_path.open("r", encoding="cp1252") as file:
+        with translate_file_path.open("r", encoding="utf8") as file:
+        # with translate_file_path.open("r", encoding="cp1252") as file:
             for index, row in enumerate(file):
                 row = [item.strip() for item in row.split("\t")]
                 if index == 0:
