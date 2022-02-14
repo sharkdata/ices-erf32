@@ -3863,3 +3863,6 @@ Pseudocuma longicorne	233597	110627	Pseudocuma (Pseudocuma) longicorne
 Bosmina coregoni	233671	106271	Bosmina (Eubosmina) coregoni
 Bosmina longirostris	242091	148379	Bosmina (Bosmina) longirostris
 Pectinaria s.lat.		980	Pectinariidae
+
+Bosmina longispina maritima	233755	106271	Bosmina (Eubosmina) coregoni
+Oikopleura dioica	242109	103407	Oikopleura (Vexillaria) dioica

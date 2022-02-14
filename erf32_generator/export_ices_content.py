@@ -384,6 +384,16 @@ class ExportIcesContent(object):
             self._dict["QFLAG-R38"] = ""
             self._dict["VFLAG-R38"] = "S"
 
+
+        # Convert SMVOL from litre to m3 .
+        if self._dict["DTYPE-R34"] == "ZP":
+            sampled_volume_l = self._get_value("sampled_volume_l", "")
+            sampled_volume_l = float(sampled_volume_l)
+            sampled_volume_m3 = sampled_volume_l / 1000.0
+            self._dict["SMVOL-R34"] = str(sampled_volume_m3)
+
+
+
     def check_zp_abundnr_wetwt(self, datarow_dict, zp_abundnr_wetwt_list):
         """ "ZP must have both ABUNDNR and WETWT."""
         if self._dict["DTYPE-R34"] == "ZP":

@@ -10,25 +10,63 @@ dataset_name	SHARK_Zooplankton_2019_SLCK
 
 dataset_name	SHARK_Zooplankton_2019_2020_SLCK_SMHI
 
+dataset_name	SHARK_Zooplankton_2018_UMSC
+dataset_name	SHARK_Zooplankton_2018_DEEP
+dataset_name	SHARK_Zooplankton_2018_SLCK
+dataset_name	SHARK_Zooplankton_2018_SMHI
+
+dataset_name	SHARK_Zooplankton_2017_UMSC
+dataset_name	SHARK_Zooplankton_2017_DEEP
+dataset_name	SHARK_Zooplankton_2017_SMHI
+
+dataset_name	SHARK_Zooplankton_2016_UMSC
+dataset_name	SHARK_Zooplankton_2016_DEEP
+dataset_name	SHARK_Zooplankton_2016_SMHI
+
+dataset_name	SHARK_Zooplankton_2015_UMSC
+dataset_name	SHARK_Zooplankton_2015_DEEP
+dataset_name	SHARK_Zooplankton_2015_SMHI
+
+dataset_name	SHARK_Zooplankton_2014_UMSC
+dataset_name	SHARK_Zooplankton_2014_DEEP
+dataset_name	SHARK_Zooplankton_2014_SMHI
+
+dataset_name	SHARK_Zooplankton_2013_UMSC
+dataset_name	SHARK_Zooplankton_2013_DEEP
+dataset_name	SHARK_Zooplankton_2013_SMHI
+
+dataset_name	SHARK_Zooplankton_2012_UMSC
+dataset_name	SHARK_Zooplankton_2012_SUSE
+dataset_name	SHARK_Zooplankton_2012_SMHI
+
+dataset_name	SHARK_Zooplankton_2011_UMSC
+dataset_name	SHARK_Zooplankton_2011_SUSE
+dataset_name	SHARK_Zooplankton_2011_SMHI
+
+dataset_name	SHARK_Zooplankton_2010_SUSE
+dataset_name	SHARK_Zooplankton_2010_SMHI
+dataset_name	SHARK_Zooplankton_1994_2010_UMSC
+
+
 ##Zooplankton species (problems with missing biomass parameter necessary to accompany abundance parameter in ICES)
-scientific_name		Amphibalanus improvisus
+X_scientific_name		Amphibalanus improvisus
 XXX_scientific_name		Anomalocera patersoni
 XXX_scientific_name		Asteroidea
 XXX_scientific_name		Balanus
-scientific_name		Bivalvia
-scientific_name		Bivalvia (Lamellibranchiata)
-scientific_name		Bylgides sarsi
+X_scientific_name		Bivalvia
+X_scientific_name		Bivalvia (Lamellibranchiata)
+X_scientific_name		Bylgides sarsi
 XXX_scientific_name		Bryozoa
 XXX_scientific_name		Cirripedia
 XXX_scientific_name		Crustacea
-scientific_name		Cyclopoida
+X_scientific_name		Cyclopoida
 XXX_scientific_name		Diaphanosoma
 XXX_scientific_name		Echinoidea
 XXX_scientific_name		Euterpina acutifrons
 XXX_scientific_name		Fritillaria
-scientific_name		Gastropoda
-scientific_name		Gymnolaemata
-scientific_name		Harpacticoida
+X_scientific_name		Gastropoda
+X_scientific_name		Gymnolaemata
+X_scientific_name		Harpacticoida
 XXX_scientific_name		Leptodora kindtii
 XXX_scientific_name		Magelona
 XXX_scientific_name		Microsetella norvegica
@@ -40,75 +78,75 @@ XXX_scientific_name		Osteichthyes
 XXX_scientific_name		Ostracoda
 XXX_scientific_name		Polychaeta
 XXX_scientific_name		Pompholyx
-scientific_name		Radiosperma
+X_scientific_name		Radiosperma
 XXX_scientific_name		Synchaeta
-scientific_name		Tintinnida
+X_scientific_name		Tintinnida
 
-scientific_name		Aglantha
-scientific_name		Amphipoda
-scientific_name		Arnoglossus
-scientific_name		Ascidia
-scientific_name		Asterias rubens
-scientific_name		Asteroidea
-scientific_name		Balanus
-scientific_name		Beröe cucumis
-scientific_name		Bivalvia
-scientific_name		Branchiostoma
-scientific_name		Bryozoa
-scientific_name		Candacia
-scientific_name		Carcinus maenas
-scientific_name		Chydoridae
-scientific_name		Cnidaria
-scientific_name		Copepoda
-scientific_name		Ctenophora
-scientific_name		Cyanea
-scientific_name		Decapoda
-scientific_name		Diaphanosoma
-scientific_name		Diastylis
-scientific_name		Doliolum
-scientific_name		Echinodermata
-scientific_name		Euterpina acutifrons
-scientific_name		Gadus
-scientific_name		Gastropoda
-scientific_name		Harmothoe
-scientific_name		Harpacticoida
-scientific_name		Hydrachnidiae
-scientific_name		Hydrozoa
-scientific_name		Hyperia
-scientific_name		Hyperiidea
-scientific_name		Isopoda
-scientific_name		Leptoplanidae
-scientific_name		Leuckartiara
-scientific_name		Luidia sarsi
-scientific_name		Magelona
-scientific_name		Meganyctiphanes norvegica
-scientific_name		Metridia
-scientific_name		Microsetella norvegica
-scientific_name		Mysidae
-scientific_name		Necora puber
-scientific_name		Nemertea
-scientific_name		Noctiluca scintillans
-scientific_name		Obelia
-scientific_name		Oikopleura dioica
-scientific_name		Oncaea
-scientific_name		Ophiuroidea
-scientific_name		Ostracoda
-scientific_name		Phoronida
-scientific_name		Pisces
-scientific_name		Podon
-scientific_name		Polychaeta
-scientific_name		Porcellana
-scientific_name		Processa nouveli
-scientific_name		Pseudocuma
-scientific_name		Sagitta
-scientific_name		Synchaeta
-scientific_name		Tiaropsis
-scientific_name		Tomopteris
-scientific_name		Tomopteris helgolandica
-scientific_name		Tomopteris septentrionalis
-scientific_name		Trachylinae
+X_scientific_name		Aglantha
+X_scientific_name		Amphipoda
+X_scientific_name		Arnoglossus
+X_scientific_name		Ascidia
+X_scientific_name		Asterias rubens
+X_scientific_name		Asteroidea
+X_scientific_name		Balanus
+X_scientific_name		Beröe cucumis
+X_scientific_name		Bivalvia
+X_scientific_name		Branchiostoma
+X_scientific_name		Bryozoa
+X_scientific_name		Candacia
+X_scientific_name		Carcinus maenas
+X_scientific_name		Chydoridae
+X_scientific_name		Cnidaria
+X_scientific_name		Copepoda
+X_scientific_name		Ctenophora
+X_scientific_name		Cyanea
+X_scientific_name		Decapoda
+X_scientific_name		Diaphanosoma
+X_scientific_name		Diastylis
+X_scientific_name		Doliolum
+X_scientific_name		Echinodermata
+X_scientific_name		Euterpina acutifrons
+X_scientific_name		Gadus
+X_scientific_name		Gastropoda
+X_scientific_name		Harmothoe
+X_scientific_name		Harpacticoida
+X_scientific_name		Hydrachnidiae
+X_scientific_name		Hydrozoa
+X_scientific_name		Hyperia
+X_scientific_name		Hyperiidea
+X_scientific_name		Isopoda
+X_scientific_name		Leptoplanidae
+X_scientific_name		Leuckartiara
+X_scientific_name		Luidia sarsi
+X_scientific_name		Magelona
+X_scientific_name		Meganyctiphanes norvegica
+X_scientific_name		Metridia
+X_scientific_name		Microsetella norvegica
+X_scientific_name		Mysidae
+X_scientific_name		Necora puber
+X_scientific_name		Nemertea
+X_scientific_name		Noctiluca scintillans
+X_scientific_name		Obelia
+X_scientific_name		Oikopleura dioica
+X_scientific_name		Oncaea
+X_scientific_name		Ophiuroidea
+X_scientific_name		Ostracoda
+X_scientific_name		Phoronida
+X_scientific_name		Pisces
+X_scientific_name		Podon
+X_scientific_name		Polychaeta
+X_scientific_name		Porcellana
+X_scientific_name		Processa nouveli
+X_scientific_name		Pseudocuma
+X_scientific_name		Sagitta
+X_scientific_name		Synchaeta
+X_scientific_name		Tiaropsis
+X_scientific_name		Tomopteris
+X_scientific_name		Tomopteris helgolandica
+X_scientific_name		Tomopteris septentrionalis
+X_scientific_name		Trachylinae
 
-scientific_name		Monstrilla longiremis
-scientific_name		Corycaeus anglicus
-scientific_name		Paraeuchaeta
-scientific_name		Anomalocera patersoni
+X_scientific_name		Monstrilla longiremis
+X_scientific_name		Corycaeus anglicus
+X_scientific_name		Paraeuchaeta
+X_scientific_name		Anomalocera patersoni

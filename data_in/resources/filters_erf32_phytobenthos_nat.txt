@@ -14,3 +14,5 @@ sampler_type_code		RUTA
 # Zero is not accepted as a value for Cover (%)
 XXX-parameter		Cover (%)	Group-cover-1
 XXX-value		0	Group-cover-1
+
+##### station_name		LÅNGSKÄRET

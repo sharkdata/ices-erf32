@@ -46,8 +46,11 @@ dev_stage_code	C5	C4
 monitoring_program_code	O	CEMP
 monitoring_program_code	OSPAR	CEMP
 monitoring_program_code	O~H	CEMP~COMB
+monitoring_program_code	H~O	CEMP~COMB
 monitoring_program_code	OSPAR~HELCOM	CEMP~COMB
 monitoring_program_code	H~O~NTL	CEMP~COMB~NATL
+monitoring_program_code	NTL~H~O	CEMP~COMB~NATL
+monitoring_program_code	NTL~O~H	CEMP~COMB~NATL
 monitoring_program_code	H	COMB
 monitoring_program_code	H2	COMB
 monitoring_program_code	HELCOM	COMB
@@ -57,6 +60,9 @@ monitoring_program_code	National~OSPAR	NATL~CEMP
 monitoring_program_code	O~NTL	NATL~CEMP
 monitoring_program_code	H~NTL	NATL~COMB
 monitoring_program_code	H2~NTL	NATL~COMB
+monitoring_program_code	NTL~O	NATL~CEMP
+monitoring_program_code	NTL~H	NATL~COMB
+monitoring_program_code	NTL~H2	NATL~COMB
 monitoring_program_code	National~HELCOM	NATL~COMB
 
 plankton_sampling_method_code	HAU	IND
@@ -440,3 +446,32 @@ station_name	Strömstad_02	STRÖMSTAD_2
 station_name	Strömstad_03	STRÖMSTAD_3
 station_name	Strömstad_04	STRÖMSTAD_4
 station_name	Strömstad_05	STRÖMSTAD_5
+
+
+station_name	BREDA KRÅKOR	Breda kråkor
+station_name	ENSKÄR	Enskär
+station_name	HOSHOLMARNA	Hosholmarna
+station_name	ISSKÄREN	Isskären
+station_name	KÄRRINGEHOLMEN	Kärringeholmen
+station_name	LOTESKÄR	Loteskär
+station_name	LÖSS	Löss
+station_name	MA1	Ma1
+station_name	MA6	Ma6
+station_name	MÖAREHOLMEN	Möareholmen
+station_name	OXELUDDEN	Oxeludden
+station_name	SMETHOLM	Smetholm
+station_name	ST.GARKAST	St.Garkast
+station_name	SUNDSBÅDARNA	Sundsbådarna
+station_name	TORHAMN 10	Torhamn 10
+station_name	TORHAMN 4	Torhamn 4
+station_name	TORHAMN 6	Torhamn 6
+station_name	TÄRNÖ 3	Tärnö 3
+station_name	TÄRNÖ 5	Tärnö 5
+station_name	TÄRNÖ 6	Tärnö 6
+station_name	TÄRNÖ 8	Tärnö 8
+station_name	Wa3	WA3
+station_name	Wa4	WA4
+station_name	Wa5	WA5
+station_name	Wa8	WA8
+
+
