@@ -356,26 +356,26 @@ class ExportIcesContent(object):
             if not self._dict["SMTYP-R20"]:
                 self._dict["SMTYP-R20"] = "DTR"  # Diving transect.
 
-        #### TODO:
-        # Temporary fix for ZB with sizes.
-        if self._dict["DTYPE-R34"] == "ZP":
-            size_min_um = self._dict.get("size_min_um", "")
-            size_max_um = self._dict.get("size_max_um", "")
-            if size_min_um and size_max_um:
-                c = size_min_um + "-" + size_max_um
-                self._dict["SPECI-R38"] = (
-                    "<REMOVE>" + self._dict["SPECI-R38"]
-                )  # Is removed when generating Erf32 file.
-            elif size_min_um:
-                self._dict["SIZCL-R38"] = size_min_um
-                self._dict["SPECI-R38"] = (
-                    "<REMOVE>" + self._dict["SPECI-R38"]
-                )  # Is removed when generating Erf32 file.
-            elif size_max_um:
-                self._dict["SIZCL-R38"] = size_max_um
-                self._dict["SPECI-R38"] = (
-                    "<REMOVE>" + self._dict["SPECI-R38"]
-                )  # Is removed when generating Erf32 file.
+        # #### TODO:
+        # # Temporary fix for ZB with sizes.
+        # if self._dict["DTYPE-R34"] == "ZP":
+        #     size_min_um = self._dict.get("size_min_um", "")
+        #     size_max_um = self._dict.get("size_max_um", "")
+        #     if size_min_um and size_max_um:
+        #         c = size_min_um + "-" + size_max_um
+        #         self._dict["SPECI-R38"] = (
+        #             "<REMOVE>" + self._dict["SPECI-R38"]
+        #         )  # Is removed when generating Erf32 file.
+        #     elif size_min_um:
+        #         self._dict["SIZCL-R38"] = size_min_um
+        #         self._dict["SPECI-R38"] = (
+        #             "<REMOVE>" + self._dict["SPECI-R38"]
+        #         )  # Is removed when generating Erf32 file.
+        #     elif size_max_um:
+        #         self._dict["SIZCL-R38"] = size_max_um
+        #         self._dict["SPECI-R38"] = (
+        #             "<REMOVE>" + self._dict["SPECI-R38"]
+        #         )  # Is removed when generating Erf32 file.
 
         # QFLAG=B or S not accepted. S and B saved as VFLAG=S.
         qflag = self._dict["QFLAG-R38"]
