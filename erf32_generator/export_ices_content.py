@@ -192,7 +192,8 @@ class ExportIcesContent(object):
             )
             self._dict["CPORT-R38"] = str(counted_portions_integer)
         except:
-            pass
+            cport_str = str(self._get_value("counted_portions", ""))
+            self.logger.error("Failed to convert to float. CPORT: " + cport_str)
 
         self._dict["SDVOL-R38"] = self._get_value("sedimentation_volume_ml", "")
         self._dict["AMLNK-R21"] = ""  # Generated later.
@@ -356,7 +357,95 @@ class ExportIcesContent(object):
             if not self._dict["SMTYP-R20"]:
                 self._dict["SMTYP-R20"] = "DTR"  # Diving transect.
 
-        # #### TODO:
+        # Fix for ZB with size classes. 
+        # Add size class from ICES vocab: https://vocab.ices.dk/?ref=48
+
+        if self._dict["DTYPE-R34"] == "ZP":
+            size_class  = self._dict.get("size_class", "")
+            size_min_um = self._dict.get("size_min_um", "")
+            size_max_um = self._dict.get("size_max_um", "")
+            if (size_class == "") and size_min_um and size_max_um:
+                
+                if (size_min_um == "0") and (size_max_um == "60"):
+                    self._dict["SIZCL-R38"] = "26"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "0") and (size_max_um == "120"):
+                    self._dict["SIZCL-R38"] = "27"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "61") and (size_max_um == "120"):
+                    self._dict["SIZCL-R38"] = "29"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "141") and (size_max_um == "200"):
+                    self._dict["SIZCL-R38"] = "30"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "121") and (size_max_um == "200"):
+                    self._dict["SIZCL-R38"] = "34"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "121") and (size_max_um == "220"):
+                    self._dict["SIZCL-R38"] = "35"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "121") and (size_max_um == "140"):
+                    self._dict["SIZCL-R38"] = "36"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "201") and (size_max_um == "260"):
+                    self._dict["SIZCL-R38"] = "38"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "201") and (size_max_um == "220"):
+                    self._dict["SIZCL-R38"] = "39"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "201") and (size_max_um == "250"):
+                    self._dict["SIZCL-R38"] = "40"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "221") and (size_max_um == "400"):
+                    self._dict["SIZCL-R38"] = "41"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "261") and (size_max_um == "340"):
+                    self._dict["SIZCL-R38"] = "42"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "341") and (size_max_um == "400"):
+                    self._dict["SIZCL-R38"] = "43"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "401") and (size_max_um == "800"):
+                    self._dict["SIZCL-R38"] = "44"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "801") and (size_max_um == "1200"):
+                    self._dict["SIZCL-R38"] = "65"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "801") and (size_max_um == "1000"):
+                    self._dict["SIZCL-R38"] = "66"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "1001") and (size_max_um == "1200"):
+                    self._dict["SIZCL-R38"] = "67"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "1201") and (size_max_um == "1400"):
+                    self._dict["SIZCL-R38"] = "68"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                elif (size_min_um == "1401") and (size_max_um == "1600"):
+                    self._dict["SIZCL-R38"] = "69"
+                    self._dict["SIZRF-R21"] = "SIZGL"
+                else:
+                    self.logger.warning(
+                        "ZB: No size class for: " + size_min_um + " - " + size_max_um
+                    )
+
+            # if size_min_um and size_max_um:
+            #     c = size_min_um + "-" + size_max_um
+            #     self._dict["SPECI-R38"] = (
+            #         "<REMOVE>" + self._dict["SPECI-R38"]
+            #     )  # Is removed when generating Erf32 file.
+            # elif size_min_um:
+            #     self._dict["SIZCL-R38"] = size_min_um
+            #     self._dict["SPECI-R38"] = (
+            #         "<REMOVE>" + self._dict["SPECI-R38"]
+            #     )  # Is removed when generating Erf32 file.
+            # elif size_max_um:
+            #     self._dict["SIZCL-R38"] = size_max_um
+            #     self._dict["SPECI-R38"] = (
+            #         "<REMOVE>" + self._dict["SPECI-R38"]
+            #     )  # Is removed when generating Erf32 file.
+
+
+        #### OLD SOLUTION ####
         # # Temporary fix for ZB with sizes.
         # if self._dict["DTYPE-R34"] == "ZP":
         #     size_min_um = self._dict.get("size_min_um", "")
