@@ -3866,3 +3866,7 @@ Pectinaria s.lat.		980	Pectinariidae
 
 Bosmina longispina maritima	233755	106271	Bosmina (Eubosmina) coregoni
 Oikopleura dioica	242109	103407	Oikopleura (Vexillaria) dioica
+
+Oncaea		128690	Oncaea
+Porcellana		106838	Porcellana
+
