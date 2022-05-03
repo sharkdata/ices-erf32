@@ -1,5 +1,10 @@
 source_field	include_value	exclude_value	comments
 
+# dataset_name	SHARK_Zooplankton_2021_UMSC
+# dataset_name	SHARK_Zooplankton_2021_DEEP
+dataset_name	SHARK_Zooplankton_2021_SLCK
+dataset_name	SHARK_Zooplankton_2021_SMHI
+
 dataset_name	SHARK_Zooplankton_2020_UMSC
 dataset_name	SHARK_Zooplankton_2020_DEEP
 dataset_name	SHARK_Zooplankton_2020_SLCK

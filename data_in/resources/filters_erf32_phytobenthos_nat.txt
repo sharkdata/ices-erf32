@@ -1,11 +1,11 @@
 source_field	include_value	exclude_value	filter_group_id	comments
 
-dataset_name	SHARK_Epibenthos_2020_SLC-T
-dataset_name	SHARK_Epibenthos_2020_DEEP_Asko
-dataset_name	SHARK_Epibenthos_2020_DEEP_Singo
-dataset_name	SHARK_Epibenthos_2020_DEEP_Hoga_kusten
-dataset_name	SHARK_Epibenthos_2000_2020_DEEP_Gotland
-dataset_name	SHARK_Epibenthos_2020_LNU
+dataset_name	SHARK_Epibenthos_2021_SLC-T
+dataset_name	SHARK_Epibenthos_2021_DEEP_Asko
+dataset_name	SHARK_Epibenthos_2021_DEEP_Singo
+# dataset_name	SHARK_Epibenthos_2021_DEEP_Hoga_kusten
+dataset_name	SHARK_Epibenthos_2021_DEEP_Gotland
+dataset_name	SHARK_Epibenthos_2021_LNU
 
 # Due to problems with missing values for transect
 sampler_type_code		FRAMENET
