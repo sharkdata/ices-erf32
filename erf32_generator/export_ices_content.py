@@ -193,7 +193,8 @@ class ExportIcesContent(object):
             self._dict["CPORT-R38"] = str(counted_portions_integer)
         except:
             cport_str = str(self._get_value("counted_portions", ""))
-            self.logger.error("Failed to convert to float. CPORT: " + cport_str)
+            if cport_str != "":
+                self.logger.error("Failed to convert to float. CPORT: " + cport_str)
 
         self._dict["SDVOL-R38"] = self._get_value("sedimentation_volume_ml", "")
         self._dict["AMLNK-R21"] = ""  # Generated later.
