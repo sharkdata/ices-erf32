@@ -203,7 +203,13 @@ class ExportIcesContent(object):
         self._dict["SMLNK-R20"] = ""  # Generated later.
         self._dict["SMTYP-R20"] = self._get_value("sampler_type_code", "")
         self._dict["NETOP-R20"] = ""
-        self._dict["MESHS-R20"] = self._get_value("mesh_size_um", "")
+        
+        # Mesh size. Use either mesh_size_um or lower_mesh_size_um.
+        mesh_size_um = self._get_value("mesh_size_um", "")
+        if mesh_size_um == "":
+            mesh_size_um = self._get_value("lower_mesh_size_um", "")
+        self._dict["MESHS-R20"] = mesh_size_um
+
         self._dict["SAREA-R20"] = self._get_value("sampler_area_cm2", "")
         self._dict["LNSMB-R20"] = ""  # Not used.
         self._dict["SPEED-R20"] = ""
@@ -315,14 +321,20 @@ class ExportIcesContent(object):
             self._dict["PDMET-R20"] = "IND"
 
         else:
-            # Other.
-            (aphiaid, rlist) = self.translate_scientific_name_to_aphia_id(
-                self._dict["SPECI-R38"]
-            )
-            if aphiaid:
-                self._dict["SPECI-R38"] = aphiaid
-            if rlist:
-                self._dict["RLIST-R38"] = rlist
+            # Aphia ID now included i SHARK zip files.
+            aphia_id = self._dict.get("aphia_id", "")
+            if aphia_id:
+                self._dict["SPECI-R38"] = aphia_id
+                self._dict["RLIST-R38"] = "ERID"
+            else:
+                # Other.
+                (aphiaid, rlist) = self.translate_scientific_name_to_aphia_id(
+                    self._dict["SPECI-R38"]
+                )
+                if aphiaid:
+                    self._dict["SPECI-R38"] = aphiaid
+                if rlist:
+                    self._dict["RLIST-R38"] = rlist
 
         #
         # Add depth if missing.
