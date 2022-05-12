@@ -1,1 +1,3 @@
 source_field	dwc_field	from_value	to_value	comments
+sampler_type_code		RUTA	DIV
+sampler_type_code		MESHB	DIV
