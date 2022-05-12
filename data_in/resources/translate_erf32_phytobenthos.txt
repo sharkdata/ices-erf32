@@ -4,5 +4,3 @@ sampler_type_code		RUTA	DIV
 
 sampler_type_code		MESHB	DIV
 
-# sampler_type_code	RAMSKRAP	FRAMENET
-# sampler_type_code	RSKRAP	FRAMENET
