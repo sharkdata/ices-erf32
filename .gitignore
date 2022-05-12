@@ -9,6 +9,7 @@ test_data/TMP_DarwinCore
 
 **/*OLD*
 data_out
+data_in/datasets
 .vscode
 **/*.xml
 
