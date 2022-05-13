@@ -75,6 +75,7 @@ platform_code	7774	AA15
 platform_code	7790	AA30
 platform_code	7799	AA30
 platform_code	7798	AA33
+platform_code	7791	AA33
 platform_code		AA72
 platform_code	14	77AR
 platform_code	GA	77GA
@@ -89,16 +90,13 @@ platform_code	LY	77LY
 platform_code	18	77SN
 platform_code	34AR	34A3
 
+
 preservation_method_code	ETHG	ETH9GL
 
 sample_orderer_name_en	Swedish Environmental Protection Agency	SEPA
 sample_orderer_name_en	Swedish Agency for Marine and Water Management	SWAM
 sample_orderer_name_sv	Swedish Environmental Protection Agency	SEPA
 sample_orderer_name_sv	Swedish Agency for Marine and Water Management	SWAM
-
-sampler_type_code	RAMSKRAP	FRAMENET
-sampler_type_code	RSKRAP	FRAMENET
-sampler_type_code	RUTA	SQR
 
 #section_start_depth_m		0
 #section_end_depth_m		0
