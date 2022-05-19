@@ -529,6 +529,7 @@ class ExportIcesContent(object):
                 or ("Skagerrak" in self._get_value("dataset_file_name", ""))
                 or ("Skagerrack" in self._get_value("dataset_file_name", ""))
                 or ("Skagerak" in self._get_value("dataset_file_name", ""))
+                or ("SHARK_Epibenthos_2021_SLC-T" in self._get_value("dataset_file_name", ""))
             ):
                 self._dict["TREDT-R40"] = "CR"  # TREDT.
                 self._dict["TRSLN-R40"] = transect_data_dict.get(
@@ -686,8 +687,18 @@ class ExportIcesContent(object):
 
                 self._dict["TRSCS-R34"] = self._get_value("transect_min_distance_m")
                 self._dict["TRSCE-R34"] = self._get_value("transect_max_distance_m")
+                # self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
+                # self._dict["TRCED-R34"] = self._get_value("sample_max_depth_m")
+
+            if not self._get_value("TRCSD-R34"):
                 self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
-                self._dict["TRCED-R34"] = self._get_value("sample_max_depth_m")
+            elif not self._get_value("TRCSD-R34"):
+                self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
+
+            if not self._get_value("TRCED-R34"):
+                self._dict["TRCED-R34"] = self._get_value("sample_depth_m")
+            elif not self._get_value("TRCED-R34"):
+                self._dict["TRCED-R34"] = self._get_value("sample_depth_m")
 
             # If depth > 0: Set depth to 0 and DEPAD=I1.
             section_start_depth_m = self._get_value("section_start_depth_m", "")
