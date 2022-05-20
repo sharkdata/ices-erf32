@@ -204,34 +204,38 @@ class IcesErf32Format(object):
             # ===== Rec 40. =====
             # Rec 40 used for Phytobenthos. (Valid for Zoobentos if transects are used, but thats not the case for SMHI.)
             if rowdict.get("DTYPE-R34", "") == "PB":
-                if rec40_lastusedkey != rowdict.get("rec40_key", ""):
-                    # Close old.
-                    if rec38_element == True:
-                        out_rows.append("          </R38.BiologicalCommunityAbundance>")
-                    if rec34_element == True:
-                        out_rows.append("        </R34.BiologicalCommunitySample>")
-                    if rec40_element == True:
-                        out_rows.append("      </R40.TransectDescription>")
-                    rec38_element = False
-                    rec34_element = False
-                    # Open new.
-                    rec40_element = True
-                    rec40_lastusedkey = rowdict.get("rec40_key", "")
-                    out_rows.append("      <R40.TransectDescription>")
-                    #
-                    for field in self.rec40_fields:
-                        # if rowdict.get(field, False):
-                        if rowdict.get(field, "") != "":
-                            field_ices = field.split("-R")[0]
-                            out_rows.append(
-                                "        <"
-                                + field_ices
-                                + ">"
-                                + rowdict.get(field, "")
-                                + "</"
-                                + field_ices
-                                + ">"
-                            )
+
+                # FRAMENET and DIV are not collected as transect data.
+                if rowdict.get("sampler_type_code", "") not in ["FRAMENET", "DIV"]:
+
+                    if rec40_lastusedkey != rowdict.get("rec40_key", ""):
+                        # Close old.
+                        if rec38_element == True:
+                            out_rows.append("          </R38.BiologicalCommunityAbundance>")
+                        if rec34_element == True:
+                            out_rows.append("        </R34.BiologicalCommunitySample>")
+                        if rec40_element == True:
+                            out_rows.append("      </R40.TransectDescription>")
+                        rec38_element = False
+                        rec34_element = False
+                        # Open new.
+                        rec40_element = True
+                        rec40_lastusedkey = rowdict.get("rec40_key", "")
+                        out_rows.append("      <R40.TransectDescription>")
+                        #
+                        for field in self.rec40_fields:
+                            # if rowdict.get(field, False):
+                            if rowdict.get(field, "") != "":
+                                field_ices = field.split("-R")[0]
+                                out_rows.append(
+                                    "        <"
+                                    + field_ices
+                                    + ">"
+                                    + rowdict.get(field, "")
+                                    + "</"
+                                    + field_ices
+                                    + ">"
+                                )
 
             # ===== Rec 34. =====
             if rec34_lastusedkey != rowdict.get("rec34_key", ""):
