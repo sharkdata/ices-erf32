@@ -743,6 +743,11 @@ class ExportIcesContent(object):
                 )
                 pass
 
+        # FRAMENET and DIV are not collected as transect data.
+        if self._dict.get("sampler_type_code", "") in ["FRAMENET", "DIV"]:
+            self._dict["TRCSD-R34"] = ""
+            self._dict["TRCED-R34"] = ""
+
     def add_rec20(self, rec20_dict, rec20_fields):
         """ """
         #         self.rec20_fields = ['SLABO', 'SMLNK', 'SMTYP', 'MESHS', 'SAREA', 'LNSMB']
