@@ -152,7 +152,7 @@ station_name	G4 SJÄLSTENSUDDEN	G2
 station_name	G3 DÖNSTAUDDEN	G3
 station_name	GAVIK-1	GA1
 station_name	Y10 FÅGELSKÄR	Fågelskär
-station_name	HAVSTENS FJORD, N BRATTÖN	HAVSTENS FJORD N BRATTÖN
+station_name	HAVSTENS FJORD N BRATTÖN	HAVSTENS FJORD N BRATTÖN
 station_name	HAVSTENS FJORD, V LYCKORNA	HAVSTENS FJORD V LYCKORNA
 station_name	HÄSTHOLMEN	Hästholmen (Torhamn)
 station_name	Y9	Höglosmen
