@@ -293,6 +293,22 @@ station_name	N ÖRESUND 3	NORRA ÖRESUND_3
 station_name	N ÖRESUND 4	NORRA ÖRESUND_4
 station_name	N ÖRESUND 5	NORRA ÖRESUND_5
 
+station_name	HALSE ASKERÖFJORD 3	HALSE ASKERÖFJORD_3
+station_name	HALSE ASKERÖFJORD 5	HALSE ASKERÖFJORD_5
+station_name	KATTEGATT UTSJÖ 11	KATTEGATT UTSJÖ_11
+station_name	KLÄDESHOLMEN 5	KLÄDESHOLMEN_5
+station_name	KLÄDESHOLMEN 7	KLÄDESHOLMEN_7
+station_name	KLÄDESHOLMEN 9	KLÄDESHOLMEN_9
+station_name	KUNGSHAMN S 7	KUNGSHAMN_S_7
+station_name	KUNGSHAMN S 9	KUNGSHAMN_S_9
+station_name	LAHOLMSBUKTEN YTTRE 1	LAHOLMSBUKTEN INRE_1
+station_name	LYSEKIL V 1	LYSEKIL V_1
+station_name	LYSEKIL V 2	LYSEKIL V_2
+station_name	LYSEKIL V 3	LYSEKIL V_3
+station_name	LYSEKIL V 4	LYSEKIL V_4
+station_name	LYSEKIL V 5	LYSEKIL V_5
+
+
 # stationer i ZB SLC-T borde inte behövas längre
 #station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
 #station_name	Askimsfjorden_03	ASKIMSFJORDEN_3
