@@ -6,3 +6,5 @@ scientific_name		Evertebrata	Animalia
 scientific_name		Mesocyclops leuckarti	Mesocyclops leuckarti leuckarti
 scientific_name		Luidia sarsi	Luidia sarsii
 scientific_name		Hydrachnidiae	Hydrachnidia
+
+sex_code		N	
