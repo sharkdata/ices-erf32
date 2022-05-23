@@ -17,25 +17,25 @@ dataset_name	SHARK_Zoobenthos_2019_DEEP_HAV_Asko
 
 dataset_name	SHARK_Zoobenthos_2017_2020_SLC-T
 
-station_name		Hökvik1 #RECIP
-station_name		Hökvik2 #RECIP
-station_name		Hökvik3 #RECIP
-station_name		Hökvik4 #RECIP
-station_name		Hökvik5 #RECIP
+station_name		Hökvik1	#RECIP
+station_name		Hökvik2	#RECIP
+station_name		Hökvik3	#RECIP
+station_name		Hökvik4	#RECIP
+station_name		Hökvik5	#RECIP
 
-station_name		Hökvik1-75S #RECIP
-station_name		Hökvik2-20O #RECIP
-station_name		Hökvik3-50N #RECIP
-station_name		Hökvik4-150N #RECIP
-station_name		Hökvik5-300N #RECIP
-station_name		Strävliden01 #RECIP
-station_name		Strävliden02 #RECIP
-station_name		Strävliden03 #RECIP
-station_name		Strävliden04 #RECIP
-station_name		Strävliden05 #RECIP
-station_name		Strävliden06 #RECIP
-station_name		Marstrand reningsv01 #RECIP
-station_name		Marstrand reningsv02 #RECIP
-station_name		Marstrand reningsv03 #RECIP
+station_name		Hökvik1-75S	#RECIP
+station_name		Hökvik2-20O	#RECIP
+station_name		Hökvik3-50N	#RECIP
+station_name		Hökvik4-150N	#RECIP
+station_name		Hökvik5-300N	#RECIP
+station_name		Strävliden01	#RECIP
+station_name		Strävliden02	#RECIP
+station_name		Strävliden03	#RECIP
+station_name		Strävliden04	#RECIP
+station_name		Strävliden05	#RECIP
+station_name		Strävliden06	#RECIP
+station_name		Marstrand reningsv01	#RECIP
+station_name		Marstrand reningsv02	#RECIP
+station_name		Marstrand reningsv03	#RECIP
 
 
