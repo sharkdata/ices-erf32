@@ -360,6 +360,16 @@ station_name	RISÖ SÄRÖ 1	RISÖ-SÄRÖ_1
 station_name	RISÖ SÄRÖ 3	RISÖ-SÄRÖ_3
 #station_name	RISÖ SÄRÖ 4	RISÖ-SÄRÖ_4
 station_name	RISÖ SÄRÖ 5	RISÖ-SÄRÖ_5
+station_name	SKÄLDERVIKEN N VALDEMARSGROTTAN	SKÄLDERVIKEN_1
+station_name	SKÄLDERVIKEN N ARILD	SKÄLDERVIKEN_2
+station_name	SKÄLDERVIKEN DAGSHÖG	SKÄLDERVIKEN_3
+station_name	SKÄLDERVIKEN GRYTGRUNDEN	SKÄLDERVIKEN_4
+station_name	SKÄLDERVIKEN V VEJBYSTRAND	SKÄLDERVIKEN_5
+station_name	SKÄLDERVIKEN NO KULLEN	SKÄLDERVIKEN_6
+station_name	SKÄLDERVIKEN V ORSKÄR	SKÄLDERVIKEN_7
+station_name	SKÄLDERVIKEN 8	SKÄLDERVIKEN_8
+station_name	SKÄLDERVIKEN 9	SKÄLDERVIKEN_9
+station_name	Skälderviken 10	SKÄLDERVIKEN_10
 
 # stationer i ZB SLC-T borde inte behövas längre
 #station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
@@ -519,16 +529,7 @@ station_name	RISÖ SÄRÖ 5	RISÖ-SÄRÖ_5
 #station_name	Skagerrak utsjö_08	SKAGERRAK UTSJÖ_8
 #station_name	Skagerrak utsjö_09	SKAGERRAK UTSJÖ_9
 #station_name	SKAGERRAK UTSJÖ 10	SKAGERRAK UTSJÖ_10
-#station_name	Skälderviken_01	SKÄLDERVIKEN_1
-#station_name	Skälderviken_02	SKÄLDERVIKEN_2
-#station_name	Skälderviken_03	SKÄLDERVIKEN_3
-#station_name	Skälderviken_04	SKÄLDERVIKEN_4
-#station_name	Skälderviken_05	SKÄLDERVIKEN_5
-#station_name	Skälderviken_06	SKÄLDERVIKEN_6
-#station_name	Skälderviken_07	SKÄLDERVIKEN_7
-#station_name	Skälderviken_08	SKÄLDERVIKEN_8
-#station_name	Skälderviken_09	SKÄLDERVIKEN_9
-#station_name	Skälderviken_10	SKÄLDERVIKEN_10
+
 
 #station_name	Strävliden01	STRÄVLIDEN_1
 #station_name	Strävliden02	STRÄVLIDEN_2
