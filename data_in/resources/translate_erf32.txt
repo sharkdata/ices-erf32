@@ -324,6 +324,8 @@ station_name	MARSTRANDSFJORDEN 9	MARSTRANDSFJORDEN_9
 station_name	N KOSTERFJORDEN 1	N_KOSTERFJORDEN_1
 station_name	N KOSTERFJORDEN 2	N_KOSTERFJORDEN_2
 station_name	N KOSTERFJORDEN 3	N_KOSTERFJORDEN_3
+station_name	N KOSTERFJORDEN 4	N_KOSTERFJORDEN_4
+station_name	N KOSTERFJORDEN 6	N_KOSTERFJORDEN_6
 station_name	ONSALA N YTTRE KUST 8	ONSALA N YTTRE KUST_8
 station_name	ONSALA N YTTRE KUST 11	ONSALA N YTTRE KUST_11
 station_name	ONSALA N YTTRE KUST 12	ONSALA N YTTRE KUST_12
@@ -342,6 +344,22 @@ station_name	SYD KOSTER YTTRE KUST 5	SYD KOSTER YTTRE KUST_5
 station_name	SYD KOSTER YTTRE KUST 6	SYD KOSTER YTTRE KUST_6
 station_name	SYD KOSTER YTTRE KUST 7	SYD KOSTER YTTRE KUST_7
 station_name	SYD KOSTER YTTRE KUST 8	SYD KOSTER YTTRE KUST_8
+station_name	NORDRE ÄLVS FJORD 1	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
+station_name	SÄLÖ FJORD 2	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
+station_name	NORDRE ÄLVS FJORD 3	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
+station_name	NORDRE ÄLVS FJORD 4	NORDRE ÄLVS FJORD/SÄLÖ FJORD_4
+station_name	NORDRE ÄLVS FJORD 5	NORDRE ÄLVS FJORD/SÄLÖ FJORD_5
+station_name	SÄLÖ FJORD 6	NORDRE ÄLVS FJORD/SÄLÖ FJORD_6
+station_name	SÄLÖ FJORD 7	NORDRE ÄLVS FJORD/SÄLÖ FJORD_7
+station_name	NORDRE ÄLVS FJORD 8	NORDRE ÄLVS FJORD/SÄLÖ FJORD_8
+station_name	SÄLÖ FJORD 9	NORDRE ÄLVS FJORD/SÄLÖ FJORD_9
+station_name	SÄLÖ FJORD 10	NORDRE ÄLVS FJORD/SÄLÖ FJORD_10
+
+station_name	RISÖ SÄRÖ 1	RISÖ-SÄRÖ_1
+#station_name	RISÖ SÄRÖ 2	RISÖ-SÄRÖ_2
+station_name	RISÖ SÄRÖ 3	RISÖ-SÄRÖ_3
+#station_name	RISÖ SÄRÖ 4	RISÖ-SÄRÖ_4
+station_name	RISÖ SÄRÖ 5	RISÖ-SÄRÖ_5
 
 # stationer i ZB SLC-T borde inte behövas längre
 #station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
@@ -483,11 +501,7 @@ station_name	SYD KOSTER YTTRE KUST 8	SYD KOSTER YTTRE KUST_8
 #station_name	Onsala kust_03	ONSALA KUST_3
 #station_name	Onsala kust_04	ONSALA KUST_4
 #station_name	Onsala kust_05	ONSALA KUST_5
-#station_name	Risö-Särö_01	RISÖ-SÄRÖ_1
-#station_name	Risö-Särö_02	RISÖ-SÄRÖ_2
-#station_name	Risö-Särö_03	RISÖ-SÄRÖ_3
-#station_name	Risö-Särö_04	RISÖ-SÄRÖ_4
-#station_name	Risö-Särö_05	RISÖ-SÄRÖ_5
+
 #station_name	Sälö fjord_01	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
 #station_name	Sälö fjord_02	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
 #station_name	Sälö fjord_03	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
