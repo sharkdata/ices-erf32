@@ -9,8 +9,10 @@ dataset_name	SHARK_Epibenthos_2021_LNU
 
 # Due to problems with missing values for transect
 # sampler_type_code		FRAMENET
-# sampler_type_code		RUTA
-# sampler_type_code		MESHB
+
+# Excluded do to lack of area information
+sampler_type_code		RUTA
+sampler_type_code		MESHB
 
 # Zero is not accepted as a value for Cover (%)
 XXX-parameter		Cover (%)	Group-cover-1
