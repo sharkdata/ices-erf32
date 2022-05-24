@@ -107,18 +107,22 @@ class ExportStations:
                 row = [item.strip() for item in row.split("\t")]
                 if index == 0:
                     header = row
+                    # Remove strange characters.
+                    header[0] = "Station"
                 else:
                     if len(row) >= 2:
                         row_dict = dict(zip(header, map(str, row)))
                         #
-                        station_name = str(row_dict.get("Station_Name", ""))
-                        if station_name:
-                            if station_name not in self.station_info_dict.keys():
-                                self.station_info_dict[station_name] = row_dict
-                            else:
-                                self.logger.warning(
-                                    "Stations, duplicate row: " + station_name
-                                )
+                        row_type = str(row_dict.get("Station", ""))
+                        if row_type == "Station":
+                            station_name = str(row_dict.get("Station_Name", ""))
+                            if station_name:
+                                if station_name not in self.station_info_dict.keys():
+                                    self.station_info_dict[station_name] = row_dict
+                                else:
+                                    self.logger.warning(
+                                        "Stations, duplicate row: " + station_name
+                                    )
 
 
 class TranslateTaxa:
