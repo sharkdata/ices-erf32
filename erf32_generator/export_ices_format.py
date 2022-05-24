@@ -205,8 +205,14 @@ class IcesErf32Format(object):
             # Rec 40 used for Phytobenthos. (Valid for Zoobentos if transects are used, but thats not the case for SMHI.)
             if rowdict.get("DTYPE-R34", "") == "PB":
 
-                # FRAMENET and DIV are not collected as transect data.
-                if rowdict.get("sampler_type_code", "") not in ["FRAMENET", "DIV"]:
+
+
+                # # NOTE: Can't handle transects with mixed FRAMENET and non FRAMENET.
+                # # FRAMENET and DIV are not collected as transect data.
+                # if rowdict.get("sampler_type_code", "") not in ["FRAMENET", "DIV"]:
+                if True:
+
+
 
                     if rec40_lastusedkey != rowdict.get("rec40_key", ""):
                         # Close old.
