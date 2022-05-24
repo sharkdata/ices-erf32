@@ -692,12 +692,12 @@ class ExportIcesContent(object):
 
             if not self._get_value("TRCSD-R34"):
                 self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
-            elif not self._get_value("TRCSD-R34"):
-                self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
+            if not self._get_value("TRCSD-R34"):
+                self._dict["TRCSD-R34"] = self._get_value("sample_depth_m")
 
             if not self._get_value("TRCED-R34"):
-                self._dict["TRCED-R34"] = self._get_value("sample_depth_m")
-            elif not self._get_value("TRCED-R34"):
+                self._dict["TRCED-R34"] = self._get_value("sample_max_depth_m")
+            if not self._get_value("TRCED-R34"):
                 self._dict["TRCED-R34"] = self._get_value("sample_depth_m")
 
             # If depth > 0: Set depth to 0 and DEPAD=I1.
@@ -743,10 +743,15 @@ class ExportIcesContent(object):
                 )
                 pass
 
-        # FRAMENET and DIV are not collected as transect data.
-        if self._dict.get("sampler_type_code", "") in ["FRAMENET", "DIV"]:
-            self._dict["TRCSD-R34"] = ""
-            self._dict["TRCED-R34"] = ""
+
+        # # NOTE: Can't handle transects with mixed FRAMENET and non FRAMENET.
+        # # FRAMENET and DIV are not collected as transect data.
+        # if self._dict.get("sampler_type_code", "") in ["FRAMENET", "DIV"]:
+        #     self._dict["TRCSD-R34"] = ""
+        #     self._dict["TRCED-R34"] = ""
+
+
+
 
     def add_rec20(self, rec20_dict, rec20_fields):
         """ """
