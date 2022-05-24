@@ -307,7 +307,7 @@ station_name	N ÖRESUND 2	NORRA ÖRESUND_2
 station_name	N ÖRESUND 3	NORRA ÖRESUND_3
 station_name	N ÖRESUND 4	NORRA ÖRESUND_4
 station_name	N ÖRESUND 5	NORRA ÖRESUND_5
-station_name	N ÖRESUND 6	NORRA ÖRESUND_6
+station_name	N ÖRESUND 6	N ÖRESUND_6
 station_name	NORRA ÖRESUND_6 > N ÖRESUND_6 
 station_name	HALSE ASKERÖFJORD 3	HALSE ASKERÖFJORD_3
 station_name	HALSE ASKERÖFJORD 5	HALSE ASKERÖFJORD_5
