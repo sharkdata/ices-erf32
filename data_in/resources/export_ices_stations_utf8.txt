@@ -1239,6 +1239,7 @@ Station	Record	13611	SE	ÄLGÖFJORD 5	ÄLGÖFJORD 5	2017		O	545	B~T~E~S	57.90784
 Station	Record	13612	SE	ÄLGÖFJORD 4	ÄLGÖFJORD 4	2017		O	545	B~T~E~S	57.89612	0.05000	11.66904	0.10000		ZB				false 
 Station	Record	13613	SE	ASKERÖFJORDEN	ASKERÖFJORDEN	2017		O	545	B~T~E~S	58.07050	0.05000	11.78670	0.10000		ZB				false 
 Station	Record	13614	SE	S KOSTERFJORDEN 3	S KOSTERFJORDEN 3	2017		O~NTL	545	B~T~E~S	58.8233	0.05000	11.08833	0.10000		ZB				false
+Station	Record	13615	SE	LAHOLMSBUKTEN YTTRE 1	LAHOLMSBUKTEN YTTRE 1	2017		O~H~NTL	545	B~T~E~S	56.60867	0.05000	12.67801	0.10000		ZB				false
 
 Relation	Header	Relation_Code	Relation_RelatedCode	Relation_Country	Relation_RelatedCountry	Relation_Name	Relation_RelatedName	Relation_ActiveFromDate	Relation_RelatedActiveFromDate	Relation_RelationType
 Relation	Record	5820	5750	SE	SE	KA2	FLADEN	      1998	      1965	4 
