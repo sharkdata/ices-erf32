@@ -321,7 +321,10 @@ station_name	LYSEKIL V 2	LYSEKIL V_2
 station_name	LYSEKIL V 3	LYSEKIL V_3
 station_name	LYSEKIL V 4	LYSEKIL V_4
 station_name	LYSEKIL V 5	LYSEKIL V_5
+station_name	BROFJORDEN 2	Brofjorden 2
+station_name	BROFJORDEN 3	Brofjorden 3
 station_name	BROFJORDEN 4	Brofjorden 4
+station_name	BROFJORDEN 6	Brofjorden 6
 station_name	BROFJORDEN 8	Brofjorden 8
 station_name	BROFJORDEN 9	Brofjorden_9
 station_name	MARSTRANDSFJORDEN 1	MARSTRANDSFJORDEN_1
@@ -381,12 +384,8 @@ station_name	SKÄLDERVIKEN V ORSKÄR	SKÄLDERVIKEN_7
 station_name	SKÄLDERVIKEN 8	SKÄLDERVIKEN_8
 station_name	SKÄLDERVIKEN 9	SKÄLDERVIKEN_9
 station_name	Skälderviken 10	SKÄLDERVIKEN_10
-
 station_name	ASKERÖFJORD	ASKERÖFJORDEN
 station_name	LAHOLMSBUKTEN YTTRE 8	LAHOLMSBUKTEN YTTRE_8
-station_name	BROFJORDEN 2	Brofjorden 2
-station_name	BROFJORDEN 3	Brofjorden 3
-station_name	BROFJORDEN 6	Brofjorden 6
 station_name	DANAFJORD	Danafjord
 station_name	HAVSTENS FJORD, N BRATTÖN	HAVSTENS FJORD. N BRATTÖN
 station_name	Havstens fjord. N Brattön	HAVSTENS FJORD. N BRATTÖN
@@ -401,13 +400,8 @@ station_name	Havstens fjord. N Brattön	HAVSTENS FJORD. N BRATTÖN
 #station_name	Bottnefjorden_03	BOTTNEFJORDEN_3
 #station_name	Bottnefjorden_04	BOVALLSTRAND_2
 #station_name	Bottnefjorden_05	BOVALLSTRAND_1
-#station_name	BROFJORDEN_2	Brofjorden 2
-#station_name	BROFJORDEN_3	Brofjorden 3
-#station_name	BROFJORDEN_4	Brofjorden 4
 #station_name	BROFJORDEN_5	Brofjorden 5
-#station_name	BROFJORDEN_6	Brofjorden 6
 #station_name	BROFJORDEN_7	Brofjorden 7
-#station_name	BROFJORDEN_8	Brofjorden 8
 #station_name	Fjällbacka_01	FJÄLLBACKA_9
 #station_name	Fjällbacka_03	FJÄLLBACKA_3
 #station_name	Fjällbacka inre_01	FJÄLLBACKA_INRE_9
