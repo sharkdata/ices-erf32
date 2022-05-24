@@ -163,7 +163,8 @@ station_name	KF4_KÅLLA - GÅSEFJÄRDEN	KF4_Kålla-/Gåsefjärden
 station_name	KF5_KÅLLA - GÅSEFJÄRDEN	KF5_Kålla-/Gåsefjärden
 station_name	L:A MIDDELGRUND	L_A MIDDELGRUND
 station_name	L9 LAHOLMSBUKTEN	L9
-station_name	LD2_Lindödjupet<or>LD2	LD2_Lindödjupet
+station_name	LD2	LD2_Lindödjupet
+station_name	LD2_LINDÖDJUPET	LD2_Lindödjupet
 station_name	N10	N 10
 station_name	N 9 	N 9
 station_name	N_n_B_01	N_n_B_8
@@ -231,7 +232,16 @@ station_name	6019 S NYGRUND	6019
 station_name	6020 Y HÅLLSFJÄRDEN	6020
 station_name	6022 LILLBERGET	6022
 station_name	6025 SKVALLRAN	6025
+station_name	SB 17B	SB 17b
+station_name	VAE 4B	VAE 4b
 
+# Stationer i Epibenthos
+station_name	ELLÖSE 7	ELLÖSE_7
+station_name	GROGARN	Grogarn
+station_name	HOBURG	Hoburg
+station_name	KRONVALD	Kronvald
+station_name	LACKA	Lacka
+station_name	Wa2	WA2
 
 # stationer i PB SLC-T borde inte behövas längre
 #station_name	Blekeskär	BLEKESKÄR
@@ -259,6 +269,7 @@ station_name	6025 SKVALLRAN	6025
 #station_name	Yttre Vannholmen	YTTRE VANNHOLMEN
 #station_name	Ärholmen	ÄRHOLMEN
 
+# stationer zoobenthos SLC_T
 station_name	ASKIMSFJORDEN 7	ASKIMSFJORDEN_7
 station_name	FJÄLLBACKA 2	FJÄLLBACKA_2
 station_name	FJÄLLBACKA 4	FJÄLLBACKA_4
@@ -295,7 +306,6 @@ station_name	N ÖRESUND 3	NORRA ÖRESUND_3
 station_name	N ÖRESUND 4	NORRA ÖRESUND_4
 station_name	N ÖRESUND 5	NORRA ÖRESUND_5
 station_name	N ÖRESUND 6	NORRA ÖRESUND_6
-
 station_name	HALSE ASKERÖFJORD 3	HALSE ASKERÖFJORD_3
 station_name	HALSE ASKERÖFJORD 5	HALSE ASKERÖFJORD_5
 station_name	KATTEGATT UTSJÖ 11	KATTEGATT UTSJÖ_11
@@ -354,7 +364,6 @@ station_name	SÄLÖ FJORD 7	NORDRE ÄLVS FJORD/SÄLÖ FJORD_7
 station_name	NORDRE ÄLVS FJORD 8	NORDRE ÄLVS FJORD/SÄLÖ FJORD_8
 station_name	SÄLÖ FJORD 9	NORDRE ÄLVS FJORD/SÄLÖ FJORD_9
 station_name	SÄLÖ FJORD 10	NORDRE ÄLVS FJORD/SÄLÖ FJORD_10
-
 station_name	RISÖ SÄRÖ 1	RISÖ-SÄRÖ_1
 #station_name	RISÖ SÄRÖ 2	RISÖ-SÄRÖ_2
 station_name	RISÖ SÄRÖ 3	RISÖ-SÄRÖ_3
@@ -370,6 +379,14 @@ station_name	SKÄLDERVIKEN V ORSKÄR	SKÄLDERVIKEN_7
 station_name	SKÄLDERVIKEN 8	SKÄLDERVIKEN_8
 station_name	SKÄLDERVIKEN 9	SKÄLDERVIKEN_9
 station_name	Skälderviken 10	SKÄLDERVIKEN_10
+
+station_name	ASKERÖFJORD	ASKERÖFJORDEN
+station_name	LAHOLMSBUKTEN YTTRE 8	LAHOLMSBUKTEN YTTRE_8
+station_name	BROFJORDEN 2	Brofjorden 2
+station_name	BROFJORDEN 3	Brofjorden 3
+station_name	BROFJORDEN 6	Brofjorden 6
+station_name	DANAFJORD	Danafjord
+station_name	HAVSTENS FJORD, N BRATTÖN	Havstens fjord. N Brattön
 
 # stationer i ZB SLC-T borde inte behövas längre
 #station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
@@ -511,7 +528,6 @@ station_name	Skälderviken 10	SKÄLDERVIKEN_10
 #station_name	Onsala kust_03	ONSALA KUST_3
 #station_name	Onsala kust_04	ONSALA KUST_4
 #station_name	Onsala kust_05	ONSALA KUST_5
-
 #station_name	Sälö fjord_01	NORDRE ÄLVS FJORD/SÄLÖ FJORD_1
 #station_name	Sälö fjord_02	NORDRE ÄLVS FJORD/SÄLÖ FJORD_2
 #station_name	Sälö fjord_03	NORDRE ÄLVS FJORD/SÄLÖ FJORD_3
@@ -529,8 +545,6 @@ station_name	Skälderviken 10	SKÄLDERVIKEN_10
 #station_name	Skagerrak utsjö_08	SKAGERRAK UTSJÖ_8
 #station_name	Skagerrak utsjö_09	SKAGERRAK UTSJÖ_9
 #station_name	SKAGERRAK UTSJÖ 10	SKAGERRAK UTSJÖ_10
-
-
 #station_name	Strävliden01	STRÄVLIDEN_1
 #station_name	Strävliden02	STRÄVLIDEN_2
 #station_name	Strävliden03	STRÄVLIDEN_3
