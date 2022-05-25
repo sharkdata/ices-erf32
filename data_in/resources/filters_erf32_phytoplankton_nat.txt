@@ -12,7 +12,7 @@ scientific_name		Strombidium
 XXXX_scientific_name		Helicostomella fusiformis
 XXXX_scientific_name		Coxliella helix
 XXXX_scientific_name		alpingella acuminata
-XXXX_scientific_name		Tintinnopsis
+scientific_name		Tintinnopsis
 scientific_name		Gymnodinium litoralis
 scientific_name		Tiarina fusus
 scientific_name		Tintinnidae
@@ -22,6 +22,9 @@ scientific_name		Helicostomella subulata
 scientific_name		Salpingella acuminata
 scientific_name		Ensiculifera carinata
 scientific_name		Didinium nasutum
+scientific_name		Paulinella ovalis
+scientific_name		Eutintinnus
+scientific_name		Acanthostomella norvegica
 
 
 scientific_name		Unicell	Group-bvol-1
