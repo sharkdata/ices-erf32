@@ -22,6 +22,10 @@ scientific_name		Eutintinnus
 scientific_name		Acanthostomella norvegica
 scientific_name		Mesodinium
 scientific_name		Verrucodesmus
+scientific_name		Ensiculifera
+scientific_name		Oxytoxum laticeps
+scientific_name		Entomoneis
+
 scientific_name		Unicell	Group-bvol-1
 size_class		29	Group-bvol-1
 
