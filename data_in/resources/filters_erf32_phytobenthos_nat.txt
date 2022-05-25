@@ -14,8 +14,12 @@ dataset_name	SHARK_Epibenthos_2021_LNU
 sampler_type_code		RUTA
 sampler_type_code		MESHB
 
+# Excluded because FRAMNETS are taken outside of the transect and the position of the sample is not availible
+shark_sample_id_md5		0ba35b1637257d8bdfee0d8c67c21d08 
+shark_sample_id_md5		297e76f612e1c9aef8cb619bb27223b7 
+shark_sample_id_md5		abad7136e1a3f64f42c1bc0b8b54c091 
+
+##### station_name		LÅNGSKÄRET
 # Zero is not accepted as a value for Cover (%)
 XXX-parameter		Cover (%)	Group-cover-1
 XXX-value		0	Group-cover-1
-
-##### station_name		LÅNGSKÄRET
