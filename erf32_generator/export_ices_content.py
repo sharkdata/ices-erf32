@@ -315,10 +315,10 @@ class ExportIcesContent(object):
                 self._dict["SPECI-R38"] = scientific_name
             if rlist:
                 self._dict["RLIST-R38"] = rlist
-                self._dict["SIZRF-R21"] = rlist
+                self._dict["SIZRF-R21"] = "PEG_BVOL2021"
             else:
                 self._dict["RLIST-R38"] = "PEG_BVOL"
-                self._dict["SIZRF-R21"] = "PEG_BVOL"
+                self._dict["SIZRF-R21"] = "PEG_BVOL2021"
             #
             self._dict["PDMET-R20"] = "IND"
 
