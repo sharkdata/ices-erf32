@@ -389,6 +389,7 @@ station_name	ASKERÖFJORD	ASKERÖFJORDEN
 station_name	DANAFJORD	Danafjord
 station_name	HAVSTENS FJORD, N BRATTÖN	HAVSTENS FJORD. N BRATTÖN
 station_name	Havstens fjord. N Brattön	HAVSTENS FJORD. N BRATTÖN
+station_name	GULLMARN 1	GULLMARN_1
 
 # stationer i ZB SLC-T borde inte behövas längre
 #station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
