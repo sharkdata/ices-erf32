@@ -3872,4 +3872,3 @@ Porcellana		106838	Porcellana
 Hirudinida		2041	Hirudinea
 Ruppia spiralis		234030	Ruppia
 Bdelloidea		17968	Bdelloidea
-Scenedesmus s.lat.		160602	Scenedesmus
