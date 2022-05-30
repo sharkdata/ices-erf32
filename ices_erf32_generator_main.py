@@ -172,10 +172,10 @@ class IcesErf32Generator:
 if __name__ == "__main__":
     """ """
     config_files = [
-        "erf32_config/ices_erf32_zooplankton.yaml",
-        "erf32_config/ices_erf32_zoobenthos.yaml",
+        # "erf32_config/ices_erf32_zooplankton.yaml",
+        # "erf32_config/ices_erf32_zoobenthos.yaml",
         "erf32_config/ices_erf32_phytoplankton.yaml",
-        "erf32_config/ices_erf32_phytobenthos.yaml",
+        # "erf32_config/ices_erf32_phytobenthos.yaml",
     ]
     generator = IcesErf32Generator()
     for config_file in config_files:
