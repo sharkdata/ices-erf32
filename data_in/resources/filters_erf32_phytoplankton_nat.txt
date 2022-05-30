@@ -6,7 +6,6 @@ dataset_name	SHARK_Phytoplankton_2021_UMSC
 
 # Phytoplankton species (problems with OSPAR area biovolumes not in ICES HELCOM PEG list)
 scientific_name		Ciliophora
-scientific_name		Favella
 scientific_name		Strombidium
 scientific_name		Tintinnopsis
 scientific_name		Gymnodinium litoralis
@@ -16,12 +15,9 @@ scientific_name		Stenosemella
 scientific_name		Helicostomella subulata
 scientific_name		Salpingella acuminata
 scientific_name		Ensiculifera carinata
-scientific_name		Didinium nasutum
 scientific_name		Paulinella ovalis
 scientific_name		Eutintinnus
 scientific_name		Acanthostomella norvegica
-scientific_name		Mesodinium
-scientific_name		Verrucodesmus
 scientific_name		Ensiculifera
 scientific_name		Oxytoxum laticeps
 scientific_name		Entomoneis
@@ -29,8 +25,7 @@ scientific_name		Entomoneis
 scientific_name		Unicell	Group-bvol-1
 size_class		29	Group-bvol-1
 
-XXXX_scientific_name		Leprotintinnus pellucidus
-XXXX_scientific_name		Helicostomella fusiformis
-XXXX_scientific_name		Coxliella helix
-XXXX_scientific_name		alpingella acuminata
-XXXX_scientific_name		Stenosemella
+XXXX_scientific_name		Favella
+XXXX_scientific_name		Didinium nasutum
+XXXX_scientific_name		Mesodinium
+XXXX_scientific_name		Verrucodesmus
