@@ -959,3 +959,5 @@ Octactis speculum	Octactis speculum	PEG_BVOL
 Protodinium simplex	Protodinium simplex	PEG_BVOL
 Tripos horridus	Tripos horridus	PEG_BVOL
 Monoraphidium arcuatum	Ankistrodesmus arcuatus	PEG_BVOL
+
+Scenedesmus s.lat.	Scenedesmus	PEG_BVOL

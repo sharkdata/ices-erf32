@@ -307,6 +307,7 @@ class ExportIcesContent(object):
 
         # Phytoplankton.
         if self._dict["DTYPE-R34"] == "PP":
+
             (scientific_name, rlist) = self.translate_scientific_name_to_helcom_peg(
                 self._get_value("scientific_name", self._dict["SPECI-R38"])
             )
@@ -314,10 +315,10 @@ class ExportIcesContent(object):
                 self._dict["SPECI-R38"] = scientific_name
             if rlist:
                 self._dict["RLIST-R38"] = rlist
-                self._dict["SIZRF-R21"] = "PEG_BVOL2017"
+                self._dict["SIZRF-R21"] = rlist
             else:
                 self._dict["RLIST-R38"] = "PEG_BVOL"
-                self._dict["SIZRF-R21"] = "PEG_BVOL2017"
+                self._dict["SIZRF-R21"] = "PEG_BVOL"
             #
             self._dict["PDMET-R20"] = "IND"
 
