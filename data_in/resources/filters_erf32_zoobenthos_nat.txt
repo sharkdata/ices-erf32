@@ -33,6 +33,9 @@ dataset_name	SHARK_Zoobenthos_2016_SLC-T
 dataset_name	SHARK_Zoobenthos_2017_2020_SLC-T
 dataset_name	SHARK_Zoobenthos_2007_2016_DEEP_Asko
 
+dataset_name	SHARK_Zoobenthos_1979_1997_UMSC_BMP
+dataset_name	SHARK_Zoobenthos_1990_1999_UMSC
+
 station_name		Hökvik1	#RECIP
 station_name		Hökvik2	#RECIP
 station_name		Hökvik3	#RECIP
