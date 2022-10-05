@@ -69,26 +69,26 @@ monitoring_program_code	National~HELCOM	NATL~COMB
 
 plankton_sampling_method_code	HAU	IND
 
-platform_code	74	AA15
-platform_code	7710	77SE
-platform_code	7774	AA15
-platform_code	7790	AA30
-platform_code	7799	AA30
-platform_code	7798	AA33
-platform_code	7791	AA33
+#platform_code	74	AA15
+#platform_code	7710	77SE
+#platform_code	7774	AA15
+#platform_code	7790	AA30
+#platform_code	7799	AA30
+#platform_code	7798	AA33
+#platform_code	7791	AA33
 platform_code		AA72
-platform_code	14	77AR
-platform_code	GA	77GA
-platform_code	HE	77HP
-platform_code	K2	77K2
-platform_code	K5	77K5
-platform_code	1	77KB
-platform_code	2	77KC
+#platform_code	14	77AR
+#platform_code	GA	77GA
+#platform_code	HE	77HP
+#platform_code	K2	77K2
+#platform_code	K5	77K5
+#platform_code	1	77KB
+#platform_code	2	77KC
 platform_code	KD	77KD
 platform_code	28	77KF
-platform_code	LY	77LY
-platform_code	18	77SN
-platform_code	34AR	34A3
+#platform_code	LY	77LY
+#platform_code	18	77SN
+#platform_code	34AR	34A3
 
 
 preservation_method_code	ETHG	ETH9GL
