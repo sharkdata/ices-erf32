@@ -1,20 +1,22 @@
 source_field	include_value	exclude_value	filter_group_id	comments
 
-dataset_name	SHARK_Epibenthos_2021_SLC-T
-dataset_name	SHARK_Epibenthos_2021_DEEP_Asko
-dataset_name	SHARK_Epibenthos_2021_DEEP_Singo
-dataset_name	SHARK_Epibenthos_2021_DEEP_Hoga_kusten
-dataset_name	SHARK_Epibenthos_2021_DEEP_Gotland
-dataset_name	SHARK_Epibenthos_2021_LNU
+dataset_name	SHARK_Epibenthos_2022_SLC-T
+#dataset_name	SHARK_Epibenthos_2022_DEEP_Asko
+#dataset_name	SHARK_Epibenthos_2022_DEEP_Singo
+#dataset_name	SHARK_Epibenthos_2022_DEEP_Hoga_kusten
+#dataset_name	SHARK_Epibenthos_2022_DEEP_Gotland
+#dataset_name	SHARK_Epibenthos_2022_LNU
 
 # Excluded do to lack of area information
 sampler_type_code		RUTA
 sampler_type_code		MESHB
 
 # Excluded because FRAMNETS are taken outside of the transect and the position of the sample is not availible
-shark_sample_id_md5		0ba35b1637257d8bdfee0d8c67c21d08 
-shark_sample_id_md5		297e76f612e1c9aef8cb619bb27223b7 
-shark_sample_id_md5		abad7136e1a3f64f42c1bc0b8b54c091 
+
+#for data from 2021
+#shark_sample_id_md5		0ba35b1637257d8bdfee0d8c67c21d08 
+#shark_sample_id_md5		297e76f612e1c9aef8cb619bb27223b7 
+#shark_sample_id_md5		abad7136e1a3f64f42c1bc0b8b54c091 
 
 ##### station_name		LÅNGSKÄRET
 # Zero is not accepted as a value for Cover (%)
