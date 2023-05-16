@@ -7,6 +7,8 @@ dataset_name	SHARK_Epibenthos_2022_SLC-T
 #dataset_name	SHARK_Epibenthos_2022_DEEP_Gotland
 #dataset_name	SHARK_Epibenthos_2022_LNU
 
+#test
+
 # Excluded do to lack of area information
 sampler_type_code		RUTA
 sampler_type_code		MESHB
