@@ -4,3 +4,6 @@ sampler_type_code		RUTA	DIV
 
 sampler_type_code		MESHB	DIV
 
+# translates due to thar translate_all_columns does not work in SHARKadm
+sampler_type_code		RamSkrap	FRAMNET
+sampler_type_code		Mesh bag	DIV
