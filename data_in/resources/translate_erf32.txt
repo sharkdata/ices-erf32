@@ -141,6 +141,7 @@ station_name	BY39 ÖLANDS S UDDE	BY39
 station_name	BY4 CHRISTIANSÖ	BY4
 station_name	BY9 KLAIPEDA	BY9
 station_name	C3	C3_North
+station_name	C3_SOUTH	C3_South
 station_name	F18 SYDOSTBROTTEN	F18
 station_name	F26 / C15	F26
 station_name	F33 GRUNDKALLEN	F33
