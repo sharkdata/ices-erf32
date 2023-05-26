@@ -3,7 +3,7 @@ dataset_name	SHARK_Zoobenthos_2022_LNU
 dataset_name	SHARK_Zoobenthos_2022_UMSC
 #dataset_name	SHARK_Zoobenthos_2022_DEEP
 #dataset_name	SHARK_Zoobenthos_2022_DEEP_Asko
-#dataset_name	SHARK_Zoobenthos_2022_SLC-T
+dataset_name	SHARK_Zoobenthos_2022_SLC-T
 
 #dataset_name	SHARK_Zoobenthos_2021_LNU
 #dataset_name	SHARK_Zoobenthos_2021_UMSC
