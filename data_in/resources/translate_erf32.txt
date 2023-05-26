@@ -397,6 +397,65 @@ station_name	HAVSTENS FJORD, N BRATTÖN	HAVSTENS FJORD. N BRATTÖN
 station_name	Havstens fjord. N Brattön	HAVSTENS FJORD. N BRATTÖN
 station_name	GULLMARN 1	GULLMARN_1
 
+#ZB SLC-T stations (nytt namn i SHARK 2023?)
+station_name	BOTTNEFJORDEN 1	BOTTNEFJORDEN_1
+station_name	BOTTNEFJORDEN 2	BOTTNEFJORDEN_2
+station_name	BOTTNEFJORDEN 3	BOTTNEFJORDEN_3
+station_name	BOTTNEFJORDEN 4	BOVALLSTRAND_2
+station_name	BOTTNEFJORDEN 5	BOVALLSTRAND_1
+station_name	ELLÖSE 1	ELLÖSE_1
+station_name	ELLÖSE 3	ELLÖSE_3
+station_name	ELLÖSE 5	ELLÖSE_5
+station_name	ELLÖSE 9	ELLÖSE_9
+station_name	GULLMARN 2	GULLMARN_2
+station_name	GULLMARN 3	GULLMARN_3
+station_name	GULLMARN 4	GULLMARN_4
+station_name	GULLMARN 5	
+station_name	GULLMARN 6	
+station_name	GULLMARN 8	
+station_name	KÄRINGÖFJORD INRE 1	KÄRINGÖ_FJORD_1
+station_name	KÄRINGÖFJORD INRE 2	KÄRINGÖ_FJORD_2
+station_name	KÄRINGÖFJORD INRE 3	KÄRINGÖ_FJORD_3
+station_name	KRÅKEFJORD INRE 1	KRÅKE_FJORD_1
+station_name	KRÅKEFJORD INRE 2	KRÅKE_FJORD_2
+station_name	KRÅKEFJORD INRE 3	KRÅKE_FJORD_3
+station_name	KRÅKEFJORD INRE 5	KRÅKE_FJORD_5
+station_name	LYSEKIL YTTRE KUST 1	LYSEKIL YTTRE KUST_1
+station_name	LYSEKIL YTTRE KUST 2	LYSEKIL YTTRE KUST_2
+station_name	LYSEKIL YTTRE KUST 3	LYSEKIL YTTRE KUST_3
+station_name	LYSEKIL YTTRE KUST 4	LYSEKIL YTTRE KUST_4
+station_name	LYSEKIL YTTRE KUST 5	LYSEKIL YTTRE KUST_5
+station_name	LYSEKIL YTTRE KUST 6	LYSEKIL YTTRE KUST_6
+station_name	LYSEKIL YTTRE KUST 7	LYSEKIL YTTRE KUST_7
+station_name	LYSEKIL YTTRE KUST 8	LYSEKIL YTTRE KUST_8
+station_name	LYSEKIL YTTRE KUST 9	LYSEKIL YTTRE KUST_9
+station_name	MOLLÖFJORDEN 1	MOLLÖFJORDEN_1
+station_name	MOLLÖFJORDEN 4	MOLLÖFJORDEN_4
+station_name	MOLLÖFJORDEN 5	MOLLÖFJORDEN_5
+station_name	RISÖ SÄRÖ 2	
+station_name	RISÖ SÄRÖ 4	
+station_name	SALTF	
+station_name	SALTKÄLLAN 1	SALTKÄLLAN_1
+station_name	SALTKÄLLAN 2	SALTKÄLLAN_2
+station_name	SALTKÄLLAN 3	SALTKÄLLAN_3
+station_name	SALTKÄLLAN 4	SALTKÄLLAN_4
+station_name	SK34	
+station_name	STRÖMSTAD 1	STRÖMSTAD_1
+station_name	STRÖMSTAD 2	STRÖMSTAD_2
+station_name	STRÖMSTAD 3	STRÖMSTAD_3
+station_name	STRÖMSTAD 5	STRÖMSTAD_5
+station_name	TÅNGEN 1	
+station_name	TÅNGEN 2	
+station_name	MELLERSTA ÖRESUND 1 S	
+station_name	MELLERSTA ÖRESUND 2	
+station_name	MELLERSTA ÖRESUND 3	
+station_name	MELLERSTA ÖRESUND 4	
+station_name	MELLERSTA ÖRESUND 5	
+station_name	SKÄLDERVIKEN 10	
+
+
+
+
 # stationer i ZB SLC-T borde inte behövas längre
 #station_name	Askimsfjorden_01	ASKIMSFJORDEN_1
 #station_name	Askimsfjorden_03	ASKIMSFJORDEN_3
