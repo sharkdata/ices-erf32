@@ -92,6 +92,10 @@ platform_code	28	77KF
 platform_code	ZZ99	AA30	Översätts tillsvidare till AA30 innan ICES kan ta emot ZZ99 inom biologi
 
 
+# translates due to thar translate_all_columns does not work in SHARKadm
+fauna_flora_found	0	Y	
+fauna_flora_found	1	N	
+
 preservation_method_code	ETHG	ETH9GL
 
 sample_orderer_name_en	Swedish Environmental Protection Agency	SEPA
