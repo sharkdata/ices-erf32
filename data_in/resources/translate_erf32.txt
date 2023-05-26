@@ -432,8 +432,8 @@ station_name	LYSEKIL YTTRE KUST 9	LYSEKIL YTTRE KUST_9
 station_name	MOLLÖFJORDEN 1	MOLLÖFJORDEN_1
 station_name	MOLLÖFJORDEN 4	MOLLÖFJORDEN_4
 station_name	MOLLÖFJORDEN 5	MOLLÖFJORDEN_5
-#station_name	RISÖ SÄRÖ 2	RISÖ-SÄRÖ_2
-#station_name	RISÖ SÄRÖ 4	RISÖ-SÄRÖ_4
+station_name	RISÖ SÄRÖ 2	RISÖ-SÄRÖ_2
+station_name	RISÖ SÄRÖ 4	RISÖ-SÄRÖ_4
 #station_name	SALTF	
 station_name	SALTKÄLLAN 1	SALTKÄLLEFJORDEN
 station_name	SALTKÄLLAN 2	SALTKÄLLEFJORDEN_1
@@ -447,10 +447,10 @@ station_name	STRÖMSTAD 5	STRÖMSTAD_5
 #station_name	TÅNGEN 1	
 #station_name	TÅNGEN 2	
 #station_name	MELLERSTA ÖRESUND 1 S	
-#station_name	MELLERSTA ÖRESUND 2	
-#station_name	MELLERSTA ÖRESUND 3	
-#station_name	MELLERSTA ÖRESUND 4	
-#station_name	MELLERSTA ÖRESUND 5	
+#station_name	MELLERSTA ÖRESUND 2	MELLERSTA ÖRESUND_2
+#station_name	MELLERSTA ÖRESUND 3	MELLERSTA ÖRESUND_3
+#station_name	MELLERSTA ÖRESUND 4	MELLERSTA ÖRESUND_4
+#station_name	MELLERSTA ÖRESUND 5	MELLERSTA ÖRESUND_5
 #station_name	SKÄLDERVIKEN 10	
 
 
