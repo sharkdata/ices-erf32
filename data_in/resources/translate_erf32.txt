@@ -71,7 +71,7 @@ plankton_sampling_method_code	HAU	IND
 
 #platform_code	74	AA15
 #platform_code	7710	77SE
-#platform_code	7774	AA15
+platform_code	7774	AA15
 #platform_code	7790	AA30
 #platform_code	7799	AA30
 #platform_code	7798	AA33

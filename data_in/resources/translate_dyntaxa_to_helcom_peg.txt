@@ -414,7 +414,7 @@ Synura	Synura	PEG_BVOL
 Actinocyclus normanii	Actinocyclus normanii	PEG_BVOL
 Actinocyclus normanii var. normanii	Actinocyclus normanii f. normanii	PEG_BVOL
 Actinocyclus normanii var. subsalsus	Actinocyclus normanii f. subsalsus	PEG_BVOL
-Actinocyclus octonarius	Actinoptychus octonarius	PEG_BVOL
+Actinocyclus octonarius	Actinocyclus octonarius	PEG_BVOL
 Actinocyclus octonarius var. octonarius	Actinocyclus octonarius var. octonarius	PEG_BVOL
 Actinocyclus octonarius var. crassus	Actinocyclus octonarius var. crassus	PEG_BVOL
 Actinocyclus octonarius var. tenellus	Actinocyclus octonarius var. tenellus	PEG_BVOL
