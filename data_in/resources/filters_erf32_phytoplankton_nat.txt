@@ -36,6 +36,8 @@ XXXX_scientific_name		Mesodinium
 XXXX_scientific_name		Verrucodesmus
 
 station_name		INF 1	#RECIP
+station_name		INF1	#RECIP
 station_name		MJS 1	#RECIP
+station_name		MJS1	#RECIP
 station_name		S2	#RECIP
 station_name		V4	#RECIP
