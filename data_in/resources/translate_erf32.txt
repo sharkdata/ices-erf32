@@ -75,7 +75,7 @@ platform_code	7774	AA15
 #platform_code	7790	AA30
 #platform_code	7799	AA30
 #platform_code	7798	AA33
-#platform_code	7791	AA33
+platform_code	7791	AA33
 platform_code		AA72
 #platform_code	14	77AR
 #platform_code	GA	77GA
