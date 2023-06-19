@@ -22,6 +22,11 @@ sampler_type_code		MESHB
 
 # Excluded because FRAMNETS are taken outside of the transect and the position of the sample is not availible
 
+#resubmission of 2021 data, new md5 values
+shark_sample_id_md5		991459d5dcc6f08675f70b801f274752 
+shark_sample_id_md5		d0ea9156c5932019382d43938f549caf 
+shark_sample_id_md5		e1066867b2684b24d93ea1f1feeda846 
+
 #for data from 2021
 #shark_sample_id_md5		0ba35b1637257d8bdfee0d8c67c21d08 
 #shark_sample_id_md5		297e76f612e1c9aef8cb619bb27223b7 
