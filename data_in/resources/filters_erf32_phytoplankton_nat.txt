@@ -26,6 +26,8 @@ scientific_name		Acanthostomella norvegica
 scientific_name		Ensiculifera
 scientific_name		Oxytoxum laticeps
 scientific_name		Entomoneis
+scientific_name		Corethron hystrix
+scientific_name		Pterosperma vanhoeffenii
 
 scientific_name		Unicell	Group-bvol-1
 size_class		29	Group-bvol-1
