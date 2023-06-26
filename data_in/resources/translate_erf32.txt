@@ -89,6 +89,7 @@ platform_code	28	77KF
 #platform_code	LY	77LY
 #platform_code	18	77SN
 #platform_code	34AR	34A3
+platform_code	7798	AA30	Översätts tillsvidare till AA30 innan ICES kan ta emot ZZ99 inom biologi
 platform_code	ZZ99	AA30	Översätts tillsvidare till AA30 innan ICES kan ta emot ZZ99 inom biologi
 
 
