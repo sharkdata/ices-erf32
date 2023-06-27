@@ -7,8 +7,8 @@ info:
 
 datatype: Phytobenthos
 
-yearFrom: 2021
-yearTo: 2021
+yearFrom: 2022
+yearTo: 2022
 
 icesTarget:
     directory: data_out
