@@ -1,7 +1,5 @@
 source_field	from_value	to_value	comments
 
-analytical_laboratory_name_en	MEDINS AB	KMFS	# test test test
-
 sampling_laboratory_name_en	The Sven Lovén Centre for Marine Sciences-Kristineberg	KMFS
 sampling_laboratory_name_en	The Sven Lovén Centre for Marine Sciences-Tjärnö	TMBL
 sampling_laboratory_name_en	Swedish Meteorological and Hydrological Institute	SMHI
@@ -28,6 +26,7 @@ analytical_laboratory_name_en	Linnaeus University	UCKS
 analytical_laboratory_name_en	Umeå University	UMSC
 analytical_laboratory_name_en	WEAQ AB	WEAQ
 analytical_laboratory_name_en	-	TMBL
+analytical_laboratory_name_en	MEDINS AB	Medins Havs och Vattenkonsulter AB	
 
 analytical_laboratory_name_sv	National Marine Fisheries Research Institute (NMFRI)	MIRG
 analytical_laboratory_name_sv	Swedish Meteorological and Hydrological Institute	SMHI
