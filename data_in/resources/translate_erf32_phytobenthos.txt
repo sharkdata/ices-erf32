@@ -9,3 +9,4 @@ sampler_type_code		MESHB	DIV
 sampler_type_code		RamSkrap	FRAMENET
 sampler_type_code		Mesh bag	DIV
 sampler_area_m2		-9	
+sampler_area_m2		999	
