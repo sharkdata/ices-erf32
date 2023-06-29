@@ -17,8 +17,8 @@ dataset_name	SHARK_Epibenthos_2022_DEEP_Singo
 
 
 # Excluded do to lack of area information
-sampler_type_code		RUTA
-sampler_type_code		MESHB
+#sampler_type_code		RUTA
+#sampler_type_code		MESHB
 
 # Excluded because FRAMNETS are taken outside of the transect and the position of the sample is not availible
 
