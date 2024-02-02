@@ -887,8 +887,10 @@ class ExportIcesContent(object):
             return "BMCEVOL"  # PP: Biovolume concentration, mm3/l, BMCEVOL.
         elif value == "Carbon concentration":
             return "BMCCONT"  # PP: Carbon concentration, ugC/l, BMCCONT.
-        elif value == "Cover (%)":
+        elif value == "Cover":
             return "ABUND%C"  # Epibenthos.
+        elif value == "Dry weight": #Test
+            return "BMDRYWT"  # Epibenthos.
         # ZP.
         if value == "Carbon content":
             unit_value = row_dict["MUNIT-R38"]

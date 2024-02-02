@@ -25,7 +25,7 @@ analytical_laboratory_name_en	FITO-Lab	SFIP
 analytical_laboratory_name_en	Linnaeus University	UCKS
 analytical_laboratory_name_en	Umeå University	UMSC
 analytical_laboratory_name_en	WEAQ AB	WEAQ
-analytical_laboratory_name_en	-	TMBL
+#analytical_laboratory_name_en	-	TMBL	not very general..
 analytical_laboratory_name_en	MEDINS AB	MHVS	
 
 analytical_laboratory_name_sv	National Marine Fisheries Research Institute (NMFRI)	MIRG

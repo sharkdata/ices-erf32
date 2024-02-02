@@ -452,7 +452,7 @@ class IcesErf32Format(object):
             "Wet weight",
             "Biovolume concentration",
             "Carbon concentration",
-            "Cover (%)",
+            "Cover",
             "Carbon content",
         ]
 
