@@ -513,7 +513,6 @@ class ExportIcesContent(object):
         transect_data_dict = erf32_generator.global_transect_data.get_transect_data(
             self._dict
         )
-
         if self._dict["DTYPE-R34"] == "PB":  # or \
             # (self._dict['DTYPE-R34'] == 'ZB'):
 
@@ -521,9 +520,8 @@ class ExportIcesContent(object):
 
             # Get max calculated distance end from sections.
             if self._dict["TRSLN-R40"] == "":
-                self._dict["TRSLN-R40"] = transect_data_dict.get(
-                    "max_section_distance_end_m", ""
-                )
+                self._dict["TRSLN-R40"] = transect_data_dict.get("max_section_distance_end_m", "")
+            
             # Add some default values if the corresponding field values are empty.
             if (
                 ("Skagerack" in self._get_value("dataset_file_name", ""))
@@ -682,6 +680,7 @@ class ExportIcesContent(object):
             # TRCSD = section_start_depth_m          sample_min_depth_m
             # TRCED = section_end_depth_m            sample_max_depth_m
 
+
             if (not self._get_value("TRSCS-R34")) and (
                 not self._get_value("TRSCE-R34")
             ):
@@ -690,6 +689,12 @@ class ExportIcesContent(object):
                 self._dict["TRSCE-R34"] = self._get_value("transect_max_distance_m")
                 # self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")
                 # self._dict["TRCED-R34"] = self._get_value("sample_max_depth_m")
+
+            # Fix for Epibenthos/Phytobenthos FRAMENET and MB mesh bag, when no transect data and end m 
+            if (self._get_value("DTYPE-R34") == "PB") and (
+                not self._get_value("TRSCE-R34")) and (
+                self._dict["SMTYP-R20"] != "DTR"):
+                self._dict["TRSCE-R34"] = self._dict["TRSCS-R34"]
 
             if not self._get_value("TRCSD-R34"):
                 self._dict["TRCSD-R34"] = self._get_value("sample_min_depth_m")

@@ -24,3 +24,6 @@ shark_sample_id_md5		e1066867b2684b24d93ea1f1feeda846
 # Zero is not accepted as a value for Cover
 XXX-parameter		Cover	Group-cover-1
 XXX-value		0	Group-cover-1
+
+# Excluded do to reveresed transect 2022
+station_name		8_22 387275

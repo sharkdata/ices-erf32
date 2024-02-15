@@ -142,16 +142,25 @@ class TransectData(object):
                     "transect_sequence_no": str(self._transect_sequence_no)
                 }
             #
-
             transect_length_m = datarow_dict.get("transect_length_m", "")
             if transect_length_m == "":
                 #
+                # print(self._transect_dict[key].get("max_section_distance_end_m"))
+                # print(self._transect_dict)
                 max_section_distance_end_m = self._transect_dict[key].get(
                     "max_section_distance_end_m", "0"
                 )
+
                 new_section_distance_end_m = datarow_dict.get(
                     "section_distance_end_m", "0"
                 )
+
+                #### MH YE MW specialare för phytobenthos transekt
+                if not new_section_distance_end_m and datarow_dict["delivery_datatype"].lower() == "epibenthos":
+                    new_section_distance_end_m = datarow_dict.get(
+                    "section_distance_start_m", "")
+                #print(new_section_distance_end_m)
+
                 #
                 try:
                     max_float = float(max_section_distance_end_m.replace(",", "."))

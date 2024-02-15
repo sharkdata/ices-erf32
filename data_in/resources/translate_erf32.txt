@@ -164,7 +164,7 @@ station_name	GAVIK-1	GA1
 station_name	Y10 FÅGELSKÄR	Fågelskär
 station_name	HAVSTENS FJORD N BRATTÖN	HAVSTENS FJORD N BRATTÖN
 station_name	HAVSTENS FJORD, V LYCKORNA	HAVSTENS FJORD V LYCKORNA
-station_name	HÄSTHOLMEN	Hästholmen (Torhamn)
+#station_name	HÄSTHOLMEN	Hästholmen (Torhamn)
 station_name	Y9	Höglosmen
 station_name	KF1_KÅLLA - GÅSEFJÄRDEN	KF1_Kålla-/Gåsefjärden
 station_name	KF2_KÅLLA - GÅSEFJÄRDEN	KF2_Kålla-/Gåsefjärden
@@ -252,6 +252,14 @@ station_name	HOBURG	Hoburg
 station_name	KRONVALD	Kronvald
 station_name	LACKA	Lacka
 station_name	Wa2	WA2
+station_name	RAMSÖ	RAMSÖKALVEN
+station_name	NORD ÖCKERÖ	Nord Öckerö
+station_name	VASSHOLMEN	Vassholmen
+station_name	TORHAMN 5	Torhamn 5
+station_name	TÄRNÖ 2	Tärnö 2
+station_name	TÄRNÖ 7	Tärnö 7
+station_name	TORHAMN 2	Torhamn 2
+
 
 # stationer i PB SLC-T borde inte behövas längre
 #station_name	Blekeskär	BLEKESKÄR
