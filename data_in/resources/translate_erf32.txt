@@ -147,6 +147,7 @@ station_name	BY3 HAMRARNE SUND	BY3
 station_name	BY32 NORRKÖPINGSDJ	BY32
 station_name	BY38 KARLSÖDJ	BY38
 station_name	BY39 ÖLANDS S UDDE	BY39
+station_name	BY39 ÖLANDS SÖDRA	BY39
 station_name	BY4 CHRISTIANSÖ	BY4
 station_name	BY9 KLAIPEDA	BY9
 station_name	C3	C3_North
@@ -259,6 +260,8 @@ station_name	TORHAMN 5	Torhamn 5
 station_name	TÄRNÖ 2	Tärnö 2
 station_name	TÄRNÖ 7	Tärnö 7
 station_name	TORHAMN 2	Torhamn 2
+station_name	SLUBBERSHOLMEN SÖRÖN 1	SLUBBERSHOLMEN
+station_name	BLEKESKÄR SÖRÖN 2	BLEKESKÄR
 
 
 # stationer i PB SLC-T borde inte behövas längre
