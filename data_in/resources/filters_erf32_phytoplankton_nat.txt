@@ -35,6 +35,15 @@ scientific_name		Pterosperma vanhoeffenii
 scientific_name		Protoperidinium ovatum
 scientific_name		Bacterosira
 
+#2024 additions
+scientific_name		Algirosphaera
+scientific_name		Tripos bucephalus
+scientific_name		Chaetoceros anastomosans
+scientific_name		Solenicola setigera
+scientific_name		Dinophysis caudata
+scientific_name		Favella
+scientific_name		Didinium nasutum
+
 #scientific_name		Bacterosira	grp-1
 #size_class		1	grp-1
 
